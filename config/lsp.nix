@@ -11,7 +11,7 @@
       "rust_analyzer"
       "pylsp"
       "nixd"
-      "ltex"
+      "texlab"
       "julials"
       "bashls"
       "clangd"

@@ -9,7 +9,7 @@
     ./theme.nix
     ./tree.nix
   ];
-  linuxImports = if system == "x86_64-linux" then [./tex.nix] else [];
+  linuxImports = if system == "x86_64-linux" then [./tex.nix] else [ ./etex.nix ];
 in {
   imports = allImports ++ linuxImports;
 }

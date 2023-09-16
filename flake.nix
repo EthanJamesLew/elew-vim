@@ -12,7 +12,19 @@
     flake-utils,
     ...
   } @ inputs: let
-    config = import ./config; # import the module directly
+    importedConfig = import ./config;
+    optionsConfig = {
+      config = {
+        options = { 
+          number = true; 
+          relativenumber = true; 
+          shiftwidth = 2; 
+        };
+        maps = {
+        
+        };
+      };
+    };
   in
     flake-utils.lib.eachDefaultSystem (system: let
       nixvimLib = nixvim.lib.${system};
@@ -20,7 +32,7 @@
       nixvim' = nixvim.legacyPackages.${system};
       nvim = nixvim'.makeNixvimWithModule {
         inherit pkgs;
-        module = config;
+        module = optionsConfig // (importedConfig {inherit pkgs system;});
       };
     in {
       checks = {

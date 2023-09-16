@@ -4,6 +4,7 @@
     ./bufferline.nix
     ./git.nix
     ./nix.nix
+    ./plugins.nix
     ./rust.nix
     ./theme.nix
     ./tree.nix

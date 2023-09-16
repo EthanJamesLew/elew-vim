@@ -1,4 +1,3 @@
-
 {pkgs, ...} @ args: {
   plugins.telescope = {
     enable = true;
@@ -12,6 +11,4 @@
     enable = true;
     flavour = "latte";
   };
-
-  extraPlugins = with pkgs.vimPlugins; [ YouCompleteMe ];
 }

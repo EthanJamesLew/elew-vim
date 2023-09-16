@@ -5,7 +5,7 @@
     ./git.nix
     ./nix.nix
     ./plugins.nix
-    ./rust.nix
+    ./lsp.nix
     ./theme.nix
     ./tree.nix
   ];

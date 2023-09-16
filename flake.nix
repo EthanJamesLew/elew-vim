@@ -18,10 +18,15 @@
         options = { 
           number = true; 
           relativenumber = true; 
-          shiftwidth = 2; 
+          foldmethod = "indent";
         };
         maps = {
-        
+          normal."<space>" = {
+            action = "za";
+          };
+          visual."<space>" = {
+            action = "zf";
+          };
         };
       };
     };

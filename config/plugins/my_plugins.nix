@@ -11,17 +11,6 @@
     dependencies = [];
   };
 
-  hexmode = vimUtils.buildVimPluginFrom2Nix {
-    name = "hexmode-2016-11-04";
-    src = fetchFromGitHub {
-      owner = "fidian";
-      repo = "hexmode";
-      rev = "27932330b9a36c91a6039267bc32a18060e82d57";
-      sha256 = "00xdv6d3rmalv342ajqd7cgbci97frd7pmsrgfnaqcfimycka3la";
-    };
-    dependencies = [];
-  };
-  
   lean = vimUtils.buildVimPluginFrom2Nix {
     name = "lean-2023-09-17";
     src = fetchFromGitHub {
@@ -40,6 +29,17 @@
       repo = "Nvim-R";
       rev = "d8f7588fda8d06e8005252178c872e169e96ce1c";
       sha256 = "sha256-As8RqjIal5XGq57y9nRm7dIr+0W8PHJf/T6e7/b0iuw=";
+    };
+    dependencies = [];
+  };
+  
+  vimf90 = vimUtils.buildVimPluginFrom2Nix {
+    name = "vimf90-2023-09-17";
+    src = fetchFromGitHub {
+      owner = "rudrab";
+      repo = "vimf90";
+      rev = "1f85c0a7bcf23c142408015413bd4822815b28fe";
+      sha256 = "sha256-GdKNnsM7u0abXy74AIvwb6TV8fFdY/niXd7tpvDGyaM=";
     };
     dependencies = [];
   };

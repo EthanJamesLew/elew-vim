@@ -21,4 +21,15 @@
     };
     dependencies = [];
   };
+  
+  lean = vimUtils.buildVimPluginFrom2Nix {
+    name = "lean-2023-09-17";
+    src = fetchFromGitHub {
+      owner = "Julian";
+      repo = "lean.nvim";
+      rev = "ad8305e07dd6226724e87607c9c5a8331bb3f62e";
+      sha256 = "sha256-vhUF1Hj6itbVFG0SuIdGuAo35+M9WjKtjpaqVnuqKeE=";
+    };
+    dependencies = [];
+  };
 }

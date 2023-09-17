@@ -4,4 +4,5 @@
 in with myPlugins; [
   ripgrep
   hexmode
+  lean
 ] 

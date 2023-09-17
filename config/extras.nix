@@ -6,7 +6,7 @@
   # nixpkgs vim plugins
   externalPlugins = with pkgs.vimPlugins; [
     YouCompleteMe 
-    ctrlp 
+    ctrlp
   ];
 in {
   extraPlugins = externalPlugins ++ myPlugins;

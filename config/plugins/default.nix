@@ -7,4 +7,5 @@ in with myPlugins; [
   nvim-r
   vimf90
   surround
+  rust
 ] 

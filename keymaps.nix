@@ -1,5 +1,13 @@
 {
   config = {
+    globals = {
+      # sets the map leader (instead of "\")
+      mapleader = ",";
+
+      # this is needed by vimf90 to accept the installation
+      fortran_dep_install = 3;
+    };
+
     options = { 
       # display relative numbers on the side
       number = true; 
@@ -15,7 +23,14 @@
       
       # this will fold the code on open
       # foldmethod = "indent";
+
+      # ignore compiled files
+      wildignore = "*.o,*~,*.pyc";
+
+      # use english
+      langmenu = "en";
     };
+
     maps = {
       # custom folding/unfolding commands
       normal."<space>" = {

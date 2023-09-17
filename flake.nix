@@ -13,23 +13,7 @@
     ...
   } @ inputs: let
     importedConfig = import ./config;
-    optionsConfig = {
-      config = {
-        options = { 
-          number = true; 
-          relativenumber = true; 
-          foldmethod = "indent";
-        };
-        maps = {
-          normal."<space>" = {
-            action = "za";
-          };
-          visual."<space>" = {
-            action = "zf";
-          };
-        };
-      };
-    };
+    optionsConfig = import ./keymaps.nix;
   in
     flake-utils.lib.eachDefaultSystem (system: let
       nixvimLib = nixvim.lib.${system};

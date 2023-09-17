@@ -43,7 +43,7 @@
       };
 
       # search
-      normal."<leader>g" = {
+      normal."<leader>r" = {
         action = ":Rg<space>";
       };
 

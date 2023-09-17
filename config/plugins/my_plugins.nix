@@ -43,4 +43,15 @@
     };
     dependencies = [];
   };
+  
+  surround = vimUtils.buildVimPluginFrom2Nix {
+    name = "surround-2023-09-17";
+    src = fetchFromGitHub {
+      owner = "tpope";
+      repo = "vim-surround";
+      rev = "3d188ed2113431cf8dac77be61b842acb64433d9";
+      sha256 = "sha256-DZE5tkmnT+lAvx/RQHaDEgEJXRKsy56KJY919xiH1lE=";
+    };
+    dependencies = [];
+  };
 }

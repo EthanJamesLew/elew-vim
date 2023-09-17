@@ -6,4 +6,5 @@ in with myPlugins; [
   lean
   nvim-r
   vimf90
+  surround
 ] 

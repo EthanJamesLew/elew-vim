@@ -32,4 +32,15 @@
     };
     dependencies = [];
   };
+  
+  nvim-r = vimUtils.buildVimPluginFrom2Nix {
+    name = "lean-2023-09-17";
+    src = fetchFromGitHub {
+      owner = "jalvesaq";
+      repo = "Nvim-R";
+      rev = "d8f7588fda8d06e8005252178c872e169e96ce1c";
+      sha256 = "sha256-As8RqjIal5XGq57y9nRm7dIr+0W8PHJf/T6e7/b0iuw=";
+    };
+    dependencies = [];
+  };
 }

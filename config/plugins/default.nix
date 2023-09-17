@@ -3,4 +3,5 @@
   myPlugins = import ./my_plugins.nix { inherit (pkgs) vimUtils fetchFromGitHub; };
 in with myPlugins; [
   ripgrep
+  hexmode
 ] 

@@ -7,6 +7,7 @@
   externalPlugins = with pkgs.vimPlugins; [
     YouCompleteMe 
     ctrlp
+    markdown-preview-nvim
   ];
 in {
   extraPlugins = externalPlugins ++ myPlugins;

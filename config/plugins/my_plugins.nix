@@ -65,15 +65,4 @@
     };
     dependencies = [];
   };
-  
-  markdown-preview = vimUtils.buildVimPluginFrom2Nix {
-    name = "markdown-preview-2023-09-20";
-    src = fetchFromGitHub {
-      owner = "iamcco";
-      repo = "markdown-preview.nvim";
-      rev = "02cc3874738bc0f86e4b91f09b8a0ac88aef8e96";
-      sha256 = "e1Buvu/lkEt9V5LVDFKWTasnSX6EdtRgWyVDZA8LpUE=";
-    };
-    dependencies = [];
-  };
 }

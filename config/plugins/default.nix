@@ -8,4 +8,5 @@ in with myPlugins; [
   vimf90
   surround
   rust
+  markdown-preview
 ] 

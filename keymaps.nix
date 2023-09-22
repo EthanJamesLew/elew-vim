@@ -8,6 +8,22 @@
       fortran_dep_install = 3;
     };
 
+    extraConfigVim = ''
+      " make sure that we're using latexmk
+      let g:vimtex_compiler_method = 'latexmk' 
+      
+      " latexmk compilation (the important one is shell escape as it is needed for pygments minted)
+      let g:vimtex_compiler_latexmk = {
+        \ 'options' : [
+        \    '-shell-escape',
+        \    '-verbose',
+        \    '-file-line-error',
+        \    '-synctex=1',
+        \    '-interaction=nonstopmode',
+        \ ],
+        \}
+    '';
+
     options = { 
       # display relative numbers on the side
       number = true; 

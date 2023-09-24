@@ -1,37 +1,77 @@
 # Vim Notes
 
-These are my notes on using vim.
+These are notes on how I vim. These are the parts of vim that I bother remembering.
 
-## Temporarily Maximize Pane for Editing
+I'm a fairly minimal user---I have yet to commit a lot of vim commands to memory let alone get familiar enough to use them in my workflows.
 
-You can use the tab sysem efficiently here,
+## Navigation
 
-```shell
-:tabedit %
-```
+In order of frequency, here are my top navigation methods.
 
-Use `gT` to navigate, then
+* `h`, `j`, `k`, and `l` for single character movement
+* `^` and `$` for beginning and end of the lines movement
+* `b` and `w` for backwards / forwards by word (I use `e` far less often)
+* (for lsp enabled buffers) `gd`, `gD`, and `gi` to jump into references and implementations
+* `:<number>` go to line number
+* `g;` to go to place of last edit
+* `<shift><up/down arrow>` to move page up and down
+* `<number><up/down arrow>` to move relative line number
+* (use sparingly) `/<regex>` to search in file
 
-```shell
-:tabclose
-```
+## Visual Mode
+
+* `<ctrl>v` and `<shift>v`. I like to use `<ctrl>v` and insert mode to add bullets points for multiple lines, for example. I may also use `J` to merge multiple lines.
+
+## Surround
+
+I use vim surround occasionally.
+
+* `cs([` to change parentheses
+* `ds(` to delete parentheses
+
+I haven't remembered the rest.
+
+## Buffer Navigation
+
+* `:bn` and `:bN` to go to and from last buffer
+
+## Tab Management
+
+* `gT` to go to the next tab
+* keymap `<leader>tn` to open new tab
+* keymap `<leader>te %` to move buffer to a new tab
+* keymap `<leader>tc` to close a tab
+
+## Git Management
+
+I use vim fugitive. I have keymapped many of its feature to `<leader>g` prefix. This is alo why my ripgrep usage is `<leader>r` to deconflict with git commands.
+
+* `<leader>gd` to pull a git diff of current buffer
+* many others...
+
+## Text Search
+
+I use vim ripgrep and keymap to `<leader>r`. I rarely use vimgrep now.
+
+## File Search
+
+I use vim ctrlp and use `<ctrl>p`.
+
+Also, I use CHADtree for a filetree.
 
 ## Terminal
 
 * use Ctrl+\ Ctrl+n to exit terminal mode
-
-## Navigation
-
-`bn` and `bN` will go to next and previous buffer.
-
-`gT` will change tabs.
-
-`g;` will go to place of last edit.
-
-`b` anf `w` will move by word.
 
 ## Markdown
 
 I use the markdown-preview.nvim plugin.
 
 `:MarkdownPreview` and it will open a browser.
+
+## LaTeX
+
+I use vimtex
+* `\ll` will start the continuous compilation
+* `:VimtexTocOpen` will open the table of contents (maybe should keymap this)
+

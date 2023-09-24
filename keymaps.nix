@@ -98,7 +98,7 @@
         action = ":Git edit<CR>";
       };
       normal."<leader>gr" = {
-        action = ":Git read<CR>";
+        action = ":Git restore --staged %:p<CR><CR>";
       };
       normal."<leader>gw" = {
         action = ":Git write<CR><CR>";

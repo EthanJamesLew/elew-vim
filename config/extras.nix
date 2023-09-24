@@ -8,6 +8,7 @@
     YouCompleteMe 
     ctrlp
     markdown-preview-nvim
+    awesome-vim-colorschemes 
   ];
 in {
   extraPlugins = externalPlugins ++ myPlugins;

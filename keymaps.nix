@@ -83,34 +83,34 @@
         action = ":Git add %:p<CR><CR>";
       };
       normal."<leader>gs" = {
-        action = ":Gstatus<CR>";
+        action = ":Git status<CR>";
       };
       normal."<leader>gc" = {
-        action = ":Gcommit -v -q<CR>";
+        action = ":Git commit -v -q<CR>";
       };
       normal."<leader>gt" = {
-        action = ":Gcommit -v -q %:p<CR>";
+        action = ":Git commit -v -q %:p<CR>";
       };
       normal."<leader>gd" = {
-        action = ":Gdiff<CR>";
+        action = ":Git diff<CR>";
       };
       normal."<leader>ge" = {
-        action = ":Gedit<CR>";
+        action = ":Git edit<CR>";
       };
       normal."<leader>gr" = {
-        action = ":Gread<CR>";
+        action = ":Git read<CR>";
       };
       normal."<leader>gw" = {
-        action = ":Gwrite<CR><CR>";
+        action = ":Git write<CR><CR>";
       };
       normal."<leader>gl" = {
         action = ":silent! Glog<CR>:bot copen<CR>";
       };
       normal."<leader>gp" = {
-        action = ":Ggrep<Space>";
+        action = ":Git grep<Space>";
       };
       normal."<leader>gm" = {
-        action = ":Gmove<Space>";
+        action = ":Git move<Space>";
       };
       normal."<leader>gb" = {
         action = ":Git branch<Space>";

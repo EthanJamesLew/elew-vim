@@ -5,6 +5,12 @@ This repository contains a personal Vim configuration using `nixvim`. It can be 
 
 ### Running the Configuration
 
+The preferred method to install this vim is via nix profile (there is no need to clone the repo)
+
+```shell
+nix profile install github:EthanJamesLew/elew-vim
+```
+
 #### Nix Flake
 Execute:
 ```

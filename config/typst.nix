@@ -1,5 +1,5 @@
 {pkgs, lib, ...} @ args: {
-  plugins.typst = {
+  plugins.typst-vim = {
     enable = true;
   };
 }

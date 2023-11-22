@@ -79,3 +79,9 @@ I use vimtex
 * `\ll` will start the continuous compilation
 * `:VimtexTocOpen` will open the table of contents (maybe should keymap this)
 
+## R
+
+use `\rf` and `\rq` to start and stop R
+
+use `\ss` to execute selection, `\l` for a line, and `\aa` for the file
+

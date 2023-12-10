@@ -65,4 +65,15 @@
     };
     dependencies = [];
   };
+  
+  matlab = vimUtils.buildVimPluginFrom2Nix {
+    name = "rust-2023-12-10";
+    src = fetchFromGitHub {
+      owner = "daeyun";
+      repo = "vim-matlab";
+      rev = "eafe639be77454b6bf46f149a7695de773b702b9";
+      sha256 = "sha256-zDiPIQp5E8Iv2ZH7ZHTKGVspX44lclLc4q/kDN8ihVE=";
+    };
+    dependencies = [];
+  };
 }

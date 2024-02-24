@@ -9,4 +9,5 @@ in with myPlugins; [
   surround
   rust
   matlab
+  clafer
 ] 

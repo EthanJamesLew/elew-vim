@@ -76,4 +76,15 @@
     };
     dependencies = [];
   };
+
+  clafer = vimUtils.buildVimPluginFrom2Nix {
+    name = "clafer-2024-02-23";
+    src = fetchFromGitHub {
+      owner = "wasowski";
+      repo = "clafer-vim";
+      rev = "037a5c01c470e8f2dfee7c1b0ac49b3c57e06090";
+      sha256 = "sha256-3/jqpZW0TPhnAcDvvLO09s3oKAwAqVhoBU0e19edAmk=";
+    };
+    dependencies = [];
+  };
 }

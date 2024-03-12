@@ -16,6 +16,7 @@
       "bashls"
       "clangd"
       "cmake"
+      "haskell"
     ];
     keymaps.lspBuf = {
       "gd" = "definition";

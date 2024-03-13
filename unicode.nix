@@ -4952,7 +4952,7 @@
   insert."\\fire" = {
     action = "🔥";
   };
-  insert."\\zap" = {
+  insert."\\opt" = {
     action = "⚡️";
   };
   insert."\\memo" = {

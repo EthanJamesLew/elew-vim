@@ -1911,7 +1911,7 @@
   insert."\\omega" = {
     action = "ω";
   };
-  insert."\\nabla" = {
+  insert."\\partial" = {
     action = "∂";
   };
   insert."\\varepsilon" = {
@@ -4913,5 +4913,22 @@
   };
   insert."\\fgsp" = {
     action = " ";
+  };
+
+  # elew
+  insert."\\python" = {
+    action = "🐍";
+  };
+  insert."\\docker" = {
+    action = "🐳";
+  };
+  insert."\\haskell" = {
+    action = "λ";
+  };
+  insert."\\git" = {
+    action = "";
+  };
+  insert."\\java" = {
+    action = "☕";
   };
 }

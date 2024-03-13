@@ -125,7 +125,7 @@
         action = ":Dispatch! git pull<CR>stuff";
       };
 
-      # david unicodes
+      # davdar
       insert."\\\\" = {
         action = "\\";
       };
@@ -237,37 +237,37 @@
       insert."\\iff" = {
         action = "⟺";
       };
-      insert."\\u\\|" = {
+      insert."\\u\|" = {
         action = "⇧";
       };
-      insert."\\r\\|" = {
+      insert."\\r\|" = {
         action = "⇨";
       };
-      insert."\\d\\|" = {
+      insert."\\d\|" = {
         action = "⇩";
       };
-      insert."\\l\\|" = {
+      insert."\\l\|" = {
         action = "⇦";
       };
-      insert."\\rl\\|" = {
+      insert."\\rl\|" = {
         action = "⬄";
       };
-      insert."\\r\\|=" = {
+      insert."\\r\|=" = {
         action = "⇰";
       };
-      insert."\\r\\\\" = {
+      insert."\\r\\" = {
         action = "⇀";
       };
-      insert."\\u\\|-" = {
+      insert."\\u\|-" = {
         action = "↥";
       };
-      insert."\\r\\|-" = {
+      insert."\\r\|-" = {
         action = "↦";
       };
-      insert."\\d\\|-" = {
+      insert."\\d\|-" = {
         action = "↧";
       };
-      insert."\\l\\|-" = {
+      insert."\\l\|-" = {
         action = "↤";
       };
       insert."\\rh" = {
@@ -282,10 +282,10 @@
       insert."\\lc" = {
         action = "↫";
       };
-      insert."\\r>\\|" = {
+      insert."\\r>\|" = {
         action = "⇥";
       };
-      insert."\\l>\\|" = {
+      insert."\\l>\|" = {
         action = "⇤";
       };
       insert."\\u>>" = {
@@ -300,13 +300,13 @@
       insert."\\l>>" = {
         action = "↞";
       };
-      insert."\\r\\|>" = {
+      insert."\\r\|>" = {
         action = "⇾";
       };
-      insert."\\l\\|>" = {
+      insert."\\l\|>" = {
         action = "⇽";
       };
-      insert."\\rl\\|>" = {
+      insert."\\rl\|>" = {
         action = "⇿";
       };
       insert."\\r~" = {
@@ -381,10 +381,10 @@
       insert."\\))" = {
         action = "⸩";
       };
-      insert."\\(\\|" = {
+      insert."\\(\|" = {
         action = "⦇";
       };
-      insert."\\)\\|" = {
+      insert."\\)\|" = {
         action = "⦈";
       };
       insert."\\c(" = {
@@ -429,10 +429,10 @@
       insert."\\>>" = {
         action = "⟫";
       };
-      insert."\\<\\|" = {
+      insert."\\<\|" = {
         action = "⦉";
       };
-      insert."\\>\\|" = {
+      insert."\\>\|" = {
         action = "⦊";
       };
       insert."\\<." = {
@@ -507,10 +507,10 @@
       insert."\\]]" = {
         action = "⟧";
       };
-      insert."\\[\\|" = {
+      insert."\\[\|" = {
         action = "⟬";
       };
-      insert."\\]\\|" = {
+      insert."\\]\|" = {
         action = "⟭";
       };
       insert."\\e[" = {
@@ -543,10 +543,10 @@
       insert."\\br" = {
         action = "⸥";
       };
-      insert."\\{\\|" = {
+      insert."\\{\|" = {
         action = "⦃";
       };
-      insert."\\}\\|" = {
+      insert."\\}\|" = {
         action = "⦄";
       };
       insert."\\{" = {
@@ -627,7 +627,7 @@
       insert."\\<<=" = {
         action = "≪=";
       };
-      insert."\\xo\\|" = {
+      insert."\\xo\|" = {
         action = "⊻";
       };
       insert."\\nand" = {
@@ -690,10 +690,10 @@
       insert."\\m>=" = {
         action = "⪭";
       };
-      insert."\\m<\\|" = {
+      insert."\\m<\|" = {
         action = "⩤";
       };
-      insert."\\m>\\|" = {
+      insert."\\m>\|" = {
         action = "⩥";
       };
       insert."\\mand" = {
@@ -747,10 +747,10 @@
       insert."\\t<>" = {
         action = "⧎";
       };
-      insert."\\t<\\|" = {
+      insert."\\t<\|" = {
         action = "⧏";
       };
-      insert."\\t>\\|" = {
+      insert."\\t>\|" = {
         action = "⧐";
       };
       insert."\\t<=/" = {
@@ -846,22 +846,22 @@
       insert."\\si." = {
         action = "⩀";
       };
-      insert."\\s<\\|" = {
+      insert."\\s<\|" = {
         action = "⫏";
       };
-      insert."\\s>\\|" = {
+      insert."\\s>\|" = {
         action = "⫐";
       };
-      insert."\\s<=\\|" = {
+      insert."\\s<=\|" = {
         action = "⫑";
       };
-      insert."\\s>=\\|" = {
+      insert."\\s>=\|" = {
         action = "⫒";
       };
-      insert."\\su\\|" = {
+      insert."\\su\|" = {
         action = "⩌";
       };
-      insert."\\si\\|" = {
+      insert."\\si\|" = {
         action = "⩍";
       };
       insert."\\hs<" = {
@@ -1035,7 +1035,7 @@
       insert."\\o;" = {
         action = "⨟";
       };
-      insert."\\,\\|" = {
+      insert."\\,\|" = {
         action = "⍪";
       };
       insert."\\d^" = {
@@ -1047,19 +1047,19 @@
       insert."\\and," = {
         action = "꘍";
       };
-      insert."\\\\|" = {
+      insert."\\\|" = {
         action = "∣";
       };
-      insert."\\\\|/" = {
+      insert."\\\|/" = {
         action = "∤";
       };
-      insert."\\\\|:" = {
+      insert."\\\|:" = {
         action = "¦";
       };
-      insert."\\w\\|" = {
+      insert."\\w\|" = {
         action = "⫾";
       };
-      insert."\\\\|\\|" = {
+      insert."\\\|\|" = {
         action = "‖";
       };
       insert."\\par" = {
@@ -1074,7 +1074,7 @@
       insert."\\/" = {
         action = "∕";
       };
-      insert."\\set\\\\" = {
+      insert."\\set\\" = {
         action = "∖";
       };
       insert."\\//" = {
@@ -1116,7 +1116,7 @@
       insert."\\n" = {
         action = "♮";
       };
-      insert."\\=\\|\\|" = {
+      insert."\\=\|\|" = {
         action = "⋕";
       };
       insert."\\d?" = {
@@ -1215,13 +1215,13 @@
       insert."\\ot" = {
         action = "⎊";
       };
-      insert."\\o\\|" = {
+      insert."\\o\|" = {
         action = "⦶";
       };
-      insert."\\o\\|\\|" = {
+      insert."\\o\|\|" = {
         action = "⦷";
       };
-      insert."\\o\\\\" = {
+      insert."\\o\\" = {
         action = "⦸";
       };
       insert."\\obot" = {
@@ -1269,7 +1269,7 @@
       insert."\\s/" = {
         action = "⧄";
       };
-      insert."\\s\\\\" = {
+      insert."\\s\\" = {
         action = "⧅";
       };
       insert."\\s*" = {
@@ -1284,7 +1284,7 @@
       insert."\\sss" = {
         action = "⧉";
       };
-      insert."\\s\\|" = {
+      insert."\\s\|" = {
         action = "⎅";
       };
       insert."\\O" = {
@@ -1440,7 +1440,7 @@
       insert."\\in." = {
         action = "⋵";
       };
-      insert."\\in\\|" = {
+      insert."\\in\|" = {
         action = "⋳";
       };
       insert."\\in=" = {
@@ -1458,7 +1458,7 @@
       insert."\\inl" = {
         action = "∋";
       };
-      insert."\\in\\|l" = {
+      insert."\\in\|l" = {
         action = "⋻";
       };
       insert."\\inu" = {
@@ -1473,10 +1473,10 @@
       insert."\\elel" = {
         action = "∍";
       };
-      insert."\\ele\\|" = {
+      insert."\\ele\|" = {
         action = "⋴";
       };
-      insert."\\ele\\|l" = {
+      insert."\\ele\|l" = {
         action = "⋼";
       };
       insert."\\mem" = {
@@ -1491,13 +1491,13 @@
       insert."\\ex/" = {
         action = "∄";
       };
-      insert."\\\\|-" = {
+      insert."\\\|-" = {
         action = "⊢";
       };
-      insert."\\-\\|" = {
+      insert."\\-\|" = {
         action = "⊣";
       };
-      insert."\\\\|=" = {
+      insert."\\\|=" = {
         action = "⊨";
       };
       insert."\\or" = {
@@ -1671,7 +1671,7 @@
       insert."\\^//" = {
         action = "ᐥ";
       };
-      insert."\\^\\|\\|" = {
+      insert."\\^\|\|" = {
         action = "ᐦ";
       };
       insert."\\^top" = {
@@ -1831,10 +1831,10 @@
         action = "ლ﹙｀ー´ლ﹚";
       };
       insert."\\shrug" = {
-        action = "¯\\_﹙ツ﹚_/¯";
+        action = "¯\_﹙ツ﹚_/¯";
       };
       insert."\\meh" = {
-        action = "¯\\﹙°_o﹚/¯";
+        action = "¯\﹙°_o﹚/¯";
       };
       insert."\\angry" = {
         action = "﹙╬ಠ益ಠ﹚";
@@ -1858,7 +1858,7 @@
         action = "ᕙ﹙⇀‸↼‶﹚ᕗ";
       };
       insert."\\sadconfused" = {
-        action = "¯\\_﹙⊙︿⊙﹚_/¯";
+        action = "¯\_﹙⊙︿⊙﹚_/¯";
       };
       insert."\\ytho" = {
         action = "щ（ﾟДﾟщ）";

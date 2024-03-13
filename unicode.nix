@@ -4931,4 +4931,13 @@
   insert."\\java" = {
     action = "☕";
   };
+  insert."\\go" = {
+    action = "🐹";
+  };
+  insert."\\rust" = {
+    action = "🦀";
+  };
+  insert."\\package" = {
+    action = "📦";
+  };
 }

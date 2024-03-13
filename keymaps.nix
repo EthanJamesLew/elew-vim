@@ -45,6 +45,11 @@
 
       # use english
       langmenu = "en";
+
+      # default tab behavior
+      tabstop=4;
+      shiftwidth=4;
+      expandtab=true;
     };
 
     maps = {

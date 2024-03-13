@@ -13,7 +13,7 @@
     ...
   } @ inputs: let
     importedConfig = import ./config;
-    optionsConfig = import ./keymaps.nix;
+    optionsConfig = import ./keymaps.nix { lib=nixpkgs.lib; };
   in
     flake-utils.lib.eachDefaultSystem (system: let
       nixvimLib = nixvim.lib.${system};

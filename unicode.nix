@@ -4940,4 +4940,25 @@
   insert."\\package" = {
     action = "📦";
   };
+  insert."\\deploy" = {
+    action = "🚀";
+  };
+  insert."\\bug" = {
+    action = "🐛";
+  };
+  insert."\\feature" = {
+    action = "✨";
+  };
+  insert."\\fire" = {
+    action = "🔥";
+  };
+  insert."\\zap" = {
+    action = "⚡️";
+  };
+  insert."\\memo" = {
+    action = "📝";
+  };
+  insert."\\hotfix" = {
+    action = "🚑️";
+  };
 }

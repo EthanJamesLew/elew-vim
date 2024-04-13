@@ -27,7 +27,7 @@ let
         \}
     '';
 
-    options = { 
+    opts = { 
       # display relative numbers on the side
       number = true; 
       relativenumber = true;
@@ -55,83 +55,129 @@ let
       expandtab=true;
     };
 
-    maps = lib.recursiveUpdate unicodes {
+    keymaps = unicodes ++ [
       # custom folding/unfolding commands
-      normal."<space>" = {
+      {
+        mode = "n";
+        key = "<space>";
         action = "za";
-      };
-      visual."<space>" = {
+      }
+      {
+        mode = "v";
+        key = "<space>";
         action = "zf";
-      };
+      }
 
       # tab management
-      normal."<leader>tn" = {
+      {
+        mode = "n";
+        key = "<leader>tn";
         action = ":tabnew<cr>";
-      };
-      normal."<leader>tc" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>tc";
         action = ":tabclose<cr>";
-      };
-      normal."<leader>to" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>to";
         action = ":tabonly<cr>";
-      };
-      normal."<leader>t<leader>" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>t<leader>";
         action = ":tabnext<cr>";
-      };
-      normal."<leader>te" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>te";
         action = ":tabedit<space>";
-      };
+      }
 
       # search
-      normal."<leader>r" = {
+      {
+        mode = "n";
+        key = "<leader>r";
         action = ":Rg<space>";
-      };
+      }
 
       # fugitive git bindings
-      normal."<leader>ga" = {
+      {
+        mode = "n";
+        key = "<leader>ga";
         action = ":Git add %:p<CR><CR>";
-      };
-      normal."<leader>gs" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gs";
         action = ":Git status<CR>";
-      };
-      normal."<leader>gc" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gc";
         action = ":Git commit -v -q<CR>";
-      };
-      normal."<leader>gt" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gt";
         action = ":Git commit -v -q %:p<CR>";
-      };
-      normal."<leader>gd" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gd";
         action = ":Git diff<CR>";
-      };
-      normal."<leader>ge" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>ge";
         action = ":Git edit<CR>";
-      };
-      normal."<leader>gr" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gr";
         action = ":Git restore --staged %:p<CR><CR>";
-      };
-      normal."<leader>gw" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gw";
         action = ":Git write<CR><CR>";
-      };
-      normal."<leader>gl" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gl";
         action = ":silent! Glog<CR>:bot copen<CR>";
-      };
-      normal."<leader>gp" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gp";
         action = ":Git grep<Space>";
-      };
-      normal."<leader>gm" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gm";
         action = ":Git move<Space>";
-      };
-      normal."<leader>gb" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gb";
         action = ":Git branch<Space>";
-      };
-      normal."<leader>go" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>go";
         action = ":Git checkout<Space>";
-      };
-      normal."<leader>gps" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gps";
         action = ":Dispatch! git push<CR>";
-      };
-      normal."<leader>gpl" = {
+      }
+      {
+        mode = "n";
+        key = "<leader>gpl";
         action = ":Dispatch! git pull<CR>stuff";
-      };
-    };
+      }
+    ];
   };
 }

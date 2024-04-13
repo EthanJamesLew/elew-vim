@@ -1,6 +1,6 @@
 { vimUtils, fetchFromGitHub }:
 {
-  ripgrep = vimUtils.buildVimPluginFrom2Nix {
+  ripgrep = vimUtils.buildVimPlugin {
     name = "vim-ripgrep-2021-11-30";
     src = fetchFromGitHub {
       owner = "jremmen";
@@ -11,7 +11,7 @@
     dependencies = [];
   };
 
-  lean = vimUtils.buildVimPluginFrom2Nix {
+  lean = vimUtils.buildVimPlugin {
     name = "lean-2023-09-17";
     src = fetchFromGitHub {
       owner = "Julian";
@@ -22,7 +22,7 @@
     dependencies = [];
   };
   
-  nvim-r = vimUtils.buildVimPluginFrom2Nix {
+  nvim-r = vimUtils.buildVimPlugin {
     name = "lean-2023-09-17";
     src = fetchFromGitHub {
       owner = "jalvesaq";
@@ -33,7 +33,7 @@
     dependencies = [];
   };
   
-  vimf90 = vimUtils.buildVimPluginFrom2Nix {
+  vimf90 = vimUtils.buildVimPlugin {
     name = "vimf90-2023-09-17";
     src = fetchFromGitHub {
       owner = "rudrab";
@@ -44,7 +44,7 @@
     dependencies = [];
   };
   
-  surround = vimUtils.buildVimPluginFrom2Nix {
+  surround = vimUtils.buildVimPlugin {
     name = "surround-2023-09-17";
     src = fetchFromGitHub {
       owner = "tpope";
@@ -55,7 +55,7 @@
     dependencies = [];
   };
   
-  rust = vimUtils.buildVimPluginFrom2Nix {
+  rust = vimUtils.buildVimPlugin {
     name = "rust-2023-09-17";
     src = fetchFromGitHub {
       owner = "rust-lang";
@@ -66,7 +66,7 @@
     dependencies = [];
   };
   
-  matlab = vimUtils.buildVimPluginFrom2Nix {
+  matlab = vimUtils.buildVimPlugin {
     name = "rust-2023-12-10";
     src = fetchFromGitHub {
       owner = "daeyun";
@@ -77,7 +77,7 @@
     dependencies = [];
   };
 
-  clafer = vimUtils.buildVimPluginFrom2Nix {
+  clafer = vimUtils.buildVimPlugin {
     name = "clafer-2024-02-23";
     src = fetchFromGitHub {
       owner = "wasowski";

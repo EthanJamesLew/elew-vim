@@ -1,4964 +1,8270 @@
-{
+[
   # davdar
-  insert."\\\\" = {
+  {
+    mode = "i";
+    key = "\\\\";
     action = "\\";
-  };
-  insert."\\u" = {
+  }
+  {
+    mode = "i";
+    key = "\\u";
     action = "↑";
-  };
-  insert."\\r" = {
+  }
+  {
+    mode = "i";
+    key = "\\r";
     action = "→";
-  };
-  insert."\\d" = {
+  }
+  {
+    mode = "i";
+    key = "\\d";
     action = "↓";
-  };
-  insert."\\l" = {
+  }
+  {
+    mode = "i";
+    key = "\\l";
     action = "←";
-  };
-  insert."\\ur" = {
+  }
+  {
+    mode = "i";
+    key = "\\ur";
     action = "↗";
-  };
-  insert."\\dr" = {
+  }
+  {
+    mode = "i";
+    key = "\\dr";
     action = "↘";
-  };
-  insert."\\dl" = {
+  }
+  {
+    mode = "i";
+    key = "\\dl";
     action = "↙";
-  };
-  insert."\\ul" = {
+  }
+  {
+    mode = "i";
+    key = "\\ul";
     action = "↖";
-  };
-  insert."\\ud-" = {
+  }
+  {
+    mode = "i";
+    key = "\\ud-";
     action = "↕";
-  };
-  insert."\\rl-" = {
+  }
+  {
+    mode = "i";
+    key = "\\rl-";
     action = "↔";
-  };
-  insert."\\uu" = {
+  }
+  {
+    mode = "i";
+    key = "\\uu";
     action = "⇈";
-  };
-  insert."\\rr" = {
+  }
+  {
+    mode = "i";
+    key = "\\rr";
     action = "⇉";
-  };
-  insert."\\dd" = {
+  }
+  {
+    mode = "i";
+    key = "\\dd";
     action = "⇊";
-  };
-  insert."\\ll" = {
+  }
+  {
+    mode = "i";
+    key = "\\ll";
     action = "⇇";
-  };
-  insert."\\ud" = {
+  }
+  {
+    mode = "i";
+    key = "\\ud";
     action = "⇅";
-  };
-  insert."\\du" = {
+  }
+  {
+    mode = "i";
+    key = "\\du";
     action = "⇵";
-  };
-  insert."\\rl" = {
+  }
+  {
+    mode = "i";
+    key = "\\rl";
     action = "⇄";
-  };
-  insert."\\lr" = {
+  }
+  {
+    mode = "i";
+    key = "\\lr";
     action = "⇆";
-  };
-  insert."\\u=" = {
+  }
+  {
+    mode = "i";
+    key = "\\u=";
     action = "⇑";
-  };
-  insert."\\r=" = {
+  }
+  {
+    mode = "i";
+    key = "\\r=";
     action = "⇒";
-  };
-  insert."\\d=" = {
+  }
+  {
+    mode = "i";
+    key = "\\d=";
     action = "⇓";
-  };
-  insert."\\l=" = {
+  }
+  {
+    mode = "i";
+    key = "\\l=";
     action = "⇐";
-  };
-  insert."\\ud=" = {
+  }
+  {
+    mode = "i";
+    key = "\\ud=";
     action = "⇕";
-  };
-  insert."\\rl=" = {
+  }
+  {
+    mode = "i";
+    key = "\\rl=";
     action = "⇔";
-  };
-  insert."\\r=/" = {
+  }
+  {
+    mode = "i";
+    key = "\\r=/";
     action = "⇏";
-  };
-  insert."\\l=/" = {
+  }
+  {
+    mode = "i";
+    key = "\\l=/";
     action = "⇍";
-  };
-  insert."\\rl=/" = {
+  }
+  {
+    mode = "i";
+    key = "\\rl=/";
     action = "⇎";
-  };
-  insert."\\ur=" = {
+  }
+  {
+    mode = "i";
+    key = "\\ur=";
     action = "⇗";
-  };
-  insert."\\dr=" = {
+  }
+  {
+    mode = "i";
+    key = "\\dr=";
     action = "⇘";
-  };
-  insert."\\dl=" = {
+  }
+  {
+    mode = "i";
+    key = "\\dl=";
     action = "⇙";
-  };
-  insert."\\ul=" = {
+  }
+  {
+    mode = "i";
+    key = "\\ul=";
     action = "⇖";
-  };
-  insert."\\r==" = {
+  }
+  {
+    mode = "i";
+    key = "\\r==";
     action = "⇛";
-  };
-  insert."\\l==" = {
+  }
+  {
+    mode = "i";
+    key = "\\l==";
     action = "⇚";
-  };
-  insert."\\impr" = {
+  }
+  {
+    mode = "i";
+    key = "\\impr";
     action = "⟹";
-  };
-  insert."\\impl" = {
+  }
+  {
+    mode = "i";
+    key = "\\impl";
     action = "⟸";
-  };
-  insert."\\iff" = {
+  }
+  {
+    mode = "i";
+    key = "\\iff";
     action = "⟺";
-  };
-  insert."\\u\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\u\|";
     action = "⇧";
-  };
-  insert."\\r\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\r\|";
     action = "⇨";
-  };
-  insert."\\d\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\d\|";
     action = "⇩";
-  };
-  insert."\\l\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\l\|";
     action = "⇦";
-  };
-  insert."\\rl\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\rl\|";
     action = "⬄";
-  };
-  insert."\\r\|=" = {
+  }
+  {
+    mode = "i";
+    key = "\\r\|=";
     action = "⇰";
-  };
-  insert."\\r\\" = {
+  }
+  {
+    mode = "i";
+    key = "\\r\\";
     action = "⇀";
-  };
-  insert."\\u\|-" = {
+  }
+  {
+    mode = "i";
+    key = "\\u\|-";
     action = "↥";
-  };
-  insert."\\r\|-" = {
+  }
+  {
+    mode = "i";
+    key = "\\r\|-";
     action = "↦";
-  };
-  insert."\\d\|-" = {
+  }
+  {
+    mode = "i";
+    key = "\\d\|-";
     action = "↧";
-  };
-  insert."\\l\|-" = {
+  }
+  {
+    mode = "i";
+    key = "\\l\|-";
     action = "↤";
-  };
-  insert."\\rh" = {
+  }
+  {
+    mode = "i";
+    key = "\\rh";
     action = "↪";
-  };
-  insert."\\lh" = {
+  }
+  {
+    mode = "i";
+    key = "\\lh";
     action = "↩";
-  };
-  insert."\\rc" = {
+  }
+  {
+    mode = "i";
+    key = "\\rc";
     action = "↬";
-  };
-  insert."\\lc" = {
+  }
+  {
+    mode = "i";
+    key = "\\lc";
     action = "↫";
-  };
-  insert."\\r>\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\r>\|";
     action = "⇥";
-  };
-  insert."\\l>\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\l>\|";
     action = "⇤";
-  };
-  insert."\\u>>" = {
+  }
+  {
+    mode = "i";
+    key = "\\u>>";
     action = "↟";
-  };
-  insert."\\r>>" = {
+  }
+  {
+    mode = "i";
+    key = "\\r>>";
     action = "↠";
-  };
-  insert."\\d>>" = {
+  }
+  {
+    mode = "i";
+    key = "\\d>>";
     action = "↡";
-  };
-  insert."\\l>>" = {
+  }
+  {
+    mode = "i";
+    key = "\\l>>";
     action = "↞";
-  };
-  insert."\\r\|>" = {
+  }
+  {
+    mode = "i";
+    key = "\\r\|>";
     action = "⇾";
-  };
-  insert."\\l\|>" = {
+  }
+  {
+    mode = "i";
+    key = "\\l\|>";
     action = "⇽";
-  };
-  insert."\\rl\|>" = {
+  }
+  {
+    mode = "i";
+    key = "\\rl\|>";
     action = "⇿";
-  };
-  insert."\\r~" = {
+  }
+  {
+    mode = "i";
+    key = "\\r~";
     action = "↝";
-  };
-  insert."\\l~" = {
+  }
+  {
+    mode = "i";
+    key = "\\l~";
     action = "↜";
-  };
-  insert."\\rl~" = {
+  }
+  {
+    mode = "i";
+    key = "\\rl~";
     action = "↭";
-  };
-  insert."\\rv" = {
+  }
+  {
+    mode = "i";
+    key = "\\rv";
     action = "↣";
-  };
-  insert."\\lv" = {
+  }
+  {
+    mode = "i";
+    key = "\\lv";
     action = "↢";
-  };
-  insert."\\r~~" = {
+  }
+  {
+    mode = "i";
+    key = "\\r~~";
     action = "⇝";
-  };
-  insert."\\l~~" = {
+  }
+  {
+    mode = "i";
+    key = "\\l~~";
     action = "⇜";
-  };
-  insert."\\u." = {
+  }
+  {
+    mode = "i";
+    key = "\\u.";
     action = "⇡";
-  };
-  insert."\\r." = {
+  }
+  {
+    mode = "i";
+    key = "\\r.";
     action = "⇢";
-  };
-  insert."\\d." = {
+  }
+  {
+    mode = "i";
+    key = "\\d.";
     action = "⇣";
-  };
-  insert."\\l." = {
+  }
+  {
+    mode = "i";
+    key = "\\l.";
     action = "⇠";
-  };
-  insert."\\r/" = {
+  }
+  {
+    mode = "i";
+    key = "\\r/";
     action = "↛";
-  };
-  insert."\\l/" = {
+  }
+  {
+    mode = "i";
+    key = "\\l/";
     action = "↚";
-  };
-  insert."\\rl/" = {
+  }
+  {
+    mode = "i";
+    key = "\\rl/";
     action = "↮";
-  };
-  insert."\\ro" = {
+  }
+  {
+    mode = "i";
+    key = "\\ro";
     action = "⊸";
-  };
-  insert."\\lo" = {
+  }
+  {
+    mode = "i";
+    key = "\\lo";
     action = "⟜";
-  };
-  insert."\\rlo" = {
+  }
+  {
+    mode = "i";
+    key = "\\rlo";
     action = "⧟";
-  };
-  insert."\\zd" = {
+  }
+  {
+    mode = "i";
+    key = "\\zd";
     action = "↯";
-  };
-  insert."\\cw" = {
+  }
+  {
+    mode = "i";
+    key = "\\cw";
     action = "↻";
-  };
-  insert."\\ccw" = {
+  }
+  {
+    mode = "i";
+    key = "\\ccw";
     action = "↺";
-  };
-  insert."\\(" = {
+  }
+  {
+    mode = "i";
+    key = "\\(";
     action = "⟮";
-  };
-  insert."\\)" = {
+  }
+  {
+    mode = "i";
+    key = "\\)";
     action = "⟯";
-  };
-  insert."\\((" = {
+  }
+  {
+    mode = "i";
+    key = "\\((";
     action = "⸨";
-  };
-  insert."\\))" = {
+  }
+  {
+    mode = "i";
+    key = "\\))";
     action = "⸩";
-  };
-  insert."\\(\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\(\|";
     action = "⦇";
-  };
-  insert."\\)\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\)\|";
     action = "⦈";
-  };
-  insert."\\c(" = {
+  }
+  {
+    mode = "i";
+    key = "\\c(";
     action = "⦅";
-  };
-  insert."\\c)" = {
+  }
+  {
+    mode = "i";
+    key = "\\c)";
     action = "⦆";
-  };
-  insert."\\b(" = {
+  }
+  {
+    mode = "i";
+    key = "\\b(";
     action = "❪";
-  };
-  insert."\\b)" = {
+  }
+  {
+    mode = "i";
+    key = "\\b)";
     action = "❫";
-  };
-  insert."\\B(" = {
+  }
+  {
+    mode = "i";
+    key = "\\B(";
     action = "❨";
-  };
-  insert."\\B)" = {
+  }
+  {
+    mode = "i";
+    key = "\\B)";
     action = "❩";
-  };
-  insert."\\u)" = {
+  }
+  {
+    mode = "i";
+    key = "\\u)";
     action = "⏜";
-  };
-  insert."\\d)" = {
+  }
+  {
+    mode = "i";
+    key = "\\d)";
     action = "⏝";
-  };
-  insert."\\fr" = {
+  }
+  {
+    mode = "i";
+    key = "\\fr";
     action = "⌢";
-  };
-  insert."\\sm" = {
+  }
+  {
+    mode = "i";
+    key = "\\sm";
     action = "⌣";
-  };
-  insert."\\<" = {
+  }
+  {
+    mode = "i";
+    key = "\\<";
     action = "⟨";
-  };
-  insert."\\>" = {
+  }
+  {
+    mode = "i";
+    key = "\\>";
     action = "⟩";
-  };
-  insert."\\<<" = {
+  }
+  {
+    mode = "i";
+    key = "\\<<";
     action = "⟪";
-  };
-  insert."\\>>" = {
+  }
+  {
+    mode = "i";
+    key = "\\>>";
     action = "⟫";
-  };
-  insert."\\<\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\<\|";
     action = "⦉";
-  };
-  insert."\\>\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\>\|";
     action = "⦊";
-  };
-  insert."\\<." = {
+  }
+  {
+    mode = "i";
+    key = "\\<.";
     action = "⦑";
-  };
-  insert."\\>." = {
+  }
+  {
+    mode = "i";
+    key = "\\>.";
     action = "⦒";
-  };
-  insert."\\b<" = {
+  }
+  {
+    mode = "i";
+    key = "\\b<";
     action = "❬";
-  };
-  insert."\\b>" = {
+  }
+  {
+    mode = "i";
+    key = "\\b>";
     action = "❭";
-  };
-  insert."\\<\"" = {
+  }
+  {
+    mode = "i";
+    key = "\\<\"";
     action = "«";
-  };
-  insert."\\>\"" = {
+  }
+  {
+    mode = "i";
+    key = "\\>\"";
     action = "»";
-  };
-  insert."\\<'" = {
+  }
+  {
+    mode = "i";
+    key = "\\<'";
     action = "‹";
-  };
-  insert."\\>'" = {
+  }
+  {
+    mode = "i";
+    key = "\\>'";
     action = "›";
-  };
-  insert."\\(<" = {
+  }
+  {
+    mode = "i";
+    key = "\\(<";
     action = "⦓";
-  };
-  insert."\\)>" = {
+  }
+  {
+    mode = "i";
+    key = "\\)>";
     action = "⦔";
-  };
-  insert."\\((>" = {
+  }
+  {
+    mode = "i";
+    key = "\\((>";
     action = "⦕";
-  };
-  insert."\\))<" = {
+  }
+  {
+    mode = "i";
+    key = "\\))<";
     action = "⦖";
-  };
-  insert."\\u<" = {
+  }
+  {
+    mode = "i";
+    key = "\\u<";
     action = "⸦";
-  };
-  insert."\\u>" = {
+  }
+  {
+    mode = "i";
+    key = "\\u>";
     action = "⸧";
-  };
-  insert."\\f<" = {
+  }
+  {
+    mode = "i";
+    key = "\\f<";
     action = "᚜";
-  };
-  insert."\\f>" = {
+  }
+  {
+    mode = "i";
+    key = "\\f>";
     action = "᚛";
-  };
-  insert."\\_<" = {
+  }
+  {
+    mode = "i";
+    key = "\\_<";
     action = "⸜";
-  };
-  insert."\\_>" = {
+  }
+  {
+    mode = "i";
+    key = "\\_>";
     action = "⸝";
-  };
-  insert."\\^<" = {
+  }
+  {
+    mode = "i";
+    key = "\\^<";
     action = "⸌";
-  };
-  insert."\\^>" = {
+  }
+  {
+    mode = "i";
+    key = "\\^>";
     action = "⸍";
-  };
-  insert."\\[" = {
+  }
+  {
+    mode = "i";
+    key = "\\[";
     action = "⦗";
-  };
-  insert."\\]" = {
+  }
+  {
+    mode = "i";
+    key = "\\]";
     action = "⦘";
-  };
-  insert."\\[[" = {
+  }
+  {
+    mode = "i";
+    key = "\\[[";
     action = "⟦";
-  };
-  insert."\\]]" = {
+  }
+  {
+    mode = "i";
+    key = "\\]]";
     action = "⟧";
-  };
-  insert."\\[\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\[\|";
     action = "⟬";
-  };
-  insert."\\]\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\]\|";
     action = "⟭";
-  };
-  insert."\\e[" = {
+  }
+  {
+    mode = "i";
+    key = "\\e[";
     action = "⁅";
-  };
-  insert."\\e]" = {
+  }
+  {
+    mode = "i";
+    key = "\\e]";
     action = "⁆";
-  };
-  insert."\\tL" = {
+  }
+  {
+    mode = "i";
+    key = "\\tL";
     action = "⌈";
-  };
-  insert."\\tR" = {
+  }
+  {
+    mode = "i";
+    key = "\\tR";
     action = "⌉";
-  };
-  insert."\\bL" = {
+  }
+  {
+    mode = "i";
+    key = "\\bL";
     action = "⌊";
-  };
-  insert."\\bR" = {
+  }
+  {
+    mode = "i";
+    key = "\\bR";
     action = "⌋";
-  };
-  insert."\\tl" = {
+  }
+  {
+    mode = "i";
+    key = "\\tl";
     action = "⸢";
-  };
-  insert."\\tr" = {
+  }
+  {
+    mode = "i";
+    key = "\\tr";
     action = "⸣";
-  };
-  insert."\\bl" = {
+  }
+  {
+    mode = "i";
+    key = "\\bl";
     action = "⸤";
-  };
-  insert."\\br" = {
+  }
+  {
+    mode = "i";
+    key = "\\br";
     action = "⸥";
-  };
-  insert."\\{\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\{\|";
     action = "⦃";
-  };
-  insert."\\}\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\}\|";
     action = "⦄";
-  };
-  insert."\\{" = {
+  }
+  {
+    mode = "i";
+    key = "\\{";
     action = "⎨";
-  };
-  insert."\\}" = {
+  }
+  {
+    mode = "i";
+    key = "\\}";
     action = "⎬";
-  };
-  insert."\\z{" = {
+  }
+  {
+    mode = "i";
+    key = "\\z{";
     action = "⧘";
-  };
-  insert."\\z}" = {
+  }
+  {
+    mode = "i";
+    key = "\\z}";
     action = "⧙";
-  };
-  insert."\\z{{" = {
+  }
+  {
+    mode = "i";
+    key = "\\z{{";
     action = "⧚";
-  };
-  insert."\\z}}" = {
+  }
+  {
+    mode = "i";
+    key = "\\z}}";
     action = "⧛";
-  };
-  insert."\\b{" = {
+  }
+  {
+    mode = "i";
+    key = "\\b{";
     action = "❴";
-  };
-  insert."\\b}" = {
+  }
+  {
+    mode = "i";
+    key = "\\b}";
     action = "❵";
-  };
-  insert."\\s{" = {
+  }
+  {
+    mode = "i";
+    key = "\\s{";
     action = "⟅";
-  };
-  insert."\\s}" = {
+  }
+  {
+    mode = "i";
+    key = "\\s}";
     action = "⟆";
-  };
-  insert."\\</" = {
+  }
+  {
+    mode = "i";
+    key = "\\</";
     action = "≮";
-  };
-  insert."\\<=" = {
+  }
+  {
+    mode = "i";
+    key = "\\<=";
     action = "≤";
-  };
-  insert."\\>=" = {
+  }
+  {
+    mode = "i";
+    key = "\\>=";
     action = "≥";
-  };
-  insert."\\<=>=" = {
+  }
+  {
+    mode = "i";
+    key = "\\<=>=";
     action = "⋚";
-  };
-  insert."\\<~" = {
+  }
+  {
+    mode = "i";
+    key = "\\<~";
     action = "≲";
-  };
-  insert."\\>~" = {
+  }
+  {
+    mode = "i";
+    key = "\\>~";
     action = "≳";
-  };
-  insert."\\<?" = {
+  }
+  {
+    mode = "i";
+    key = "\\<?";
     action = "⩻";
-  };
-  insert."\\>?" = {
+  }
+  {
+    mode = "i";
+    key = "\\>?";
     action = "⩼";
-  };
-  insert."\\><" = {
+  }
+  {
+    mode = "i";
+    key = "\\><";
     action = "⪥";
-  };
-  insert."\\><x" = {
+  }
+  {
+    mode = "i";
+    key = "\\><x";
     action = "⪤";
-  };
-  insert."\\<2" = {
+  }
+  {
+    mode = "i";
+    key = "\\<2";
     action = "≪";
-  };
-  insert."\\>2" = {
+  }
+  {
+    mode = "i";
+    key = "\\>2";
     action = "≫";
-  };
-  insert."\\<3" = {
+  }
+  {
+    mode = "i";
+    key = "\\<3";
     action = "⋘";
-  };
-  insert."\\>3" = {
+  }
+  {
+    mode = "i";
+    key = "\\>3";
     action = "⋙";
-  };
-  insert."\\>>=" = {
+  }
+  {
+    mode = "i";
+    key = "\\>>=";
     action = "≫=";
-  };
-  insert."\\<<=" = {
+  }
+  {
+    mode = "i";
+    key = "\\<<=";
     action = "≪=";
-  };
-  insert."\\xo\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\xo\|";
     action = "⊻";
-  };
-  insert."\\nand" = {
+  }
+  {
+    mode = "i";
+    key = "\\nand";
     action = "⊼";
-  };
-  insert."\\nor" = {
+  }
+  {
+    mode = "i";
+    key = "\\nor";
     action = "⊽";
-  };
-  insert."\\h<" = {
+  }
+  {
+    mode = "i";
+    key = "\\h<";
     action = "⪡";
-  };
-  insert."\\h>" = {
+  }
+  {
+    mode = "i";
+    key = "\\h>";
     action = "⪢";
-  };
-  insert."\\hor" = {
+  }
+  {
+    mode = "i";
+    key = "\\hor";
     action = "⩔";
-  };
-  insert."\\hand" = {
+  }
+  {
+    mode = "i";
+    key = "\\hand";
     action = "⩓";
-  };
-  insert."\\Hand" = {
+  }
+  {
+    mode = "i";
+    key = "\\Hand";
     action = "⩕";
-  };
-  insert."\\Hor" = {
+  }
+  {
+    mode = "i";
+    key = "\\Hor";
     action = "⩖";
-  };
-  insert."\\<o" = {
+  }
+  {
+    mode = "i";
+    key = "\\<o";
     action = "⩹";
-  };
-  insert."\\>o" = {
+  }
+  {
+    mode = "i";
+    key = "\\>o";
     action = "⩺";
-  };
-  insert."\\d<" = {
+  }
+  {
+    mode = "i";
+    key = "\\d<";
     action = "⋖";
-  };
-  insert."\\d>" = {
+  }
+  {
+    mode = "i";
+    key = "\\d>";
     action = "⋗";
-  };
-  insert."\\d<=" = {
+  }
+  {
+    mode = "i";
+    key = "\\d<=";
     action = "⩿";
-  };
-  insert."\\d>=" = {
+  }
+  {
+    mode = "i";
+    key = "\\d>=";
     action = "⪀";
-  };
-  insert."\\dor" = {
+  }
+  {
+    mode = "i";
+    key = "\\dor";
     action = "⟇";
-  };
-  insert."\\dand" = {
+  }
+  {
+    mode = "i";
+    key = "\\dand";
     action = "⟑";
-  };
-  insert."\\m<" = {
+  }
+  {
+    mode = "i";
+    key = "\\m<";
     action = "⪪";
-  };
-  insert."\\m>" = {
+  }
+  {
+    mode = "i";
+    key = "\\m>";
     action = "⪫";
-  };
-  insert."\\m<=" = {
+  }
+  {
+    mode = "i";
+    key = "\\m<=";
     action = "⪬";
-  };
-  insert."\\m>=" = {
+  }
+  {
+    mode = "i";
+    key = "\\m>=";
     action = "⪭";
-  };
-  insert."\\m<\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\m<\|";
     action = "⩤";
-  };
-  insert."\\m>\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\m>\|";
     action = "⩥";
-  };
-  insert."\\mand" = {
+  }
+  {
+    mode = "i";
+    key = "\\mand";
     action = "⩚";
-  };
-  insert."\\mor" = {
+  }
+  {
+    mode = "i";
+    key = "\\mor";
     action = "⩛";
-  };
-  insert."\\e<" = {
+  }
+  {
+    mode = "i";
+    key = "\\e<";
     action = "≺";
-  };
-  insert."\\e>" = {
+  }
+  {
+    mode = "i";
+    key = "\\e>";
     action = "≻";
-  };
-  insert."\\e<-" = {
+  }
+  {
+    mode = "i";
+    key = "\\e<-";
     action = "⪯";
-  };
-  insert."\\e>-" = {
+  }
+  {
+    mode = "i";
+    key = "\\e>-";
     action = "⪰";
-  };
-  insert."\\e<=" = {
+  }
+  {
+    mode = "i";
+    key = "\\e<=";
     action = "≼";
-  };
-  insert."\\e>=" = {
+  }
+  {
+    mode = "i";
+    key = "\\e>=";
     action = "≽";
-  };
-  insert."\\eor" = {
+  }
+  {
+    mode = "i";
+    key = "\\eor";
     action = "⋎";
-  };
-  insert."\\eand" = {
+  }
+  {
+    mode = "i";
+    key = "\\eand";
     action = "⋏";
-  };
-  insert."\\e<<" = {
+  }
+  {
+    mode = "i";
+    key = "\\e<<";
     action = "⪻";
-  };
-  insert."\\e>>" = {
+  }
+  {
+    mode = "i";
+    key = "\\e>>";
     action = "⪼";
-  };
-  insert."\\t<=" = {
+  }
+  {
+    mode = "i";
+    key = "\\t<=";
     action = "⊴";
-  };
-  insert."\\t>=" = {
+  }
+  {
+    mode = "i";
+    key = "\\t>=";
     action = "⊵";
-  };
-  insert."\\t<" = {
+  }
+  {
+    mode = "i";
+    key = "\\t<";
     action = "⊲";
-  };
-  insert."\\t>" = {
+  }
+  {
+    mode = "i";
+    key = "\\t>";
     action = "⊳";
-  };
-  insert."\\t<>" = {
+  }
+  {
+    mode = "i";
+    key = "\\t<>";
     action = "⧎";
-  };
-  insert."\\t<\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\t<\|";
     action = "⧏";
-  };
-  insert."\\t>\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\t>\|";
     action = "⧐";
-  };
-  insert."\\t<=/" = {
+  }
+  {
+    mode = "i";
+    key = "\\t<=/";
     action = "⋬";
-  };
-  insert."\\t>=/" = {
+  }
+  {
+    mode = "i";
+    key = "\\t>=/";
     action = "⋭";
-  };
-  insert."\\ct<" = {
+  }
+  {
+    mode = "i";
+    key = "\\ct<";
     action = "⪦";
-  };
-  insert."\\ct>" = {
+  }
+  {
+    mode = "i";
+    key = "\\ct>";
     action = "⪧";
-  };
-  insert."\\ct<=" = {
+  }
+  {
+    mode = "i";
+    key = "\\ct<=";
     action = "⪨";
-  };
-  insert."\\ct>=" = {
+  }
+  {
+    mode = "i";
+    key = "\\ct>=";
     action = "⪩";
-  };
-  insert."\\ctor" = {
+  }
+  {
+    mode = "i";
+    key = "\\ctor";
     action = "⌔";
-  };
-  insert."\\y<" = {
+  }
+  {
+    mode = "i";
+    key = "\\y<";
     action = "⧼";
-  };
-  insert."\\y>" = {
+  }
+  {
+    mode = "i";
+    key = "\\y>";
     action = "⧽";
-  };
-  insert."\\Y<" = {
+  }
+  {
+    mode = "i";
+    key = "\\Y<";
     action = "⊰";
-  };
-  insert."\\Y>" = {
+  }
+  {
+    mode = "i";
+    key = "\\Y>";
     action = "⊱";
-  };
-  insert."\\s<" = {
+  }
+  {
+    mode = "i";
+    key = "\\s<";
     action = "⊂";
-  };
-  insert."\\s>" = {
+  }
+  {
+    mode = "i";
+    key = "\\s>";
     action = "⊃";
-  };
-  insert."\\s<=" = {
+  }
+  {
+    mode = "i";
+    key = "\\s<=";
     action = "⊆";
-  };
-  insert."\\s>=" = {
+  }
+  {
+    mode = "i";
+    key = "\\s>=";
     action = "⊇";
-  };
-  insert."\\s<=/" = {
+  }
+  {
+    mode = "i";
+    key = "\\s<=/";
     action = "⊈";
-  };
-  insert."\\s>=/" = {
+  }
+  {
+    mode = "i";
+    key = "\\s>=/";
     action = "⊉";
-  };
-  insert."\\s</=" = {
+  }
+  {
+    mode = "i";
+    key = "\\s</=";
     action = "⊊";
-  };
-  insert."\\s>/=" = {
+  }
+  {
+    mode = "i";
+    key = "\\s>/=";
     action = "⊋";
-  };
-  insert."\\s</" = {
+  }
+  {
+    mode = "i";
+    key = "\\s</";
     action = "⊄";
-  };
-  insert."\\s>/" = {
+  }
+  {
+    mode = "i";
+    key = "\\s>/";
     action = "⊅";
-  };
-  insert."\\su" = {
+  }
+  {
+    mode = "i";
+    key = "\\su";
     action = "∪";
-  };
-  insert."\\si" = {
+  }
+  {
+    mode = "i";
+    key = "\\si";
     action = "∩";
-  };
-  insert."\\sU" = {
+  }
+  {
+    mode = "i";
+    key = "\\sU";
     action = "⋃";
-  };
-  insert."\\sI" = {
+  }
+  {
+    mode = "i";
+    key = "\\sI";
     action = "⋂";
-  };
-  insert."\\su+" = {
+  }
+  {
+    mode = "i";
+    key = "\\su+";
     action = "⊎";
-  };
-  insert."\\sU+" = {
+  }
+  {
+    mode = "i";
+    key = "\\sU+";
     action = "⨄";
-  };
-  insert."\\s<." = {
+  }
+  {
+    mode = "i";
+    key = "\\s<.";
     action = "⪽";
-  };
-  insert."\\s>." = {
+  }
+  {
+    mode = "i";
+    key = "\\s>.";
     action = "⪾";
-  };
-  insert."\\su." = {
+  }
+  {
+    mode = "i";
+    key = "\\su.";
     action = "⊍";
-  };
-  insert."\\si." = {
+  }
+  {
+    mode = "i";
+    key = "\\si.";
     action = "⩀";
-  };
-  insert."\\s<\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\s<\|";
     action = "⫏";
-  };
-  insert."\\s>\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\s>\|";
     action = "⫐";
-  };
-  insert."\\s<=\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\s<=\|";
     action = "⫑";
-  };
-  insert."\\s>=\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\s>=\|";
     action = "⫒";
-  };
-  insert."\\su\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\su\|";
     action = "⩌";
-  };
-  insert."\\si\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\si\|";
     action = "⩍";
-  };
-  insert."\\hs<" = {
+  }
+  {
+    mode = "i";
+    key = "\\hs<";
     action = "⋐";
-  };
-  insert."\\hs>" = {
+  }
+  {
+    mode = "i";
+    key = "\\hs>";
     action = "⋑";
-  };
-  insert."\\hsu" = {
+  }
+  {
+    mode = "i";
+    key = "\\hsu";
     action = "⋓";
-  };
-  insert."\\hsi" = {
+  }
+  {
+    mode = "i";
+    key = "\\hsi";
     action = "⋒";
-  };
-  insert."\\q<=" = {
+  }
+  {
+    mode = "i";
+    key = "\\q<=";
     action = "⊑";
-  };
-  insert."\\q>=" = {
+  }
+  {
+    mode = "i";
+    key = "\\q>=";
     action = "⊒";
-  };
-  insert."\\q<" = {
+  }
+  {
+    mode = "i";
+    key = "\\q<";
     action = "⊏";
-  };
-  insert."\\q>" = {
+  }
+  {
+    mode = "i";
+    key = "\\q>";
     action = "⊐";
-  };
-  insert."\\q<=/" = {
+  }
+  {
+    mode = "i";
+    key = "\\q<=/";
     action = "⋢";
-  };
-  insert."\\q>=/" = {
+  }
+  {
+    mode = "i";
+    key = "\\q>=/";
     action = "⋣";
-  };
-  insert."\\q</=" = {
+  }
+  {
+    mode = "i";
+    key = "\\q</=";
     action = "⋤";
-  };
-  insert."\\q>/=" = {
+  }
+  {
+    mode = "i";
+    key = "\\q>/=";
     action = "⋥";
-  };
-  insert."\\j" = {
+  }
+  {
+    mode = "i";
+    key = "\\j";
     action = "⊔";
-  };
-  insert."\\m" = {
+  }
+  {
+    mode = "i";
+    key = "\\m";
     action = "⊓";
-  };
-  insert."\\J" = {
+  }
+  {
+    mode = "i";
+    key = "\\J";
     action = "⨆";
-  };
-  insert."\\M" = {
+  }
+  {
+    mode = "i";
+    key = "\\M";
     action = "⨅";
-  };
-  insert."\\hj" = {
+  }
+  {
+    mode = "i";
+    key = "\\hj";
     action = "⩏";
-  };
-  insert."\\hm" = {
+  }
+  {
+    mode = "i";
+    key = "\\hm";
     action = "⩎";
-  };
-  insert."\\w" = {
+  }
+  {
+    mode = "i";
+    key = "\\w";
     action = "⩊";
-  };
-  insert."\\sum" = {
+  }
+  {
+    mode = "i";
+    key = "\\sum";
     action = "∑";
-  };
-  insert."\\prod" = {
+  }
+  {
+    mode = "i";
+    key = "\\prod";
     action = "∏";
-  };
-  insert."\\'<" = {
+  }
+  {
+    mode = "i";
+    key = "\\'<";
     action = "‘";
-  };
-  insert."\\'>" = {
+  }
+  {
+    mode = "i";
+    key = "\\'>";
     action = "’";
-  };
-  insert."\\'`" = {
+  }
+  {
+    mode = "i";
+    key = "\\'`";
     action = "‛";
-  };
-  insert."\\\"<" = {
+  }
+  {
+    mode = "i";
+    key = "\\\"<";
     action = "“";
-  };
-  insert."\\\">" = {
+  }
+  {
+    mode = "i";
+    key = "\\\">";
     action = "”";
-  };
-  insert."\\,," = {
+  }
+  {
+    mode = "i";
+    key = "\\,,";
     action = "„";
-  };
-  insert."\\\"`" = {
+  }
+  {
+    mode = "i";
+    key = "\\\"`";
     action = "‟";
-  };
-  insert."\\--" = {
+  }
+  {
+    mode = "i";
+    key = "\\--";
     action = "–";
-  };
-  insert."\\---" = {
+  }
+  {
+    mode = "i";
+    key = "\\---";
     action = "—";
-  };
-  insert."\\'" = {
+  }
+  {
+    mode = "i";
+    key = "\\'";
     action = "′";
-  };
-  insert."\\''" = {
+  }
+  {
+    mode = "i";
+    key = "\\''";
     action = "″";
-  };
-  insert."\\'''" = {
+  }
+  {
+    mode = "i";
+    key = "\\'''";
     action = "‴";
-  };
-  insert."\\`" = {
+  }
+  {
+    mode = "i";
+    key = "\\`";
     action = "‵";
-  };
-  insert."\\``" = {
+  }
+  {
+    mode = "i";
+    key = "\\``";
     action = "‶";
-  };
-  insert."\\```" = {
+  }
+  {
+    mode = "i";
+    key = "\\```";
     action = "‷";
-  };
-  insert."\\." = {
+  }
+  {
+    mode = "i";
+    key = "\\.";
     action = "⋅";
-  };
-  insert."\\.bu" = {
+  }
+  {
+    mode = "i";
+    key = "\\.bu";
     action = "∙";
-  };
-  insert."\\:" = {
+  }
+  {
+    mode = "i";
+    key = "\\:";
     action = "∶";
-  };
-  insert."\\:3" = {
+  }
+  {
+    mode = "i";
+    key = "\\:3";
     action = "⁝";
-  };
-  insert."\\:4" = {
+  }
+  {
+    mode = "i";
+    key = "\\:4";
     action = "⁞";
-  };
-  insert."\\t:" = {
+  }
+  {
+    mode = "i";
+    key = "\\t:";
     action = "ː";
-  };
-  insert."\\s:" = {
+  }
+  {
+    mode = "i";
+    key = "\\s:";
     action = "꞉";
-  };
-  insert."\\ther" = {
+  }
+  {
+    mode = "i";
+    key = "\\ther";
     action = "∴";
-  };
-  insert."\\bec" = {
+  }
+  {
+    mode = "i";
+    key = "\\bec";
     action = "∵";
-  };
-  insert."\\::" = {
+  }
+  {
+    mode = "i";
+    key = "\\::";
     action = "∷";
-  };
-  insert."\\.." = {
+  }
+  {
+    mode = "i";
+    key = "\\..";
     action = "‥";
-  };
-  insert."\\..." = {
+  }
+  {
+    mode = "i";
+    key = "\\...";
     action = "…";
-  };
-  insert."\\c..." = {
+  }
+  {
+    mode = "i";
+    key = "\\c...";
     action = "⋯";
-  };
-  insert."\\v..." = {
+  }
+  {
+    mode = "i";
+    key = "\\v...";
     action = "⋮";
-  };
-  insert."\\.:" = {
+  }
+  {
+    mode = "i";
+    key = "\\.:";
     action = "⁖";
-  };
-  insert."\\.:." = {
+  }
+  {
+    mode = "i";
+    key = "\\.:.";
     action = "⁘";
-  };
-  insert."\\:.:" = {
+  }
+  {
+    mode = "i";
+    key = "\\:.:";
     action = "⁙";
-  };
-  insert."\\.+" = {
+  }
+  {
+    mode = "i";
+    key = "\\.+";
     action = "⸭";
-  };
-  insert."\\o" = {
+  }
+  {
+    mode = "i";
+    key = "\\o";
     action = "∘";
-  };
-  insert."\\o:" = {
+  }
+  {
+    mode = "i";
+    key = "\\o:";
     action = "⦂";
-  };
-  insert."\\o;" = {
+  }
+  {
+    mode = "i";
+    key = "\\o;";
     action = "⨟";
-  };
-  insert."\\,\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\,\|";
     action = "⍪";
-  };
-  insert."\\d^" = {
+  }
+  {
+    mode = "i";
+    key = "\\d^";
     action = "⌄";
-  };
-  insert."\\.^" = {
+  }
+  {
+    mode = "i";
+    key = "\\.^";
     action = "˙";
-  };
-  insert."\\and," = {
+  }
+  {
+    mode = "i";
+    key = "\\and,";
     action = "꘍";
-  };
-  insert."\\\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\\|";
     action = "∣";
-  };
-  insert."\\\|/" = {
+  }
+  {
+    mode = "i";
+    key = "\\\|/";
     action = "∤";
-  };
-  insert."\\\|:" = {
+  }
+  {
+    mode = "i";
+    key = "\\\|:";
     action = "¦";
-  };
-  insert."\\w\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\w\|";
     action = "⫾";
-  };
-  insert."\\\|\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\\|\|";
     action = "‖";
-  };
-  insert."\\par" = {
+  }
+  {
+    mode = "i";
+    key = "\\par";
     action = "∥";
-  };
-  insert."\\%" = {
+  }
+  {
+    mode = "i";
+    key = "\\%";
     action = "÷";
-  };
-  insert."\\%%" = {
+  }
+  {
+    mode = "i";
+    key = "\\%%";
     action = "٪";
-  };
-  insert."\\/" = {
+  }
+  {
+    mode = "i";
+    key = "\\/";
     action = "∕";
-  };
-  insert."\\set\\" = {
+  }
+  {
+    mode = "i";
+    key = "\\set\\";
     action = "∖";
-  };
-  insert."\\//" = {
+  }
+  {
+    mode = "i";
+    key = "\\//";
     action = "⫽";
-  };
-  insert."\\&" = {
+  }
+  {
+    mode = "i";
+    key = "\\&";
     action = "⅋";
-  };
-  insert."\\///" = {
+  }
+  {
+    mode = "i";
+    key = "\\///";
     action = "⫻";
-  };
-  insert."\\O/" = {
+  }
+  {
+    mode = "i";
+    key = "\\O/";
     action = "∅";
-  };
-  insert."\\*" = {
+  }
+  {
+    mode = "i";
+    key = "\\*";
     action = "⋆";
-  };
-  insert."\\star" = {
+  }
+  {
+    mode = "i";
+    key = "\\star";
     action = "☆";
-  };
-  insert."\\starb" = {
+  }
+  {
+    mode = "i";
+    key = "\\starb";
     action = "★";
-  };
-  insert."\\**" = {
+  }
+  {
+    mode = "i";
+    key = "\\**";
     action = "⋇";
-  };
-  insert."\\#" = {
+  }
+  {
+    mode = "i";
+    key = "\\#";
     action = "♯";
-  };
-  insert."\\##" = {
+  }
+  {
+    mode = "i";
+    key = "\\##";
     action = "𝄪";
-  };
-  insert."\\b" = {
+  }
+  {
+    mode = "i";
+    key = "\\b";
     action = "♭";
-  };
-  insert."\\bb" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb";
     action = "𝄫";
-  };
-  insert."\\n" = {
+  }
+  {
+    mode = "i";
+    key = "\\n";
     action = "♮";
-  };
-  insert."\\=\|\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\=\|\|";
     action = "⋕";
-  };
-  insert."\\d?" = {
+  }
+  {
+    mode = "i";
+    key = "\\d?";
     action = "¿";
-  };
-  insert."\\d!" = {
+  }
+  {
+    mode = "i";
+    key = "\\d!";
     action = "¡";
-  };
-  insert."\\??" = {
+  }
+  {
+    mode = "i";
+    key = "\\??";
     action = "⁇";
-  };
-  insert."\\!!" = {
+  }
+  {
+    mode = "i";
+    key = "\\!!";
     action = "‼";
-  };
-  insert."\\?!" = {
+  }
+  {
+    mode = "i";
+    key = "\\?!";
     action = "⁈";
-  };
-  insert."\\!?" = {
+  }
+  {
+    mode = "i";
+    key = "\\!?";
     action = "⁉";
-  };
-  insert."\\++" = {
+  }
+  {
+    mode = "i";
+    key = "\\++";
     action = "⧺";
-  };
-  insert."\\+++" = {
+  }
+  {
+    mode = "i";
+    key = "\\+++";
     action = "⧻";
-  };
-  insert."\\+." = {
+  }
+  {
+    mode = "i";
+    key = "\\+.";
     action = "∔";
-  };
-  insert."\\+(" = {
+  }
+  {
+    mode = "i";
+    key = "\\+(";
     action = "⨭";
-  };
-  insert."\\+)" = {
+  }
+  {
+    mode = "i";
+    key = "\\+)";
     action = "⨮";
-  };
-  insert."\\+-" = {
+  }
+  {
+    mode = "i";
+    key = "\\+-";
     action = "±";
-  };
-  insert."\\-." = {
+  }
+  {
+    mode = "i";
+    key = "\\-.";
     action = "∸";
-  };
-  insert."\\x" = {
+  }
+  {
+    mode = "i";
+    key = "\\x";
     action = "×";
-  };
-  insert."\\x." = {
+  }
+  {
+    mode = "i";
+    key = "\\x.";
     action = "⨰";
-  };
-  insert."\\x-" = {
+  }
+  {
+    mode = "i";
+    key = "\\x-";
     action = "⨱";
-  };
-  insert."\\x(" = {
+  }
+  {
+    mode = "i";
+    key = "\\x(";
     action = "⨴";
-  };
-  insert."\\x)" = {
+  }
+  {
+    mode = "i";
+    key = "\\x)";
     action = "⨵";
-  };
-  insert."\\xx" = {
+  }
+  {
+    mode = "i";
+    key = "\\xx";
     action = "⨯";
-  };
-  insert."\\XX" = {
+  }
+  {
+    mode = "i";
+    key = "\\XX";
     action = "⨳";
-  };
-  insert."\\xb" = {
+  }
+  {
+    mode = "i";
+    key = "\\xb";
     action = "✖";
-  };
-  insert."\\swap" = {
+  }
+  {
+    mode = "i";
+    key = "\\swap";
     action = "⤨";
-  };
-  insert."\\o+" = {
+  }
+  {
+    mode = "i";
+    key = "\\o+";
     action = "⊕";
-  };
-  insert."\\o-" = {
+  }
+  {
+    mode = "i";
+    key = "\\o-";
     action = "⊖";
-  };
-  insert."\\ox" = {
+  }
+  {
+    mode = "i";
+    key = "\\ox";
     action = "⊗";
-  };
-  insert."\\o/" = {
+  }
+  {
+    mode = "i";
+    key = "\\o/";
     action = "⊘";
-  };
-  insert."\\o." = {
+  }
+  {
+    mode = "i";
+    key = "\\o.";
     action = "⊙";
-  };
-  insert."\\oo" = {
+  }
+  {
+    mode = "i";
+    key = "\\oo";
     action = "⊚";
-  };
-  insert."\\o*" = {
+  }
+  {
+    mode = "i";
+    key = "\\o*";
     action = "⊛";
-  };
-  insert."\\o=" = {
+  }
+  {
+    mode = "i";
+    key = "\\o=";
     action = "⊜";
-  };
-  insert."\\o--" = {
+  }
+  {
+    mode = "i";
+    key = "\\o--";
     action = "⊝";
-  };
-  insert."\\ot" = {
+  }
+  {
+    mode = "i";
+    key = "\\ot";
     action = "⎊";
-  };
-  insert."\\o\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\o\|";
     action = "⦶";
-  };
-  insert."\\o\|\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\o\|\|";
     action = "⦷";
-  };
-  insert."\\o\\" = {
+  }
+  {
+    mode = "i";
+    key = "\\o\\";
     action = "⦸";
-  };
-  insert."\\obot" = {
+  }
+  {
+    mode = "i";
+    key = "\\obot";
     action = "⦹";
-  };
-  insert."\\o%" = {
+  }
+  {
+    mode = "i";
+    key = "\\o%";
     action = "⦼";
-  };
-  insert."\\o<" = {
+  }
+  {
+    mode = "i";
+    key = "\\o<";
     action = "⧀";
-  };
-  insert."\\o>" = {
+  }
+  {
+    mode = "i";
+    key = "\\o>";
     action = "⧁";
-  };
-  insert."\\.di" = {
+  }
+  {
+    mode = "i";
+    key = "\\.di";
     action = "⋄";
-  };
-  insert."\\di" = {
+  }
+  {
+    mode = "i";
+    key = "\\di";
     action = "◇";
-  };
-  insert."\\di." = {
+  }
+  {
+    mode = "i";
+    key = "\\di.";
     action = "⟐";
-  };
-  insert."\\s" = {
+  }
+  {
+    mode = "i";
+    key = "\\s";
     action = "□";
-  };
-  insert."\\s+" = {
+  }
+  {
+    mode = "i";
+    key = "\\s+";
     action = "⊞";
-  };
-  insert."\\s-" = {
+  }
+  {
+    mode = "i";
+    key = "\\s-";
     action = "⊟";
-  };
-  insert."\\sx" = {
+  }
+  {
+    mode = "i";
+    key = "\\sx";
     action = "⊠";
-  };
-  insert."\\s." = {
+  }
+  {
+    mode = "i";
+    key = "\\s.";
     action = "⊡";
-  };
-  insert."\\sand" = {
+  }
+  {
+    mode = "i";
+    key = "\\sand";
     action = "⟎";
-  };
-  insert."\\sor" = {
+  }
+  {
+    mode = "i";
+    key = "\\sor";
     action = "⟏";
-  };
-  insert."\\s/" = {
+  }
+  {
+    mode = "i";
+    key = "\\s/";
     action = "⧄";
-  };
-  insert."\\s\\" = {
+  }
+  {
+    mode = "i";
+    key = "\\s\\";
     action = "⧅";
-  };
-  insert."\\s*" = {
+  }
+  {
+    mode = "i";
+    key = "\\s*";
     action = "⧆";
-  };
-  insert."\\so" = {
+  }
+  {
+    mode = "i";
+    key = "\\so";
     action = "⧇";
-  };
-  insert."\\ss" = {
+  }
+  {
+    mode = "i";
+    key = "\\ss";
     action = "⧈";
-  };
-  insert."\\sss" = {
+  }
+  {
+    mode = "i";
+    key = "\\sss";
     action = "⧉";
-  };
-  insert."\\s\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\s\|";
     action = "⎅";
-  };
-  insert."\\O" = {
+  }
+  {
+    mode = "i";
+    key = "\\O";
     action = "○";
-  };
-  insert."\\qed" = {
+  }
+  {
+    mode = "i";
+    key = "\\qed";
     action = "∎";
-  };
-  insert."\\-/" = {
+  }
+  {
+    mode = "i";
+    key = "\\-/";
     action = "⌿";
-  };
-  insert."\\sin" = {
+  }
+  {
+    mode = "i";
+    key = "\\sin";
     action = "∿";
-  };
-  insert."\\link" = {
+  }
+  {
+    mode = "i";
+    key = "\\link";
     action = "∾";
-  };
-  insert."\\bow" = {
+  }
+  {
+    mode = "i";
+    key = "\\bow";
     action = "⋈";
-  };
-  insert."\\hour" = {
+  }
+  {
+    mode = "i";
+    key = "\\hour";
     action = "⧖";
-  };
-  insert."\\bowl" = {
+  }
+  {
+    mode = "i";
+    key = "\\bowl";
     action = "⋉";
-  };
-  insert."\\bowr" = {
+  }
+  {
+    mode = "i";
+    key = "\\bowr";
     action = "⋊";
-  };
-  insert."\\inf" = {
+  }
+  {
+    mode = "i";
+    key = "\\inf";
     action = "∞";
-  };
-  insert."\\inf<" = {
+  }
+  {
+    mode = "i";
+    key = "\\inf<";
     action = "∝";
-  };
-  insert."\\tru" = {
+  }
+  {
+    mode = "i";
+    key = "\\tru";
     action = "△";
-  };
-  insert."\\trr" = {
+  }
+  {
+    mode = "i";
+    key = "\\trr";
     action = "▷";
-  };
-  insert."\\trd" = {
+  }
+  {
+    mode = "i";
+    key = "\\trd";
     action = "▽";
-  };
-  insert."\\trl" = {
+  }
+  {
+    mode = "i";
+    key = "\\trl";
     action = "◁";
-  };
-  insert."\\trub" = {
+  }
+  {
+    mode = "i";
+    key = "\\trub";
     action = "▲";
-  };
-  insert."\\trrb" = {
+  }
+  {
+    mode = "i";
+    key = "\\trrb";
     action = "▶";
-  };
-  insert."\\trdb" = {
+  }
+  {
+    mode = "i";
+    key = "\\trdb";
     action = "▼";
-  };
-  insert."\\trlb" = {
+  }
+  {
+    mode = "i";
+    key = "\\trlb";
     action = "◀";
-  };
-  insert."\\t+" = {
+  }
+  {
+    mode = "i";
+    key = "\\t+";
     action = "⨹";
-  };
-  insert."\\t-" = {
+  }
+  {
+    mode = "i";
+    key = "\\t-";
     action = "⨺";
-  };
-  insert."\\tx" = {
+  }
+  {
+    mode = "i";
+    key = "\\tx";
     action = "⨻";
-  };
-  insert."\\tt" = {
+  }
+  {
+    mode = "i";
+    key = "\\tt";
     action = "⟁";
-  };
-  insert."\\t." = {
+  }
+  {
+    mode = "i";
+    key = "\\t.";
     action = "◬";
-  };
-  insert."\\cd" = {
+  }
+  {
+    mode = "i";
+    key = "\\cd";
     action = "⟡";
-  };
-  insert."\\cd>" = {
+  }
+  {
+    mode = "i";
+    key = "\\cd>";
     action = "⟢";
-  };
-  insert."\\cd<" = {
+  }
+  {
+    mode = "i";
+    key = "\\cd<";
     action = "⟣";
-  };
-  insert."\\sq>" = {
+  }
+  {
+    mode = "i";
+    key = "\\sq>";
     action = "⟤";
-  };
-  insert."\\sq<" = {
+  }
+  {
+    mode = "i";
+    key = "\\sq<";
     action = "⟥";
-  };
-  insert."\\loz" = {
+  }
+  {
+    mode = "i";
+    key = "\\loz";
     action = "⌑";
-  };
-  insert."\\d<>" = {
+  }
+  {
+    mode = "i";
+    key = "\\d<>";
     action = "⟠";
-  };
-  insert."\\zap" = {
+  }
+  {
+    mode = "i";
+    key = "\\zap";
     action = "⌁";
-  };
-  insert."\\dag" = {
+  }
+  {
+    mode = "i";
+    key = "\\dag";
     action = "†";
-  };
-  insert."\\ddag" = {
+  }
+  {
+    mode = "i";
+    key = "\\ddag";
     action = "‡";
-  };
-  insert."\\***" = {
+  }
+  {
+    mode = "i";
+    key = "\\***";
     action = "⁂";
-  };
-  insert."\\int" = {
+  }
+  {
+    mode = "i";
+    key = "\\int";
     action = "∫";
-  };
-  insert."\\cent" = {
+  }
+  {
+    mode = "i";
+    key = "\\cent";
     action = "¢";
-  };
-  insert."\\Oo" = {
+  }
+  {
+    mode = "i";
+    key = "\\Oo";
     action = "⧂";
-  };
-  insert."\\+br" = {
+  }
+  {
+    mode = "i";
+    key = "\\+br";
     action = "⌌";
-  };
-  insert."\\+bl" = {
+  }
+  {
+    mode = "i";
+    key = "\\+bl";
     action = "⌍";
-  };
-  insert."\\+tr" = {
+  }
+  {
+    mode = "i";
+    key = "\\+tr";
     action = "⌎";
-  };
-  insert."\\+tl" = {
+  }
+  {
+    mode = "i";
+    key = "\\+tl";
     action = "⌏";
-  };
-  insert."\\ctl" = {
+  }
+  {
+    mode = "i";
+    key = "\\ctl";
     action = "⌜";
-  };
-  insert."\\ctr" = {
+  }
+  {
+    mode = "i";
+    key = "\\ctr";
     action = "⌝";
-  };
-  insert."\\cbl" = {
+  }
+  {
+    mode = "i";
+    key = "\\cbl";
     action = "⌞";
-  };
-  insert."\\cbr" = {
+  }
+  {
+    mode = "i";
+    key = "\\cbr";
     action = "⌟";
-  };
-  insert."\\>-" = {
+  }
+  {
+    mode = "i";
+    key = "\\>-";
     action = "⌲";
-  };
-  insert."\\scales" = {
+  }
+  {
+    mode = "i";
+    key = "\\scales";
     action = "⚖";
-  };
-  insert."\\root" = {
+  }
+  {
+    mode = "i";
+    key = "\\root";
     action = "√";
-  };
-  insert."\\in" = {
+  }
+  {
+    mode = "i";
+    key = "\\in";
     action = "∈";
-  };
-  insert."\\in." = {
+  }
+  {
+    mode = "i";
+    key = "\\in.";
     action = "⋵";
-  };
-  insert."\\in\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\in\|";
     action = "⋳";
-  };
-  insert."\\in=" = {
+  }
+  {
+    mode = "i";
+    key = "\\in=";
     action = "⋹";
-  };
-  insert."\\in-" = {
+  }
+  {
+    mode = "i";
+    key = "\\in-";
     action = "⋲";
-  };
-  insert."\\in-l" = {
+  }
+  {
+    mode = "i";
+    key = "\\in-l";
     action = "⋺";
-  };
-  insert."\\in/" = {
+  }
+  {
+    mode = "i";
+    key = "\\in/";
     action = "∉";
-  };
-  insert."\\inl" = {
+  }
+  {
+    mode = "i";
+    key = "\\inl";
     action = "∋";
-  };
-  insert."\\in\|l" = {
+  }
+  {
+    mode = "i";
+    key = "\\in\|l";
     action = "⋻";
-  };
-  insert."\\inu" = {
+  }
+  {
+    mode = "i";
+    key = "\\inu";
     action = "⟒";
-  };
-  insert."\\ind" = {
+  }
+  {
+    mode = "i";
+    key = "\\ind";
     action = "⫙";
-  };
-  insert."\\ele" = {
+  }
+  {
+    mode = "i";
+    key = "\\ele";
     action = "∊";
-  };
-  insert."\\elel" = {
+  }
+  {
+    mode = "i";
+    key = "\\elel";
     action = "∍";
-  };
-  insert."\\ele\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\ele\|";
     action = "⋴";
-  };
-  insert."\\ele\|l" = {
+  }
+  {
+    mode = "i";
+    key = "\\ele\|l";
     action = "⋼";
-  };
-  insert."\\mem" = {
+  }
+  {
+    mode = "i";
+    key = "\\mem";
     action = "⋿";
-  };
-  insert."\\all" = {
+  }
+  {
+    mode = "i";
+    key = "\\all";
     action = "∀";
-  };
-  insert."\\ex" = {
+  }
+  {
+    mode = "i";
+    key = "\\ex";
     action = "∃";
-  };
-  insert."\\ex/" = {
+  }
+  {
+    mode = "i";
+    key = "\\ex/";
     action = "∄";
-  };
-  insert."\\\|-" = {
+  }
+  {
+    mode = "i";
+    key = "\\\|-";
     action = "⊢";
-  };
-  insert."\\-\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\-\|";
     action = "⊣";
-  };
-  insert."\\\|=" = {
+  }
+  {
+    mode = "i";
+    key = "\\\|=";
     action = "⊨";
-  };
-  insert."\\or" = {
+  }
+  {
+    mode = "i";
+    key = "\\or";
     action = "∨";
-  };
-  insert."\\and" = {
+  }
+  {
+    mode = "i";
+    key = "\\and";
     action = "∧";
-  };
-  insert."\\andor" = {
+  }
+  {
+    mode = "i";
+    key = "\\andor";
     action = "⩙";
-  };
-  insert."\\bot" = {
+  }
+  {
+    mode = "i";
+    key = "\\bot";
     action = "⊥";
-  };
-  insert."\\bot=" = {
+  }
+  {
+    mode = "i";
+    key = "\\bot=";
     action = "⫫";
-  };
-  insert."\\top" = {
+  }
+  {
+    mode = "i";
+    key = "\\top";
     action = "⊤";
-  };
-  insert."\\not" = {
+  }
+  {
+    mode = "i";
+    key = "\\not";
     action = "¬";
-  };
-  insert."\\xor" = {
+  }
+  {
+    mode = "i";
+    key = "\\xor";
     action = "⊻";
-  };
-  insert."\\comp" = {
+  }
+  {
+    mode = "i";
+    key = "\\comp";
     action = "∁";
-  };
-  insert."\\==" = {
+  }
+  {
+    mode = "i";
+    key = "\\==";
     action = "≡";
-  };
-  insert."\\==/" = {
+  }
+  {
+    mode = "i";
+    key = "\\==/";
     action = "≢";
-  };
-  insert."\\===" = {
+  }
+  {
+    mode = "i";
+    key = "\\===";
     action = "≣";
-  };
-  insert."\\=2" = {
+  }
+  {
+    mode = "i";
+    key = "\\=2";
     action = "⩵";
-  };
-  insert."\\=3" = {
+  }
+  {
+    mode = "i";
+    key = "\\=3";
     action = "⩶";
-  };
-  insert."\\~=" = {
+  }
+  {
+    mode = "i";
+    key = "\\~=";
     action = "≃";
-  };
-  insert."\\~~" = {
+  }
+  {
+    mode = "i";
+    key = "\\~~";
     action = "≈";
-  };
-  insert."\\~~/" = {
+  }
+  {
+    mode = "i";
+    key = "\\~~/";
     action = "≉";
-  };
-  insert."\\~" = {
+  }
+  {
+    mode = "i";
+    key = "\\~";
     action = "∼";
-  };
-  insert."\\~/" = {
+  }
+  {
+    mode = "i";
+    key = "\\~/";
     action = "≁";
-  };
-  insert."\\:=" = {
+  }
+  {
+    mode = "i";
+    key = "\\:=";
     action = "≔";
-  };
-  insert."\\=:" = {
+  }
+  {
+    mode = "i";
+    key = "\\=:";
     action = "≕";
-  };
-  insert."\\::=" = {
+  }
+  {
+    mode = "i";
+    key = "\\::=";
     action = "⩴";
-  };
-  insert."\\=/" = {
+  }
+  {
+    mode = "i";
+    key = "\\=/";
     action = "≠";
-  };
-  insert."\\=?" = {
+  }
+  {
+    mode = "i";
+    key = "\\=?";
     action = "≟";
-  };
-  insert."\\=o" = {
+  }
+  {
+    mode = "i";
+    key = "\\=o";
     action = "≗";
-  };
-  insert."\\=*" = {
+  }
+  {
+    mode = "i";
+    key = "\\=*";
     action = "⩮";
-  };
-  insert."\\=." = {
+  }
+  {
+    mode = "i";
+    key = "\\=.";
     action = "⩦";
-  };
-  insert."\\=//" = {
+  }
+  {
+    mode = "i";
+    key = "\\=//";
     action = "⧣";
-  };
-  insert."\\=s" = {
+  }
+  {
+    mode = "i";
+    key = "\\=s";
     action = "≌";
-  };
-  insert."\\=star" = {
+  }
+  {
+    mode = "i";
+    key = "\\=star";
     action = "≛";
-  };
-  insert."\\~~^" = {
+  }
+  {
+    mode = "i";
+    key = "\\~~^";
     action = "⩯";
-  };
-  insert."\\=t" = {
+  }
+  {
+    mode = "i";
+    key = "\\=t";
     action = "≜";
-  };
-  insert."\\=def" = {
+  }
+  {
+    mode = "i";
+    key = "\\=def";
     action = "≝";
-  };
-  insert."\\eqv" = {
+  }
+  {
+    mode = "i";
+    key = "\\eqv";
     action = "≍";
-  };
-  insert."\\eqv/" = {
+  }
+  {
+    mode = "i";
+    key = "\\eqv/";
     action = "≭";
-  };
-  insert."\\=O" = {
+  }
+  {
+    mode = "i";
+    key = "\\=O";
     action = "≎";
-  };
-  insert."\\block" = {
+  }
+  {
+    mode = "i";
+    key = "\\block";
     action = "█";
-  };
-  insert."\\_+" = {
+  }
+  {
+    mode = "i";
+    key = "\\_+";
     action = "₊";
-  };
-  insert."\\_-" = {
+  }
+  {
+    mode = "i";
+    key = "\\_-";
     action = "₋";
-  };
-  insert."\\_=" = {
+  }
+  {
+    mode = "i";
+    key = "\\_=";
     action = "₌";
-  };
-  insert."\\_(" = {
+  }
+  {
+    mode = "i";
+    key = "\\_(";
     action = "₍";
-  };
-  insert."\\_)" = {
+  }
+  {
+    mode = "i";
+    key = "\\_)";
     action = "₎";
-  };
-  insert."\\^+" = {
+  }
+  {
+    mode = "i";
+    key = "\\^+";
     action = "⁺";
-  };
-  insert."\\^-" = {
+  }
+  {
+    mode = "i";
+    key = "\\^-";
     action = "⁻";
-  };
-  insert."\\^=" = {
+  }
+  {
+    mode = "i";
+    key = "\\^=";
     action = "⁼";
-  };
-  insert."\\^(" = {
+  }
+  {
+    mode = "i";
+    key = "\\^(";
     action = "⁽";
-  };
-  insert."\\^)" = {
+  }
+  {
+    mode = "i";
+    key = "\\^)";
     action = "⁾";
-  };
-  insert."\\^deg" = {
+  }
+  {
+    mode = "i";
+    key = "\\^deg";
     action = "˚";
-  };
-  insert."\\^bow" = {
+  }
+  {
+    mode = "i";
+    key = "\\^bow";
     action = "⑅";
-  };
-  insert."\\^uu" = {
+  }
+  {
+    mode = "i";
+    key = "\\^uu";
     action = "ᐜ";
-  };
-  insert."\\^tr" = {
+  }
+  {
+    mode = "i";
+    key = "\\^tr";
     action = "ᐞ";
-  };
-  insert."\\^/" = {
+  }
+  {
+    mode = "i";
+    key = "\\^/";
     action = "ᐟ";
-  };
-  insert."\\^\\" = {
+  }
+  {
+    mode = "i";
+    key = "\\^\\";
     action = "ᐠ";
-  };
-  insert."\\^un" = {
+  }
+  {
+    mode = "i";
+    key = "\\^un";
     action = "ᐡ";
-  };
-  insert."\\^in" = {
+  }
+  {
+    mode = "i";
+    key = "\\^in";
     action = "ᐢ";
-  };
-  insert."\\^su" = {
+  }
+  {
+    mode = "i";
+    key = "\\^su";
     action = "ᐣ";
-  };
-  insert."\\^//" = {
+  }
+  {
+    mode = "i";
+    key = "\\^//";
     action = "ᐥ";
-  };
-  insert."\\^\|\|" = {
+  }
+  {
+    mode = "i";
+    key = "\\^\|\|";
     action = "ᐦ";
-  };
-  insert."\\^top" = {
+  }
+  {
+    mode = "i";
+    key = "\\^top";
     action = "ᐪ";
-  };
-  insert."\\^." = {
+  }
+  {
+    mode = "i";
+    key = "\\^.";
     action = "ᐧ";
-  };
-  insert."\\^^nu" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^nu";
     action = "";
-  };
-  insert."\\^^^" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^^";
     action = "";
-  };
-  insert."\\^^<" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^<";
     action = "";
-  };
-  insert."\\^^>" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^>";
     action = "";
-  };
-  insert."\\^^<-" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^<-";
     action = "";
-  };
-  insert."\\^^->" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^->";
     action = "";
-  };
-  insert."\\^^~" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^~";
     action = "";
-  };
-  insert."\\^^(" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^(";
     action = "";
-  };
-  insert."\\^^)" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^)";
     action = "";
-  };
-  insert."\\^^~~" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^~~";
     action = "";
-  };
-  insert."\\^^-" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^-";
     action = "";
-  };
-  insert."\\^^--" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^--";
     action = "";
-  };
-  insert."\\^^." = {
+  }
+  {
+    mode = "i";
+    key = "\\^^.";
     action = "";
-  };
-  insert."\\^^.." = {
+  }
+  {
+    mode = "i";
+    key = "\\^^..";
     action = "";
-  };
-  insert."\\^^o" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^o";
     action = "";
-  };
-  insert."\\^^," = {
+  }
+  {
+    mode = "i";
+    key = "\\^^,";
     action = "";
-  };
-  insert."\\^^v" = {
+  }
+  {
+    mode = "i";
+    key = "\\^^v";
     action = "";
-  };
-  insert."\\^^(." = {
+  }
+  {
+    mode = "i";
+    key = "\\^^(.";
     action = "";
-  };
-  insert."\\PP" = {
+  }
+  {
+    mode = "i";
+    key = "\\PP";
     action = "¶";
-  };
-  insert."\\_" = {
+  }
+  {
+    mode = "i";
+    key = "\\_";
     action = "␣";
-  };
-  insert."\\__" = {
+  }
+  {
+    mode = "i";
+    key = "\\__";
     action = "‗";
-  };
-  insert."\\___" = {
+  }
+  {
+    mode = "i";
+    key = "\\___";
     action = "﹍";
-  };
-  insert."\\~_" = {
+  }
+  {
+    mode = "i";
+    key = "\\~_";
     action = "﹏";
-  };
-  insert."\\utie" = {
+  }
+  {
+    mode = "i";
+    key = "\\utie";
     action = "‿";
-  };
-  insert."\\iutie" = {
+  }
+  {
+    mode = "i";
+    key = "\\iutie";
     action = "⁔";
-  };
-  insert."\\sp" = {
+  }
+  {
+    mode = "i";
+    key = "\\sp";
     action = "␠";
-  };
-  insert."\\SS" = {
+  }
+  {
+    mode = "i";
+    key = "\\SS";
     action = "§";
-  };
-  insert."\\bu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bu";
     action = "•";
-  };
-  insert."\\obu" = {
+  }
+  {
+    mode = "i";
+    key = "\\obu";
     action = "◦";
-  };
-  insert."\\-bu" = {
+  }
+  {
+    mode = "i";
+    key = "\\-bu";
     action = "⁃";
-  };
-  insert."\\tbu" = {
+  }
+  {
+    mode = "i";
+    key = "\\tbu";
     action = "‣";
-  };
-  insert."\\lbu" = {
+  }
+  {
+    mode = "i";
+    key = "\\lbu";
     action = "⁌";
-  };
-  insert."\\rbu" = {
+  }
+  {
+    mode = "i";
+    key = "\\rbu";
     action = "⁍";
-  };
-  insert."\\ibu" = {
+  }
+  {
+    mode = "i";
+    key = "\\ibu";
     action = "◘";
-  };
-  insert."\\hbu" = {
+  }
+  {
+    mode = "i";
+    key = "\\hbu";
     action = "❥";
-  };
-  insert."\\hlbu" = {
+  }
+  {
+    mode = "i";
+    key = "\\hlbu";
     action = "☙";
-  };
-  insert."\\hrbu" = {
+  }
+  {
+    mode = "i";
+    key = "\\hrbu";
     action = "❧";
-  };
-  insert."\\buo" = {
+  }
+  {
+    mode = "i";
+    key = "\\buo";
     action = "⦿";
-  };
-  insert."\\obuo" = {
+  }
+  {
+    mode = "i";
+    key = "\\obuo";
     action = "⦾";
-  };
-  insert."\\check" = {
+  }
+  {
+    mode = "i";
+    key = "\\check";
     action = "✓";
-  };
-  insert."\\X" = {
+  }
+  {
+    mode = "i";
+    key = "\\X";
     action = "✗";
-  };
-  insert."\\bal" = {
+  }
+  {
+    mode = "i";
+    key = "\\bal";
     action = "☐";
-  };
-  insert."\\balc" = {
+  }
+  {
+    mode = "i";
+    key = "\\balc";
     action = "☑";
-  };
-  insert."\\balx" = {
+  }
+  {
+    mode = "i";
+    key = "\\balx";
     action = "☒";
-  };
-  insert."\\disapprove" = {
+  }
+  {
+    mode = "i";
+    key = "\\disapprove";
     action = "ಠ_ಠ";
-  };
-  insert."\\flip" = {
+  }
+  {
+    mode = "i";
+    key = "\\flip";
     action = "﹙╯°□°）╯︵┻━┻";
-  };
-  insert."\\putback" = {
+  }
+  {
+    mode = "i";
+    key = "\\putback";
     action = "┬─┬ノ﹙゜-゜ノ﹚";
-  };
-  insert."\\dust" = {
+  }
+  {
+    mode = "i";
+    key = "\\dust";
     action = "┬─┬⃰͡ ﹙ᵔᵕᵔ͜ ﹚";
-  };
-  insert."\\doubleflip" = {
+  }
+  {
+    mode = "i";
+    key = "\\doubleflip";
     action = "┻━┻︵ヽ﹙`Д´﹚ﾉ︵┻━┻";
-  };
-  insert."\\fisticuffs" = {
+  }
+  {
+    mode = "i";
+    key = "\\fisticuffs";
     action = "ლ﹙｀ー´ლ﹚";
-  };
-  insert."\\shrug" = {
+  }
+  {
+    mode = "i";
+    key = "\\shrug";
     action = "¯\_﹙ツ﹚_/¯";
-  };
-  insert."\\meh" = {
+  }
+  {
+    mode = "i";
+    key = "\\meh";
     action = "¯\﹙°_o﹚/¯";
-  };
-  insert."\\angry" = {
+  }
+  {
+    mode = "i";
+    key = "\\angry";
     action = "﹙╬ಠ益ಠ﹚";
-  };
-  insert."\\meow" = {
+  }
+  {
+    mode = "i";
+    key = "\\meow";
     action = "ฅ^•ﻌ•^ฅ";
-  };
-  insert."\\cheers" = {
+  }
+  {
+    mode = "i";
+    key = "\\cheers";
     action = "﹙^_^）o自自o（^_^﹚";
-  };
-  insert."\\crying" = {
+  }
+  {
+    mode = "i";
+    key = "\\crying";
     action = "ಥ_ಥ";
-  };
-  insert."\\breakdown" = {
+  }
+  {
+    mode = "i";
+    key = "\\breakdown";
     action = "ಥ﹏ಥ";
-  };
-  insert."\\disagree" = {
+  }
+  {
+    mode = "i";
+    key = "\\disagree";
     action = "٩◔̯◔۶";
-  };
-  insert."\\flex" = {
+  }
+  {
+    mode = "i";
+    key = "\\flex";
     action = "ᕙ﹙⇀‸↼‶﹚ᕗ";
-  };
-  insert."\\sadconfused" = {
+  }
+  {
+    mode = "i";
+    key = "\\sadconfused";
     action = "¯\_﹙⊙︿⊙﹚_/¯";
-  };
-  insert."\\ytho" = {
+  }
+  {
+    mode = "i";
+    key = "\\ytho";
     action = "щ（ﾟДﾟщ）";
-  };
-  insert."\\strut" = {
+  }
+  {
+    mode = "i";
+    key = "\\strut";
     action = "ᕕ﹙ᐛ﹚ᕗ";
-  };
-  insert."\\fkit" = {
+  }
+  {
+    mode = "i";
+    key = "\\fkit";
     action = "t﹙-_-t﹚";
-  };
-  insert."\\sleepy" = {
+  }
+  {
+    mode = "i";
+    key = "\\sleepy";
     action = "눈_눈";
-  };
-  insert."\\opera" = {
+  }
+  {
+    mode = "i";
+    key = "\\opera";
     action = "ヾ﹙´〇`﹚ﾉ♪♪♪";
-  };
-  insert."\\zombie" = {
+  }
+  {
+    mode = "i";
+    key = "\\zombie";
     action = "[¬º-°]¬";
-  };
-  insert."\\point" = {
+  }
+  {
+    mode = "i";
+    key = "\\point";
     action = "﹙☞ﾟヮﾟ﹚☞";
-  };
-  insert."\\poo" = {
+  }
+  {
+    mode = "i";
+    key = "\\poo";
     action = "💩";
-  };
-  insert."\\Alpha" = {
+  }
+  {
+    mode = "i";
+    key = "\\Alpha";
     action = "Α";
-  };
-  insert."\\Beta" = {
+  }
+  {
+    mode = "i";
+    key = "\\Beta";
     action = "Β";
-  };
-  insert."\\Gamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\Gamma";
     action = "Γ";
-  };
-  insert."\\Delta" = {
+  }
+  {
+    mode = "i";
+    key = "\\Delta";
     action = "Δ";
-  };
-  insert."\\Epsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\Epsilon";
     action = "Ε";
-  };
-  insert."\\Zeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\Zeta";
     action = "Ζ";
-  };
-  insert."\\Eta" = {
+  }
+  {
+    mode = "i";
+    key = "\\Eta";
     action = "Η";
-  };
-  insert."\\Theta" = {
+  }
+  {
+    mode = "i";
+    key = "\\Theta";
     action = "Θ";
-  };
-  insert."\\Iota" = {
+  }
+  {
+    mode = "i";
+    key = "\\Iota";
     action = "Ι";
-  };
-  insert."\\Kappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\Kappa";
     action = "Κ";
-  };
-  insert."\\Lambda" = {
+  }
+  {
+    mode = "i";
+    key = "\\Lambda";
     action = "Λ";
-  };
-  insert."\\Mu" = {
+  }
+  {
+    mode = "i";
+    key = "\\Mu";
     action = "Μ";
-  };
-  insert."\\Nu" = {
+  }
+  {
+    mode = "i";
+    key = "\\Nu";
     action = "Ν";
-  };
-  insert."\\Xi" = {
+  }
+  {
+    mode = "i";
+    key = "\\Xi";
     action = "Ξ";
-  };
-  insert."\\Omicron" = {
+  }
+  {
+    mode = "i";
+    key = "\\Omicron";
     action = "Ο";
-  };
-  insert."\\Pi" = {
+  }
+  {
+    mode = "i";
+    key = "\\Pi";
     action = "Π";
-  };
-  insert."\\Rho" = {
+  }
+  {
+    mode = "i";
+    key = "\\Rho";
     action = "Ρ";
-  };
-  insert."\\varSigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\varSigma";
     action = "ϴ";
-  };
-  insert."\\Sigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\Sigma";
     action = "Σ";
-  };
-  insert."\\Tau" = {
+  }
+  {
+    mode = "i";
+    key = "\\Tau";
     action = "Τ";
-  };
-  insert."\\Upsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\Upsilon";
     action = "Υ";
-  };
-  insert."\\Phi" = {
+  }
+  {
+    mode = "i";
+    key = "\\Phi";
     action = "Φ";
-  };
-  insert."\\Chi" = {
+  }
+  {
+    mode = "i";
+    key = "\\Chi";
     action = "Χ";
-  };
-  insert."\\Psi" = {
+  }
+  {
+    mode = "i";
+    key = "\\Psi";
     action = "Ψ";
-  };
-  insert."\\Omega" = {
+  }
+  {
+    mode = "i";
+    key = "\\Omega";
     action = "Ω";
-  };
-  insert."\\Nabla" = {
+  }
+  {
+    mode = "i";
+    key = "\\Nabla";
     action = "∇";
-  };
-  insert."\\alpha" = {
+  }
+  {
+    mode = "i";
+    key = "\\alpha";
     action = "α";
-  };
-  insert."\\beta" = {
+  }
+  {
+    mode = "i";
+    key = "\\beta";
     action = "β";
-  };
-  insert."\\gamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\gamma";
     action = "γ";
-  };
-  insert."\\delta" = {
+  }
+  {
+    mode = "i";
+    key = "\\delta";
     action = "δ";
-  };
-  insert."\\epsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\epsilon";
     action = "ε";
-  };
-  insert."\\zeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\zeta";
     action = "ζ";
-  };
-  insert."\\eta" = {
+  }
+  {
+    mode = "i";
+    key = "\\eta";
     action = "η";
-  };
-  insert."\\theta" = {
+  }
+  {
+    mode = "i";
+    key = "\\theta";
     action = "θ";
-  };
-  insert."\\iota" = {
+  }
+  {
+    mode = "i";
+    key = "\\iota";
     action = "ι";
-  };
-  insert."\\kappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\kappa";
     action = "κ";
-  };
-  insert."\\lambda" = {
+  }
+  {
+    mode = "i";
+    key = "\\lambda";
     action = "λ";
-  };
-  insert."\\mu" = {
+  }
+  {
+    mode = "i";
+    key = "\\mu";
     action = "μ";
-  };
-  insert."\\nu" = {
+  }
+  {
+    mode = "i";
+    key = "\\nu";
     action = "ν";
-  };
-  insert."\\xi" = {
+  }
+  {
+    mode = "i";
+    key = "\\xi";
     action = "ξ";
-  };
-  insert."\\omicron" = {
+  }
+  {
+    mode = "i";
+    key = "\\omicron";
     action = "ο";
-  };
-  insert."\\pi" = {
+  }
+  {
+    mode = "i";
+    key = "\\pi";
     action = "π";
-  };
-  insert."\\rho" = {
+  }
+  {
+    mode = "i";
+    key = "\\rho";
     action = "ρ";
-  };
-  insert."\\varsigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\varsigma";
     action = "ς";
-  };
-  insert."\\sigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\sigma";
     action = "σ";
-  };
-  insert."\\tau" = {
+  }
+  {
+    mode = "i";
+    key = "\\tau";
     action = "τ";
-  };
-  insert."\\upsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\upsilon";
     action = "υ";
-  };
-  insert."\\phi" = {
+  }
+  {
+    mode = "i";
+    key = "\\phi";
     action = "φ";
-  };
-  insert."\\chi" = {
+  }
+  {
+    mode = "i";
+    key = "\\chi";
     action = "χ";
-  };
-  insert."\\psi" = {
+  }
+  {
+    mode = "i";
+    key = "\\psi";
     action = "ψ";
-  };
-  insert."\\omega" = {
+  }
+  {
+    mode = "i";
+    key = "\\omega";
     action = "ω";
-  };
-  insert."\\partial" = {
+  }
+  {
+    mode = "i";
+    key = "\\partial";
     action = "∂";
-  };
-  insert."\\varepsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\varepsilon";
     action = "ϵ";
-  };
-  insert."\\vartheta" = {
+  }
+  {
+    mode = "i";
+    key = "\\vartheta";
     action = "ϑ";
-  };
-  insert."\\varkappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\varkappa";
     action = "ϰ";
-  };
-  insert."\\varphi" = {
+  }
+  {
+    mode = "i";
+    key = "\\varphi";
     action = "ϕ";
-  };
-  insert."\\varrho" = {
+  }
+  {
+    mode = "i";
+    key = "\\varrho";
     action = "ϱ";
-  };
-  insert."\\varpi" = {
+  }
+  {
+    mode = "i";
+    key = "\\varpi";
     action = "ϖ";
-  };
-  insert."\\lambda/" = {
+  }
+  {
+    mode = "i";
+    key = "\\lambda/";
     action = "ƛ";
-  };
-  insert."\\bdAlpha" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdAlpha";
     action = "𝚨";
-  };
-  insert."\\bdBeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdBeta";
     action = "𝚩";
-  };
-  insert."\\bdGamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdGamma";
     action = "𝚪";
-  };
-  insert."\\bdDelta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdDelta";
     action = "𝚫";
-  };
-  insert."\\bdEpsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdEpsilon";
     action = "𝚬";
-  };
-  insert."\\bdZeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdZeta";
     action = "𝚭";
-  };
-  insert."\\bdEta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdEta";
     action = "𝚮";
-  };
-  insert."\\bdTheta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdTheta";
     action = "𝚯";
-  };
-  insert."\\bdIota" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdIota";
     action = "𝚰";
-  };
-  insert."\\bdKappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdKappa";
     action = "𝚱";
-  };
-  insert."\\bdLambda" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdLambda";
     action = "𝚲";
-  };
-  insert."\\bdMu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdMu";
     action = "𝚳";
-  };
-  insert."\\bdNu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdNu";
     action = "𝚴";
-  };
-  insert."\\bdXi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdXi";
     action = "𝚵";
-  };
-  insert."\\bdOmicron" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdOmicron";
     action = "𝚶";
-  };
-  insert."\\bdPi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdPi";
     action = "𝚷";
-  };
-  insert."\\bdRho" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdRho";
     action = "𝚸";
-  };
-  insert."\\bdvarSigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdvarSigma";
     action = "𝚹";
-  };
-  insert."\\bdSigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdSigma";
     action = "𝚺";
-  };
-  insert."\\bdTau" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdTau";
     action = "𝚻";
-  };
-  insert."\\bdUpsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdUpsilon";
     action = "𝚼";
-  };
-  insert."\\bdPhi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdPhi";
     action = "𝚽";
-  };
-  insert."\\bdChi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdChi";
     action = "𝚾";
-  };
-  insert."\\bdPsi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdPsi";
     action = "𝚿";
-  };
-  insert."\\bdOmega" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdOmega";
     action = "𝛀";
-  };
-  insert."\\bdNabla" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdNabla";
     action = "𝛁";
-  };
-  insert."\\bdalpha" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdalpha";
     action = "𝛂";
-  };
-  insert."\\bdbeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdbeta";
     action = "𝛃";
-  };
-  insert."\\bdgamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdgamma";
     action = "𝛄";
-  };
-  insert."\\bddelta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bddelta";
     action = "𝛅";
-  };
-  insert."\\bdepsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdepsilon";
     action = "𝛆";
-  };
-  insert."\\bdzeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdzeta";
     action = "𝛇";
-  };
-  insert."\\bdldeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdldeta";
     action = "𝛈";
-  };
-  insert."\\bdtheta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdtheta";
     action = "𝛉";
-  };
-  insert."\\bdiota" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdiota";
     action = "𝛊";
-  };
-  insert."\\bdkappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdkappa";
     action = "𝛋";
-  };
-  insert."\\bdlambda" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdlambda";
     action = "𝛌";
-  };
-  insert."\\bdmu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdmu";
     action = "𝛍";
-  };
-  insert."\\bdnu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdnu";
     action = "𝛎";
-  };
-  insert."\\bdxi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdxi";
     action = "𝛏";
-  };
-  insert."\\bdomicron" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdomicron";
     action = "𝛐";
-  };
-  insert."\\bdpi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdpi";
     action = "𝛑";
-  };
-  insert."\\bdrho" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdrho";
     action = "𝛒";
-  };
-  insert."\\bdvarsigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdvarsigma";
     action = "𝛓";
-  };
-  insert."\\bdsigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdsigma";
     action = "𝛔";
-  };
-  insert."\\bdtau" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdtau";
     action = "𝛕";
-  };
-  insert."\\bdupsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdupsilon";
     action = "𝛖";
-  };
-  insert."\\bdphi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdphi";
     action = "𝛗";
-  };
-  insert."\\bdchi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdchi";
     action = "𝛘";
-  };
-  insert."\\bdpsi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdpsi";
     action = "𝛙";
-  };
-  insert."\\bdomega" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdomega";
     action = "𝛚";
-  };
-  insert."\\bdnabla" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdnabla";
     action = "𝛛";
-  };
-  insert."\\bdvarepsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdvarepsilon";
     action = "𝛜";
-  };
-  insert."\\bdvartheta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdvartheta";
     action = "𝛝";
-  };
-  insert."\\bdvarkappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdvarkappa";
     action = "𝛞";
-  };
-  insert."\\bdvarphi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdvarphi";
     action = "𝛟";
-  };
-  insert."\\bdvarrho" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdvarrho";
     action = "𝛠";
-  };
-  insert."\\bdvarpi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdvarpi";
     action = "𝛡";
-  };
-  insert."\\itAlpha" = {
+  }
+  {
+    mode = "i";
+    key = "\\itAlpha";
     action = "𝛢";
-  };
-  insert."\\itBeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\itBeta";
     action = "𝛣";
-  };
-  insert."\\itGamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\itGamma";
     action = "𝛤";
-  };
-  insert."\\itDelta" = {
+  }
+  {
+    mode = "i";
+    key = "\\itDelta";
     action = "𝛥";
-  };
-  insert."\\itEpsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\itEpsilon";
     action = "𝛦";
-  };
-  insert."\\itZeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\itZeta";
     action = "𝛧";
-  };
-  insert."\\itEta" = {
+  }
+  {
+    mode = "i";
+    key = "\\itEta";
     action = "𝛨";
-  };
-  insert."\\itTheta" = {
+  }
+  {
+    mode = "i";
+    key = "\\itTheta";
     action = "𝛩";
-  };
-  insert."\\itIota" = {
+  }
+  {
+    mode = "i";
+    key = "\\itIota";
     action = "𝛪";
-  };
-  insert."\\itKappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\itKappa";
     action = "𝛫";
-  };
-  insert."\\itLambda" = {
+  }
+  {
+    mode = "i";
+    key = "\\itLambda";
     action = "𝛬";
-  };
-  insert."\\itMu" = {
+  }
+  {
+    mode = "i";
+    key = "\\itMu";
     action = "𝛭";
-  };
-  insert."\\itNu" = {
+  }
+  {
+    mode = "i";
+    key = "\\itNu";
     action = "𝛮";
-  };
-  insert."\\itXi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itXi";
     action = "𝛯";
-  };
-  insert."\\itOmicron" = {
+  }
+  {
+    mode = "i";
+    key = "\\itOmicron";
     action = "𝛰";
-  };
-  insert."\\itPi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itPi";
     action = "𝛱";
-  };
-  insert."\\itRho" = {
+  }
+  {
+    mode = "i";
+    key = "\\itRho";
     action = "𝛲";
-  };
-  insert."\\itvarSigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\itvarSigma";
     action = "𝛳";
-  };
-  insert."\\itSigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\itSigma";
     action = "𝛴";
-  };
-  insert."\\itTau" = {
+  }
+  {
+    mode = "i";
+    key = "\\itTau";
     action = "𝛵";
-  };
-  insert."\\itUpsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\itUpsilon";
     action = "𝛶";
-  };
-  insert."\\itPhi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itPhi";
     action = "𝛷";
-  };
-  insert."\\itChi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itChi";
     action = "𝛸";
-  };
-  insert."\\itPsi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itPsi";
     action = "𝛹";
-  };
-  insert."\\itOmega" = {
+  }
+  {
+    mode = "i";
+    key = "\\itOmega";
     action = "𝛺";
-  };
-  insert."\\itNabla" = {
+  }
+  {
+    mode = "i";
+    key = "\\itNabla";
     action = "𝛻";
-  };
-  insert."\\italpha" = {
+  }
+  {
+    mode = "i";
+    key = "\\italpha";
     action = "𝛼";
-  };
-  insert."\\itbeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\itbeta";
     action = "𝛽";
-  };
-  insert."\\itgamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\itgamma";
     action = "𝛾";
-  };
-  insert."\\itdelta" = {
+  }
+  {
+    mode = "i";
+    key = "\\itdelta";
     action = "𝛿";
-  };
-  insert."\\itepsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\itepsilon";
     action = "𝜀";
-  };
-  insert."\\itzeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\itzeta";
     action = "𝜁";
-  };
-  insert."\\iteta" = {
+  }
+  {
+    mode = "i";
+    key = "\\iteta";
     action = "𝜂";
-  };
-  insert."\\ittheta" = {
+  }
+  {
+    mode = "i";
+    key = "\\ittheta";
     action = "𝜃";
-  };
-  insert."\\itiota" = {
+  }
+  {
+    mode = "i";
+    key = "\\itiota";
     action = "𝜄";
-  };
-  insert."\\itkappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\itkappa";
     action = "𝜅";
-  };
-  insert."\\itlambda" = {
+  }
+  {
+    mode = "i";
+    key = "\\itlambda";
     action = "𝜆";
-  };
-  insert."\\itmu" = {
+  }
+  {
+    mode = "i";
+    key = "\\itmu";
     action = "𝜇";
-  };
-  insert."\\itnu" = {
+  }
+  {
+    mode = "i";
+    key = "\\itnu";
     action = "𝜈";
-  };
-  insert."\\itxi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itxi";
     action = "𝜉";
-  };
-  insert."\\itomicron" = {
+  }
+  {
+    mode = "i";
+    key = "\\itomicron";
     action = "𝜊";
-  };
-  insert."\\itpi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itpi";
     action = "𝜋";
-  };
-  insert."\\itrho" = {
+  }
+  {
+    mode = "i";
+    key = "\\itrho";
     action = "𝜌";
-  };
-  insert."\\itvarsigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\itvarsigma";
     action = "𝜍";
-  };
-  insert."\\itsigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\itsigma";
     action = "𝜎";
-  };
-  insert."\\ittau" = {
+  }
+  {
+    mode = "i";
+    key = "\\ittau";
     action = "𝜏";
-  };
-  insert."\\itupsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\itupsilon";
     action = "𝜐";
-  };
-  insert."\\itphi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itphi";
     action = "𝜑";
-  };
-  insert."\\itchi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itchi";
     action = "𝜒";
-  };
-  insert."\\itpsi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itpsi";
     action = "𝜓";
-  };
-  insert."\\itomega" = {
+  }
+  {
+    mode = "i";
+    key = "\\itomega";
     action = "𝜔";
-  };
-  insert."\\itnabla" = {
+  }
+  {
+    mode = "i";
+    key = "\\itnabla";
     action = "𝜕";
-  };
-  insert."\\itvarepsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\itvarepsilon";
     action = "𝜖";
-  };
-  insert."\\itvartheta" = {
+  }
+  {
+    mode = "i";
+    key = "\\itvartheta";
     action = "𝜗";
-  };
-  insert."\\itvarkappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\itvarkappa";
     action = "𝜘";
-  };
-  insert."\\itvarphi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itvarphi";
     action = "𝜙";
-  };
-  insert."\\itvarrho" = {
+  }
+  {
+    mode = "i";
+    key = "\\itvarrho";
     action = "𝜚";
-  };
-  insert."\\itvarpi" = {
+  }
+  {
+    mode = "i";
+    key = "\\itvarpi";
     action = "𝜛";
-  };
-  insert."\\bditAlpha" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditAlpha";
     action = "𝜜";
-  };
-  insert."\\bditBeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditBeta";
     action = "𝜝";
-  };
-  insert."\\bditGamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditGamma";
     action = "𝜞";
-  };
-  insert."\\bditDelta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditDelta";
     action = "𝜟";
-  };
-  insert."\\bditEpsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditEpsilon";
     action = "𝜠";
-  };
-  insert."\\bditZeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditZeta";
     action = "𝜡";
-  };
-  insert."\\bditEta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditEta";
     action = "𝜢";
-  };
-  insert."\\bditTheta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditTheta";
     action = "𝜣";
-  };
-  insert."\\bditIota" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditIota";
     action = "𝜤";
-  };
-  insert."\\bditKappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditKappa";
     action = "𝜥";
-  };
-  insert."\\bditLambda" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditLambda";
     action = "𝜦";
-  };
-  insert."\\bditMu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditMu";
     action = "𝜧";
-  };
-  insert."\\bditNu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditNu";
     action = "𝜨";
-  };
-  insert."\\bditXi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditXi";
     action = "𝜩";
-  };
-  insert."\\bditOmicron" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditOmicron";
     action = "𝜪";
-  };
-  insert."\\bditPi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditPi";
     action = "𝜫";
-  };
-  insert."\\bditRho" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditRho";
     action = "𝜬";
-  };
-  insert."\\bditvarSigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditvarSigma";
     action = "𝜭";
-  };
-  insert."\\bditSigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditSigma";
     action = "𝜮";
-  };
-  insert."\\bditTau" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditTau";
     action = "𝜯";
-  };
-  insert."\\bditUpsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditUpsilon";
     action = "𝜰";
-  };
-  insert."\\bditPhi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditPhi";
     action = "𝜱";
-  };
-  insert."\\bditChi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditChi";
     action = "𝜲";
-  };
-  insert."\\bditPsi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditPsi";
     action = "𝜳";
-  };
-  insert."\\bditOmega" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditOmega";
     action = "𝜴";
-  };
-  insert."\\bditNabla" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditNabla";
     action = "𝜵";
-  };
-  insert."\\bditalpha" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditalpha";
     action = "𝜶";
-  };
-  insert."\\bditbeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditbeta";
     action = "𝜷";
-  };
-  insert."\\bditgamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditgamma";
     action = "𝜸";
-  };
-  insert."\\bditdelta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditdelta";
     action = "𝜹";
-  };
-  insert."\\bditepsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditepsilon";
     action = "𝜺";
-  };
-  insert."\\bditzeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditzeta";
     action = "𝜻";
-  };
-  insert."\\bditeta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditeta";
     action = "𝜼";
-  };
-  insert."\\bdittheta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdittheta";
     action = "𝜽";
-  };
-  insert."\\bditiota" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditiota";
     action = "𝜾";
-  };
-  insert."\\bditkappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditkappa";
     action = "𝜿";
-  };
-  insert."\\bditlambda" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditlambda";
     action = "𝝀";
-  };
-  insert."\\bditmu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditmu";
     action = "𝝁";
-  };
-  insert."\\bditnu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditnu";
     action = "𝝂";
-  };
-  insert."\\bditxi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditxi";
     action = "𝝃";
-  };
-  insert."\\bditomicron" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditomicron";
     action = "𝝄";
-  };
-  insert."\\bditpi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditpi";
     action = "𝝅";
-  };
-  insert."\\bditrho" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditrho";
     action = "𝝆";
-  };
-  insert."\\bditvarsigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditvarsigma";
     action = "𝝇";
-  };
-  insert."\\bditsigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditsigma";
     action = "𝝈";
-  };
-  insert."\\bdittau" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdittau";
     action = "𝝉";
-  };
-  insert."\\bditupsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditupsilon";
     action = "𝝊";
-  };
-  insert."\\bditphi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditphi";
     action = "𝝋";
-  };
-  insert."\\bditchi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditchi";
     action = "𝝌";
-  };
-  insert."\\bditpsi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditpsi";
     action = "𝝍";
-  };
-  insert."\\bditomega" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditomega";
     action = "𝝎";
-  };
-  insert."\\bditnabla" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditnabla";
     action = "𝝏";
-  };
-  insert."\\bditvarepsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditvarepsilon";
     action = "𝝐";
-  };
-  insert."\\bditvartheta" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditvartheta";
     action = "𝝑";
-  };
-  insert."\\bditvarkappa" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditvarkappa";
     action = "𝝒";
-  };
-  insert."\\bditvarphi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditvarphi";
     action = "𝝓";
-  };
-  insert."\\bditvarrho" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditvarrho";
     action = "𝝔";
-  };
-  insert."\\bditvarpi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditvarpi";
     action = "𝝕";
-  };
-  insert."\\_beta" = {
+  }
+  {
+    mode = "i";
+    key = "\\_beta";
     action = "ᵦ";
-  };
-  insert."\\_gamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\_gamma";
     action = "ᵧ";
-  };
-  insert."\\_rho" = {
+  }
+  {
+    mode = "i";
+    key = "\\_rho";
     action = "ᵨ";
-  };
-  insert."\\_phi" = {
+  }
+  {
+    mode = "i";
+    key = "\\_phi";
     action = "ᵩ";
-  };
-  insert."\\_chi" = {
+  }
+  {
+    mode = "i";
+    key = "\\_chi";
     action = "ᵪ";
-  };
-  insert."\\^alpha" = {
+  }
+  {
+    mode = "i";
+    key = "\\^alpha";
     action = "ᵅ";
-  };
-  insert."\\^beta" = {
+  }
+  {
+    mode = "i";
+    key = "\\^beta";
     action = "ᵝ";
-  };
-  insert."\\^gamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\^gamma";
     action = "ᵞ";
-  };
-  insert."\\^delta" = {
+  }
+  {
+    mode = "i";
+    key = "\\^delta";
     action = "ᵟ";
-  };
-  insert."\\^epsilon" = {
+  }
+  {
+    mode = "i";
+    key = "\\^epsilon";
     action = "ᵋ";
-  };
-  insert."\\^theta" = {
+  }
+  {
+    mode = "i";
+    key = "\\^theta";
     action = "ᶿ";
-  };
-  insert."\\^iota" = {
+  }
+  {
+    mode = "i";
+    key = "\\^iota";
     action = "ᶥ";
-  };
-  insert."\\^Phi" = {
+  }
+  {
+    mode = "i";
+    key = "\\^Phi";
     action = "ᶲ";
-  };
-  insert."\\^phi" = {
+  }
+  {
+    mode = "i";
+    key = "\\^phi";
     action = "ᵠ";
-  };
-  insert."\\^chi" = {
+  }
+  {
+    mode = "i";
+    key = "\\^chi";
     action = "ᵡ";
-  };
-  insert."\\bbGamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbGamma";
     action = "ℾ";
-  };
-  insert."\\bbgamma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbgamma";
     action = "ℽ";
-  };
-  insert."\\bbPi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbPi";
     action = "ℿ";
-  };
-  insert."\\bbpi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbpi";
     action = "ℼ";
-  };
-  insert."\\bbSigma" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbSigma";
     action = "⅀";
-  };
-  insert."\\bd0" = {
+  }
+  {
+    mode = "i";
+    key = "\\bd0";
     action = "𝟎";
-  };
-  insert."\\bd1" = {
+  }
+  {
+    mode = "i";
+    key = "\\bd1";
     action = "𝟏";
-  };
-  insert."\\bd2" = {
+  }
+  {
+    mode = "i";
+    key = "\\bd2";
     action = "𝟐";
-  };
-  insert."\\bd3" = {
+  }
+  {
+    mode = "i";
+    key = "\\bd3";
     action = "𝟑";
-  };
-  insert."\\bd4" = {
+  }
+  {
+    mode = "i";
+    key = "\\bd4";
     action = "𝟒";
-  };
-  insert."\\bd5" = {
+  }
+  {
+    mode = "i";
+    key = "\\bd5";
     action = "𝟓";
-  };
-  insert."\\bd6" = {
+  }
+  {
+    mode = "i";
+    key = "\\bd6";
     action = "𝟔";
-  };
-  insert."\\bd7" = {
+  }
+  {
+    mode = "i";
+    key = "\\bd7";
     action = "𝟕";
-  };
-  insert."\\bd8" = {
+  }
+  {
+    mode = "i";
+    key = "\\bd8";
     action = "𝟖";
-  };
-  insert."\\bd9" = {
+  }
+  {
+    mode = "i";
+    key = "\\bd9";
     action = "𝟗";
-  };
-  insert."\\bb0" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb0";
     action = "𝟘";
-  };
-  insert."\\bb1" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb1";
     action = "𝟙";
-  };
-  insert."\\bb2" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb2";
     action = "𝟚";
-  };
-  insert."\\bb3" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb3";
     action = "𝟛";
-  };
-  insert."\\bb4" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb4";
     action = "𝟜";
-  };
-  insert."\\bb5" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb5";
     action = "𝟝";
-  };
-  insert."\\bb6" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb6";
     action = "𝟞";
-  };
-  insert."\\bb7" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb7";
     action = "𝟟";
-  };
-  insert."\\bb8" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb8";
     action = "𝟠";
-  };
-  insert."\\bb9" = {
+  }
+  {
+    mode = "i";
+    key = "\\bb9";
     action = "𝟡";
-  };
-  insert."\\_0" = {
+  }
+  {
+    mode = "i";
+    key = "\\_0";
     action = "₀";
-  };
-  insert."\\_1" = {
+  }
+  {
+    mode = "i";
+    key = "\\_1";
     action = "₁";
-  };
-  insert."\\_2" = {
+  }
+  {
+    mode = "i";
+    key = "\\_2";
     action = "₂";
-  };
-  insert."\\_3" = {
+  }
+  {
+    mode = "i";
+    key = "\\_3";
     action = "₃";
-  };
-  insert."\\_4" = {
+  }
+  {
+    mode = "i";
+    key = "\\_4";
     action = "₄";
-  };
-  insert."\\_5" = {
+  }
+  {
+    mode = "i";
+    key = "\\_5";
     action = "₅";
-  };
-  insert."\\_6" = {
+  }
+  {
+    mode = "i";
+    key = "\\_6";
     action = "₆";
-  };
-  insert."\\_7" = {
+  }
+  {
+    mode = "i";
+    key = "\\_7";
     action = "₇";
-  };
-  insert."\\_8" = {
+  }
+  {
+    mode = "i";
+    key = "\\_8";
     action = "₈";
-  };
-  insert."\\_9" = {
+  }
+  {
+    mode = "i";
+    key = "\\_9";
     action = "₉";
-  };
-  insert."\\^0" = {
+  }
+  {
+    mode = "i";
+    key = "\\^0";
     action = "⁰";
-  };
-  insert."\\^1" = {
+  }
+  {
+    mode = "i";
+    key = "\\^1";
     action = "¹";
-  };
-  insert."\\^2" = {
+  }
+  {
+    mode = "i";
+    key = "\\^2";
     action = "²";
-  };
-  insert."\\^3" = {
+  }
+  {
+    mode = "i";
+    key = "\\^3";
     action = "³";
-  };
-  insert."\\^4" = {
+  }
+  {
+    mode = "i";
+    key = "\\^4";
     action = "⁴";
-  };
-  insert."\\^5" = {
+  }
+  {
+    mode = "i";
+    key = "\\^5";
     action = "⁵";
-  };
-  insert."\\^6" = {
+  }
+  {
+    mode = "i";
+    key = "\\^6";
     action = "⁶";
-  };
-  insert."\\^7" = {
+  }
+  {
+    mode = "i";
+    key = "\\^7";
     action = "⁷";
-  };
-  insert."\\^8" = {
+  }
+  {
+    mode = "i";
+    key = "\\^8";
     action = "⁸";
-  };
-  insert."\\^9" = {
+  }
+  {
+    mode = "i";
+    key = "\\^9";
     action = "⁹";
-  };
-  insert."\\1/2" = {
+  }
+  {
+    mode = "i";
+    key = "\\1/2";
     action = "½";
-  };
-  insert."\\0/3" = {
+  }
+  {
+    mode = "i";
+    key = "\\0/3";
     action = "↉";
-  };
-  insert."\\1/3" = {
+  }
+  {
+    mode = "i";
+    key = "\\1/3";
     action = "⅓";
-  };
-  insert."\\2/3" = {
+  }
+  {
+    mode = "i";
+    key = "\\2/3";
     action = "⅔";
-  };
-  insert."\\1/4" = {
+  }
+  {
+    mode = "i";
+    key = "\\1/4";
     action = "¼";
-  };
-  insert."\\3/4" = {
+  }
+  {
+    mode = "i";
+    key = "\\3/4";
     action = "¾";
-  };
-  insert."\\1/5" = {
+  }
+  {
+    mode = "i";
+    key = "\\1/5";
     action = "⅕";
-  };
-  insert."\\2/5" = {
+  }
+  {
+    mode = "i";
+    key = "\\2/5";
     action = "⅖";
-  };
-  insert."\\3/5" = {
+  }
+  {
+    mode = "i";
+    key = "\\3/5";
     action = "⅗";
-  };
-  insert."\\4/5" = {
+  }
+  {
+    mode = "i";
+    key = "\\4/5";
     action = "⅘";
-  };
-  insert."\\1/6" = {
+  }
+  {
+    mode = "i";
+    key = "\\1/6";
     action = "⅙";
-  };
-  insert."\\5/6" = {
+  }
+  {
+    mode = "i";
+    key = "\\5/6";
     action = "⅚";
-  };
-  insert."\\1/7" = {
+  }
+  {
+    mode = "i";
+    key = "\\1/7";
     action = "⅐";
-  };
-  insert."\\1/8" = {
+  }
+  {
+    mode = "i";
+    key = "\\1/8";
     action = "⅛";
-  };
-  insert."\\3/8" = {
+  }
+  {
+    mode = "i";
+    key = "\\3/8";
     action = "⅜";
-  };
-  insert."\\5/8" = {
+  }
+  {
+    mode = "i";
+    key = "\\5/8";
     action = "⅝";
-  };
-  insert."\\7/8" = {
+  }
+  {
+    mode = "i";
+    key = "\\7/8";
     action = "⅞";
-  };
-  insert."\\1/9" = {
+  }
+  {
+    mode = "i";
+    key = "\\1/9";
     action = "⅑";
-  };
-  insert."\\1/10" = {
+  }
+  {
+    mode = "i";
+    key = "\\1/10";
     action = "⅒";
-  };
-  insert."\\wp" = {
+  }
+  {
+    mode = "i";
+    key = "\\wp";
     action = "℘";
-  };
-  insert."\\ell" = {
+  }
+  {
+    mode = "i";
+    key = "\\ell";
     action = "ℓ";
-  };
-  insert."\\ln" = {
+  }
+  {
+    mode = "i";
+    key = "\\ln";
     action = "㏑";
-  };
-  insert."\\log" = {
+  }
+  {
+    mode = "i";
+    key = "\\log";
     action = "㏒";
-  };
-  insert."\\bdA" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdA";
     action = "𝐀";
-  };
-  insert."\\bdB" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdB";
     action = "𝐁";
-  };
-  insert."\\bdC" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdC";
     action = "𝐂";
-  };
-  insert."\\bdD" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdD";
     action = "𝐃";
-  };
-  insert."\\bdE" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdE";
     action = "𝐄";
-  };
-  insert."\\bdF" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdF";
     action = "𝐅";
-  };
-  insert."\\bdG" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdG";
     action = "𝐆";
-  };
-  insert."\\bdH" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdH";
     action = "𝐇";
-  };
-  insert."\\bdI" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdI";
     action = "𝐈";
-  };
-  insert."\\bdJ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdJ";
     action = "𝐉";
-  };
-  insert."\\bdK" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdK";
     action = "𝐊";
-  };
-  insert."\\bdL" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdL";
     action = "𝐋";
-  };
-  insert."\\bdM" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdM";
     action = "𝐌";
-  };
-  insert."\\bdN" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdN";
     action = "𝐍";
-  };
-  insert."\\bdO" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdO";
     action = "𝐎";
-  };
-  insert."\\bdP" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdP";
     action = "𝐏";
-  };
-  insert."\\bdQ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdQ";
     action = "𝐐";
-  };
-  insert."\\bdR" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdR";
     action = "𝐑";
-  };
-  insert."\\bdS" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdS";
     action = "𝐒";
-  };
-  insert."\\bdT" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdT";
     action = "𝐓";
-  };
-  insert."\\bdU" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdU";
     action = "𝐔";
-  };
-  insert."\\bdV" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdV";
     action = "𝐕";
-  };
-  insert."\\bdW" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdW";
     action = "𝐖";
-  };
-  insert."\\bdX" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdX";
     action = "𝐗";
-  };
-  insert."\\bdY" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdY";
     action = "𝐘";
-  };
-  insert."\\bdZ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdZ";
     action = "𝐙";
-  };
-  insert."\\bda" = {
+  }
+  {
+    mode = "i";
+    key = "\\bda";
     action = "𝐚";
-  };
-  insert."\\bdb" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdb";
     action = "𝐛";
-  };
-  insert."\\bdc" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdc";
     action = "𝐜";
-  };
-  insert."\\bdd" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdd";
     action = "𝐝";
-  };
-  insert."\\bde" = {
+  }
+  {
+    mode = "i";
+    key = "\\bde";
     action = "𝐞";
-  };
-  insert."\\bdf" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdf";
     action = "𝐟";
-  };
-  insert."\\bdg" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdg";
     action = "𝐠";
-  };
-  insert."\\bdh" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdh";
     action = "𝐡";
-  };
-  insert."\\bdi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdi";
     action = "𝐢";
-  };
-  insert."\\bdj" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdj";
     action = "𝐣";
-  };
-  insert."\\bdk" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdk";
     action = "𝐤";
-  };
-  insert."\\bdl" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdl";
     action = "𝐥";
-  };
-  insert."\\bdm" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdm";
     action = "𝐦";
-  };
-  insert."\\bdn" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdn";
     action = "𝐧";
-  };
-  insert."\\bdo" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdo";
     action = "𝐨";
-  };
-  insert."\\bdp" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdp";
     action = "𝐩";
-  };
-  insert."\\bdq" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdq";
     action = "𝐪";
-  };
-  insert."\\bdr" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdr";
     action = "𝐫";
-  };
-  insert."\\bds" = {
+  }
+  {
+    mode = "i";
+    key = "\\bds";
     action = "𝐬";
-  };
-  insert."\\bdt" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdt";
     action = "𝐭";
-  };
-  insert."\\bdu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdu";
     action = "𝐮";
-  };
-  insert."\\bdv" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdv";
     action = "𝐯";
-  };
-  insert."\\bdw" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdw";
     action = "𝐰";
-  };
-  insert."\\bdx" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdx";
     action = "𝐱";
-  };
-  insert."\\bdy" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdy";
     action = "𝐲";
-  };
-  insert."\\bdz" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdz";
     action = "𝐳";
-  };
-  insert."\\itA" = {
+  }
+  {
+    mode = "i";
+    key = "\\itA";
     action = "𝐴";
-  };
-  insert."\\itB" = {
+  }
+  {
+    mode = "i";
+    key = "\\itB";
     action = "𝐵";
-  };
-  insert."\\itC" = {
+  }
+  {
+    mode = "i";
+    key = "\\itC";
     action = "𝐶";
-  };
-  insert."\\itD" = {
+  }
+  {
+    mode = "i";
+    key = "\\itD";
     action = "𝐷";
-  };
-  insert."\\itE" = {
+  }
+  {
+    mode = "i";
+    key = "\\itE";
     action = "𝐸";
-  };
-  insert."\\itF" = {
+  }
+  {
+    mode = "i";
+    key = "\\itF";
     action = "𝐹";
-  };
-  insert."\\itG" = {
+  }
+  {
+    mode = "i";
+    key = "\\itG";
     action = "𝐺";
-  };
-  insert."\\itH" = {
+  }
+  {
+    mode = "i";
+    key = "\\itH";
     action = "𝐻";
-  };
-  insert."\\itI" = {
+  }
+  {
+    mode = "i";
+    key = "\\itI";
     action = "𝐼";
-  };
-  insert."\\itJ" = {
+  }
+  {
+    mode = "i";
+    key = "\\itJ";
     action = "𝐽";
-  };
-  insert."\\itK" = {
+  }
+  {
+    mode = "i";
+    key = "\\itK";
     action = "𝐾";
-  };
-  insert."\\itL" = {
+  }
+  {
+    mode = "i";
+    key = "\\itL";
     action = "𝐿";
-  };
-  insert."\\itM" = {
+  }
+  {
+    mode = "i";
+    key = "\\itM";
     action = "𝑀";
-  };
-  insert."\\itN" = {
+  }
+  {
+    mode = "i";
+    key = "\\itN";
     action = "𝑁";
-  };
-  insert."\\itO" = {
+  }
+  {
+    mode = "i";
+    key = "\\itO";
     action = "𝑂";
-  };
-  insert."\\itP" = {
+  }
+  {
+    mode = "i";
+    key = "\\itP";
     action = "𝑃";
-  };
-  insert."\\itQ" = {
+  }
+  {
+    mode = "i";
+    key = "\\itQ";
     action = "𝑄";
-  };
-  insert."\\itR" = {
+  }
+  {
+    mode = "i";
+    key = "\\itR";
     action = "𝑅";
-  };
-  insert."\\itS" = {
+  }
+  {
+    mode = "i";
+    key = "\\itS";
     action = "𝑆";
-  };
-  insert."\\itT" = {
+  }
+  {
+    mode = "i";
+    key = "\\itT";
     action = "𝑇";
-  };
-  insert."\\itU" = {
+  }
+  {
+    mode = "i";
+    key = "\\itU";
     action = "𝑈";
-  };
-  insert."\\itV" = {
+  }
+  {
+    mode = "i";
+    key = "\\itV";
     action = "𝑉";
-  };
-  insert."\\itW" = {
+  }
+  {
+    mode = "i";
+    key = "\\itW";
     action = "𝑊";
-  };
-  insert."\\itX" = {
+  }
+  {
+    mode = "i";
+    key = "\\itX";
     action = "𝑋";
-  };
-  insert."\\itY" = {
+  }
+  {
+    mode = "i";
+    key = "\\itY";
     action = "𝑌";
-  };
-  insert."\\itZ" = {
+  }
+  {
+    mode = "i";
+    key = "\\itZ";
     action = "𝑍";
-  };
-  insert."\\ita" = {
+  }
+  {
+    mode = "i";
+    key = "\\ita";
     action = "𝑎";
-  };
-  insert."\\itb" = {
+  }
+  {
+    mode = "i";
+    key = "\\itb";
     action = "𝑏";
-  };
-  insert."\\itc" = {
+  }
+  {
+    mode = "i";
+    key = "\\itc";
     action = "𝑐";
-  };
-  insert."\\itd" = {
+  }
+  {
+    mode = "i";
+    key = "\\itd";
     action = "𝑑";
-  };
-  insert."\\ite" = {
+  }
+  {
+    mode = "i";
+    key = "\\ite";
     action = "𝑒";
-  };
-  insert."\\itf" = {
+  }
+  {
+    mode = "i";
+    key = "\\itf";
     action = "𝑓";
-  };
-  insert."\\itg" = {
+  }
+  {
+    mode = "i";
+    key = "\\itg";
     action = "𝑔";
-  };
-  insert."\\ith" = {
+  }
+  {
+    mode = "i";
+    key = "\\ith";
     action = "ℎ";
-  };
-  insert."\\iti" = {
+  }
+  {
+    mode = "i";
+    key = "\\iti";
     action = "𝑖";
-  };
-  insert."\\itj" = {
+  }
+  {
+    mode = "i";
+    key = "\\itj";
     action = "𝑗";
-  };
-  insert."\\itk" = {
+  }
+  {
+    mode = "i";
+    key = "\\itk";
     action = "𝑘";
-  };
-  insert."\\itl" = {
+  }
+  {
+    mode = "i";
+    key = "\\itl";
     action = "𝑙";
-  };
-  insert."\\itm" = {
+  }
+  {
+    mode = "i";
+    key = "\\itm";
     action = "𝑚";
-  };
-  insert."\\itn" = {
+  }
+  {
+    mode = "i";
+    key = "\\itn";
     action = "𝑛";
-  };
-  insert."\\ito" = {
+  }
+  {
+    mode = "i";
+    key = "\\ito";
     action = "𝑜";
-  };
-  insert."\\itp" = {
+  }
+  {
+    mode = "i";
+    key = "\\itp";
     action = "𝑝";
-  };
-  insert."\\itq" = {
+  }
+  {
+    mode = "i";
+    key = "\\itq";
     action = "𝑞";
-  };
-  insert."\\itr" = {
+  }
+  {
+    mode = "i";
+    key = "\\itr";
     action = "𝑟";
-  };
-  insert."\\its" = {
+  }
+  {
+    mode = "i";
+    key = "\\its";
     action = "𝑠";
-  };
-  insert."\\itt" = {
+  }
+  {
+    mode = "i";
+    key = "\\itt";
     action = "𝑡";
-  };
-  insert."\\itu" = {
+  }
+  {
+    mode = "i";
+    key = "\\itu";
     action = "𝑢";
-  };
-  insert."\\itv" = {
+  }
+  {
+    mode = "i";
+    key = "\\itv";
     action = "𝑣";
-  };
-  insert."\\itw" = {
+  }
+  {
+    mode = "i";
+    key = "\\itw";
     action = "𝑤";
-  };
-  insert."\\itx" = {
+  }
+  {
+    mode = "i";
+    key = "\\itx";
     action = "𝑥";
-  };
-  insert."\\ity" = {
+  }
+  {
+    mode = "i";
+    key = "\\ity";
     action = "𝑦";
-  };
-  insert."\\itz" = {
+  }
+  {
+    mode = "i";
+    key = "\\itz";
     action = "𝑧";
-  };
-  insert."\\bditA" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditA";
     action = "𝑨";
-  };
-  insert."\\bditB" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditB";
     action = "𝑩";
-  };
-  insert."\\bditC" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditC";
     action = "𝑪";
-  };
-  insert."\\bditD" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditD";
     action = "𝑫";
-  };
-  insert."\\bditE" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditE";
     action = "𝑬";
-  };
-  insert."\\bditF" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditF";
     action = "𝑭";
-  };
-  insert."\\bditG" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditG";
     action = "𝑮";
-  };
-  insert."\\bditH" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditH";
     action = "𝑯";
-  };
-  insert."\\bditI" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditI";
     action = "𝑰";
-  };
-  insert."\\bditJ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditJ";
     action = "𝑱";
-  };
-  insert."\\bditK" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditK";
     action = "𝑲";
-  };
-  insert."\\bditL" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditL";
     action = "𝑳";
-  };
-  insert."\\bditM" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditM";
     action = "𝑴";
-  };
-  insert."\\bditN" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditN";
     action = "𝑵";
-  };
-  insert."\\bditO" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditO";
     action = "𝑶";
-  };
-  insert."\\bditP" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditP";
     action = "𝑷";
-  };
-  insert."\\bditQ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditQ";
     action = "𝑸";
-  };
-  insert."\\bditR" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditR";
     action = "𝑹";
-  };
-  insert."\\bditS" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditS";
     action = "𝑺";
-  };
-  insert."\\bditT" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditT";
     action = "𝑻";
-  };
-  insert."\\bditU" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditU";
     action = "𝑼";
-  };
-  insert."\\bditV" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditV";
     action = "𝑽";
-  };
-  insert."\\bditW" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditW";
     action = "𝑾";
-  };
-  insert."\\bditX" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditX";
     action = "𝑿";
-  };
-  insert."\\bditY" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditY";
     action = "𝒀";
-  };
-  insert."\\bditZ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditZ";
     action = "𝒁";
-  };
-  insert."\\bdita" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdita";
     action = "𝒂";
-  };
-  insert."\\bditb" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditb";
     action = "𝒃";
-  };
-  insert."\\bditc" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditc";
     action = "𝒄";
-  };
-  insert."\\bditd" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditd";
     action = "𝒅";
-  };
-  insert."\\bdite" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdite";
     action = "𝒆";
-  };
-  insert."\\bditf" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditf";
     action = "𝒇";
-  };
-  insert."\\bditg" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditg";
     action = "𝒈";
-  };
-  insert."\\bdith" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdith";
     action = "𝒉";
-  };
-  insert."\\bditi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditi";
     action = "𝒊";
-  };
-  insert."\\bditj" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditj";
     action = "𝒋";
-  };
-  insert."\\bditk" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditk";
     action = "𝒌";
-  };
-  insert."\\bditl" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditl";
     action = "𝒍";
-  };
-  insert."\\bditm" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditm";
     action = "𝒎";
-  };
-  insert."\\bditn" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditn";
     action = "𝒏";
-  };
-  insert."\\bdito" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdito";
     action = "𝒐";
-  };
-  insert."\\bditp" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditp";
     action = "𝒑";
-  };
-  insert."\\bditq" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditq";
     action = "𝒒";
-  };
-  insert."\\bditr" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditr";
     action = "𝒓";
-  };
-  insert."\\bdits" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdits";
     action = "𝒔";
-  };
-  insert."\\bditt" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditt";
     action = "𝒕";
-  };
-  insert."\\bditu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditu";
     action = "𝒖";
-  };
-  insert."\\bditv" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditv";
     action = "𝒗";
-  };
-  insert."\\bditw" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditw";
     action = "𝒘";
-  };
-  insert."\\bditx" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditx";
     action = "𝒙";
-  };
-  insert."\\bdity" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdity";
     action = "𝒚";
-  };
-  insert."\\bditz" = {
+  }
+  {
+    mode = "i";
+    key = "\\bditz";
     action = "𝒛";
-  };
-  insert."\\calA" = {
+  }
+  {
+    mode = "i";
+    key = "\\calA";
     action = "𝒜";
-  };
-  insert."\\calB" = {
+  }
+  {
+    mode = "i";
+    key = "\\calB";
     action = "ℬ";
-  };
-  insert."\\calC" = {
+  }
+  {
+    mode = "i";
+    key = "\\calC";
     action = "𝒞";
-  };
-  insert."\\calD" = {
+  }
+  {
+    mode = "i";
+    key = "\\calD";
     action = "𝒟";
-  };
-  insert."\\calE" = {
+  }
+  {
+    mode = "i";
+    key = "\\calE";
     action = "ℰ";
-  };
-  insert."\\calF" = {
+  }
+  {
+    mode = "i";
+    key = "\\calF";
     action = "ℱ";
-  };
-  insert."\\calG" = {
+  }
+  {
+    mode = "i";
+    key = "\\calG";
     action = "𝒢";
-  };
-  insert."\\calH" = {
+  }
+  {
+    mode = "i";
+    key = "\\calH";
     action = "ℋ";
-  };
-  insert."\\calI" = {
+  }
+  {
+    mode = "i";
+    key = "\\calI";
     action = "ℐ";
-  };
-  insert."\\calJ" = {
+  }
+  {
+    mode = "i";
+    key = "\\calJ";
     action = "𝒥";
-  };
-  insert."\\calK" = {
+  }
+  {
+    mode = "i";
+    key = "\\calK";
     action = "𝒦";
-  };
-  insert."\\calL" = {
+  }
+  {
+    mode = "i";
+    key = "\\calL";
     action = "ℒ";
-  };
-  insert."\\calM" = {
+  }
+  {
+    mode = "i";
+    key = "\\calM";
     action = "ℳ";
-  };
-  insert."\\calN" = {
+  }
+  {
+    mode = "i";
+    key = "\\calN";
     action = "𝒩";
-  };
-  insert."\\calO" = {
+  }
+  {
+    mode = "i";
+    key = "\\calO";
     action = "𝒪";
-  };
-  insert."\\calP" = {
+  }
+  {
+    mode = "i";
+    key = "\\calP";
     action = "𝒫";
-  };
-  insert."\\calQ" = {
+  }
+  {
+    mode = "i";
+    key = "\\calQ";
     action = "𝒬";
-  };
-  insert."\\calR" = {
+  }
+  {
+    mode = "i";
+    key = "\\calR";
     action = "ℛ";
-  };
-  insert."\\calS" = {
+  }
+  {
+    mode = "i";
+    key = "\\calS";
     action = "𝒮";
-  };
-  insert."\\calT" = {
+  }
+  {
+    mode = "i";
+    key = "\\calT";
     action = "𝒯";
-  };
-  insert."\\calU" = {
+  }
+  {
+    mode = "i";
+    key = "\\calU";
     action = "𝒰";
-  };
-  insert."\\calV" = {
+  }
+  {
+    mode = "i";
+    key = "\\calV";
     action = "𝒱";
-  };
-  insert."\\calW" = {
+  }
+  {
+    mode = "i";
+    key = "\\calW";
     action = "𝒲";
-  };
-  insert."\\calX" = {
+  }
+  {
+    mode = "i";
+    key = "\\calX";
     action = "𝒳";
-  };
-  insert."\\calY" = {
+  }
+  {
+    mode = "i";
+    key = "\\calY";
     action = "𝒴";
-  };
-  insert."\\calZ" = {
+  }
+  {
+    mode = "i";
+    key = "\\calZ";
     action = "𝒵";
-  };
-  insert."\\cala" = {
+  }
+  {
+    mode = "i";
+    key = "\\cala";
     action = "𝒶";
-  };
-  insert."\\calb" = {
+  }
+  {
+    mode = "i";
+    key = "\\calb";
     action = "𝒷";
-  };
-  insert."\\calc" = {
+  }
+  {
+    mode = "i";
+    key = "\\calc";
     action = "𝒸";
-  };
-  insert."\\cald" = {
+  }
+  {
+    mode = "i";
+    key = "\\cald";
     action = "𝒹";
-  };
-  insert."\\cale" = {
+  }
+  {
+    mode = "i";
+    key = "\\cale";
     action = "ℯ";
-  };
-  insert."\\calf" = {
+  }
+  {
+    mode = "i";
+    key = "\\calf";
     action = "𝒻";
-  };
-  insert."\\calg" = {
+  }
+  {
+    mode = "i";
+    key = "\\calg";
     action = "ℊ";
-  };
-  insert."\\calh" = {
+  }
+  {
+    mode = "i";
+    key = "\\calh";
     action = "𝒽";
-  };
-  insert."\\cali" = {
+  }
+  {
+    mode = "i";
+    key = "\\cali";
     action = "𝒾";
-  };
-  insert."\\calj" = {
+  }
+  {
+    mode = "i";
+    key = "\\calj";
     action = "𝒿";
-  };
-  insert."\\calk" = {
+  }
+  {
+    mode = "i";
+    key = "\\calk";
     action = "𝓀";
-  };
-  insert."\\call" = {
+  }
+  {
+    mode = "i";
+    key = "\\call";
     action = "𝓁";
-  };
-  insert."\\calm" = {
+  }
+  {
+    mode = "i";
+    key = "\\calm";
     action = "𝓂";
-  };
-  insert."\\caln" = {
+  }
+  {
+    mode = "i";
+    key = "\\caln";
     action = "𝓃";
-  };
-  insert."\\calo" = {
+  }
+  {
+    mode = "i";
+    key = "\\calo";
     action = "ℴ";
-  };
-  insert."\\calp" = {
+  }
+  {
+    mode = "i";
+    key = "\\calp";
     action = "𝓅";
-  };
-  insert."\\calq" = {
+  }
+  {
+    mode = "i";
+    key = "\\calq";
     action = "𝓆";
-  };
-  insert."\\calr" = {
+  }
+  {
+    mode = "i";
+    key = "\\calr";
     action = "𝓇";
-  };
-  insert."\\cals" = {
+  }
+  {
+    mode = "i";
+    key = "\\cals";
     action = "𝓈";
-  };
-  insert."\\calt" = {
+  }
+  {
+    mode = "i";
+    key = "\\calt";
     action = "𝓉";
-  };
-  insert."\\calu" = {
+  }
+  {
+    mode = "i";
+    key = "\\calu";
     action = "𝓊";
-  };
-  insert."\\calv" = {
+  }
+  {
+    mode = "i";
+    key = "\\calv";
     action = "𝓋";
-  };
-  insert."\\calw" = {
+  }
+  {
+    mode = "i";
+    key = "\\calw";
     action = "𝓌";
-  };
-  insert."\\calx" = {
+  }
+  {
+    mode = "i";
+    key = "\\calx";
     action = "𝓍";
-  };
-  insert."\\caly" = {
+  }
+  {
+    mode = "i";
+    key = "\\caly";
     action = "𝓎";
-  };
-  insert."\\calz" = {
+  }
+  {
+    mode = "i";
+    key = "\\calz";
     action = "𝓏";
-  };
-  insert."\\bdcalA" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalA";
     action = "𝓐";
-  };
-  insert."\\bdcalB" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalB";
     action = "𝓑";
-  };
-  insert."\\bdcalC" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalC";
     action = "𝓒";
-  };
-  insert."\\bdcalD" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalD";
     action = "𝓓";
-  };
-  insert."\\bdcalE" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalE";
     action = "𝓔";
-  };
-  insert."\\bdcalF" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalF";
     action = "𝓕";
-  };
-  insert."\\bdcalG" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalG";
     action = "𝓖";
-  };
-  insert."\\bdcalH" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalH";
     action = "𝓗";
-  };
-  insert."\\bdcalI" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalI";
     action = "𝓘";
-  };
-  insert."\\bdcalJ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalJ";
     action = "𝓙";
-  };
-  insert."\\bdcalK" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalK";
     action = "𝓚";
-  };
-  insert."\\bdcalL" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalL";
     action = "𝓛";
-  };
-  insert."\\bdcalM" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalM";
     action = "𝓜";
-  };
-  insert."\\bdcalN" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalN";
     action = "𝓝";
-  };
-  insert."\\bdcalO" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalO";
     action = "𝓞";
-  };
-  insert."\\bdcalP" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalP";
     action = "𝓟";
-  };
-  insert."\\bdcalQ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalQ";
     action = "𝓠";
-  };
-  insert."\\bdcalR" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalR";
     action = "𝓡";
-  };
-  insert."\\bdcalS" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalS";
     action = "𝓢";
-  };
-  insert."\\bdcalT" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalT";
     action = "𝓣";
-  };
-  insert."\\bdcalU" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalU";
     action = "𝓤";
-  };
-  insert."\\bdcalV" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalV";
     action = "𝓥";
-  };
-  insert."\\bdcalW" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalW";
     action = "𝓦";
-  };
-  insert."\\bdcalX" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalX";
     action = "𝓧";
-  };
-  insert."\\bdcalY" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalY";
     action = "𝓨";
-  };
-  insert."\\bdcalZ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalZ";
     action = "𝓩";
-  };
-  insert."\\bdcala" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcala";
     action = "𝓪";
-  };
-  insert."\\bdcalb" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalb";
     action = "𝓫";
-  };
-  insert."\\bdcalc" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalc";
     action = "𝓬";
-  };
-  insert."\\bdcald" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcald";
     action = "𝓭";
-  };
-  insert."\\bdcale" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcale";
     action = "𝓮";
-  };
-  insert."\\bdcalf" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalf";
     action = "𝓯";
-  };
-  insert."\\bdcalg" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalg";
     action = "𝓰";
-  };
-  insert."\\bdcalh" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalh";
     action = "𝓱";
-  };
-  insert."\\bdcali" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcali";
     action = "𝓲";
-  };
-  insert."\\bdcalj" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalj";
     action = "𝓳";
-  };
-  insert."\\bdcalk" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalk";
     action = "𝓴";
-  };
-  insert."\\bdcall" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcall";
     action = "𝓵";
-  };
-  insert."\\bdcalm" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalm";
     action = "𝓶";
-  };
-  insert."\\bdcaln" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcaln";
     action = "𝓷";
-  };
-  insert."\\bdcalo" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalo";
     action = "𝓸";
-  };
-  insert."\\bdcalp" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalp";
     action = "𝓹";
-  };
-  insert."\\bdcalq" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalq";
     action = "𝓺";
-  };
-  insert."\\bdcalr" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalr";
     action = "𝓻";
-  };
-  insert."\\bdcals" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcals";
     action = "𝓼";
-  };
-  insert."\\bdcalt" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalt";
     action = "𝓽";
-  };
-  insert."\\bdcalu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalu";
     action = "𝓾";
-  };
-  insert."\\bdcalv" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalv";
     action = "𝓿";
-  };
-  insert."\\bdcalw" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalw";
     action = "𝔀";
-  };
-  insert."\\bdcalx" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalx";
     action = "𝔁";
-  };
-  insert."\\bdcaly" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcaly";
     action = "𝔂";
-  };
-  insert."\\bdcalz" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdcalz";
     action = "𝔃";
-  };
-  insert."\\frakA" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakA";
     action = "𝔄";
-  };
-  insert."\\frakB" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakB";
     action = "𝔅";
-  };
-  insert."\\frakC" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakC";
     action = "ℭ";
-  };
-  insert."\\frakD" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakD";
     action = "𝔇";
-  };
-  insert."\\frakE" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakE";
     action = "𝔈";
-  };
-  insert."\\frakF" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakF";
     action = "𝔉";
-  };
-  insert."\\frakG" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakG";
     action = "𝔊";
-  };
-  insert."\\frakH" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakH";
     action = "ℌ";
-  };
-  insert."\\frakI" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakI";
     action = "ℑ";
-  };
-  insert."\\frakJ" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakJ";
     action = "𝔍";
-  };
-  insert."\\frakK" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakK";
     action = "𝔎";
-  };
-  insert."\\frakL" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakL";
     action = "𝔏";
-  };
-  insert."\\frakM" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakM";
     action = "𝔐";
-  };
-  insert."\\frakN" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakN";
     action = "𝔑";
-  };
-  insert."\\frakO" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakO";
     action = "𝔒";
-  };
-  insert."\\frakP" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakP";
     action = "𝔓";
-  };
-  insert."\\frakQ" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakQ";
     action = "𝔔";
-  };
-  insert."\\frakR" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakR";
     action = "ℜ";
-  };
-  insert."\\frakS" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakS";
     action = "𝔖";
-  };
-  insert."\\frakT" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakT";
     action = "𝔗";
-  };
-  insert."\\frakU" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakU";
     action = "𝔘";
-  };
-  insert."\\frakV" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakV";
     action = "𝔙";
-  };
-  insert."\\frakW" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakW";
     action = "𝔚";
-  };
-  insert."\\frakX" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakX";
     action = "𝔛";
-  };
-  insert."\\frakY" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakY";
     action = "𝔜";
-  };
-  insert."\\frakZ" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakZ";
     action = "ℨ";
-  };
-  insert."\\fraka" = {
+  }
+  {
+    mode = "i";
+    key = "\\fraka";
     action = "𝔞";
-  };
-  insert."\\frakb" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakb";
     action = "𝔟";
-  };
-  insert."\\frakc" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakc";
     action = "𝔠";
-  };
-  insert."\\frakd" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakd";
     action = "𝔡";
-  };
-  insert."\\frake" = {
+  }
+  {
+    mode = "i";
+    key = "\\frake";
     action = "𝔢";
-  };
-  insert."\\frakf" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakf";
     action = "𝔣";
-  };
-  insert."\\frakg" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakg";
     action = "𝔤";
-  };
-  insert."\\frakh" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakh";
     action = "𝔥";
-  };
-  insert."\\fraki" = {
+  }
+  {
+    mode = "i";
+    key = "\\fraki";
     action = "𝔦";
-  };
-  insert."\\frakj" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakj";
     action = "𝔧";
-  };
-  insert."\\frakk" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakk";
     action = "𝔨";
-  };
-  insert."\\frakl" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakl";
     action = "𝔩";
-  };
-  insert."\\frakm" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakm";
     action = "𝔪";
-  };
-  insert."\\frakn" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakn";
     action = "𝔫";
-  };
-  insert."\\frako" = {
+  }
+  {
+    mode = "i";
+    key = "\\frako";
     action = "𝔬";
-  };
-  insert."\\frakp" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakp";
     action = "𝔭";
-  };
-  insert."\\frakq" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakq";
     action = "𝔮";
-  };
-  insert."\\frakr" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakr";
     action = "𝔯";
-  };
-  insert."\\fraks" = {
+  }
+  {
+    mode = "i";
+    key = "\\fraks";
     action = "𝔰";
-  };
-  insert."\\frakt" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakt";
     action = "𝔱";
-  };
-  insert."\\fraku" = {
+  }
+  {
+    mode = "i";
+    key = "\\fraku";
     action = "𝔲";
-  };
-  insert."\\frakv" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakv";
     action = "𝔳";
-  };
-  insert."\\frakw" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakw";
     action = "𝔴";
-  };
-  insert."\\frakx" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakx";
     action = "𝔵";
-  };
-  insert."\\fraky" = {
+  }
+  {
+    mode = "i";
+    key = "\\fraky";
     action = "𝔶";
-  };
-  insert."\\frakz" = {
+  }
+  {
+    mode = "i";
+    key = "\\frakz";
     action = "𝔷";
-  };
-  insert."\\bdfrakA" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakA";
     action = "𝕬";
-  };
-  insert."\\bdfrakB" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakB";
     action = "𝕭";
-  };
-  insert."\\bdfrakC" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakC";
     action = "𝕮";
-  };
-  insert."\\bdfrakD" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakD";
     action = "𝕯";
-  };
-  insert."\\bdfrakE" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakE";
     action = "𝕰";
-  };
-  insert."\\bdfrakF" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakF";
     action = "𝕱";
-  };
-  insert."\\bdfrakG" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakG";
     action = "𝕲";
-  };
-  insert."\\bdfrakH" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakH";
     action = "𝕳";
-  };
-  insert."\\bdfrakI" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakI";
     action = "𝕴";
-  };
-  insert."\\bdfrakJ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakJ";
     action = "𝕵";
-  };
-  insert."\\bdfrakK" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakK";
     action = "𝕶";
-  };
-  insert."\\bdfrakL" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakL";
     action = "𝕷";
-  };
-  insert."\\bdfrakM" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakM";
     action = "𝕸";
-  };
-  insert."\\bdfrakN" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakN";
     action = "𝕹";
-  };
-  insert."\\bdfrakO" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakO";
     action = "𝕺";
-  };
-  insert."\\bdfrakP" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakP";
     action = "𝕻";
-  };
-  insert."\\bdfrakQ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakQ";
     action = "𝕼";
-  };
-  insert."\\bdfrakR" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakR";
     action = "𝕽";
-  };
-  insert."\\bdfrakS" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakS";
     action = "𝕾";
-  };
-  insert."\\bdfrakT" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakT";
     action = "𝕿";
-  };
-  insert."\\bdfrakU" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakU";
     action = "𝖀";
-  };
-  insert."\\bdfrakV" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakV";
     action = "𝖁";
-  };
-  insert."\\bdfrakW" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakW";
     action = "𝖂";
-  };
-  insert."\\bdfrakX" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakX";
     action = "𝖃";
-  };
-  insert."\\bdfrakY" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakY";
     action = "𝖄";
-  };
-  insert."\\bdfrakZ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakZ";
     action = "𝖅";
-  };
-  insert."\\bdfraka" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfraka";
     action = "𝖆";
-  };
-  insert."\\bdfrakb" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakb";
     action = "𝖇";
-  };
-  insert."\\bdfrakc" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakc";
     action = "𝖈";
-  };
-  insert."\\bdfrakd" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakd";
     action = "𝖉";
-  };
-  insert."\\bdfrake" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrake";
     action = "𝖊";
-  };
-  insert."\\bdfrakf" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakf";
     action = "𝖋";
-  };
-  insert."\\bdfrakg" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakg";
     action = "𝖌";
-  };
-  insert."\\bdfrakh" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakh";
     action = "𝖍";
-  };
-  insert."\\bdfraki" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfraki";
     action = "𝖎";
-  };
-  insert."\\bdfrakj" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakj";
     action = "𝖏";
-  };
-  insert."\\bdfrakk" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakk";
     action = "𝖐";
-  };
-  insert."\\bdfrakl" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakl";
     action = "𝖑";
-  };
-  insert."\\bdfrakm" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakm";
     action = "𝖒";
-  };
-  insert."\\bdfrakn" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakn";
     action = "𝖓";
-  };
-  insert."\\bdfrako" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrako";
     action = "𝖔";
-  };
-  insert."\\bdfrakp" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakp";
     action = "𝖕";
-  };
-  insert."\\bdfrakq" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakq";
     action = "𝖖";
-  };
-  insert."\\bdfrakr" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakr";
     action = "𝖗";
-  };
-  insert."\\bdfraks" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfraks";
     action = "𝖘";
-  };
-  insert."\\bdfrakt" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakt";
     action = "𝖙";
-  };
-  insert."\\bdfraku" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfraku";
     action = "𝖚";
-  };
-  insert."\\bdfrakv" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakv";
     action = "𝖛";
-  };
-  insert."\\bdfrakw" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakw";
     action = "𝖜";
-  };
-  insert."\\bdfrakx" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakx";
     action = "𝖝";
-  };
-  insert."\\bdfraky" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfraky";
     action = "𝖞";
-  };
-  insert."\\bdfrakz" = {
+  }
+  {
+    mode = "i";
+    key = "\\bdfrakz";
     action = "𝖟";
-  };
-  insert."\\bbA" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbA";
     action = "𝔸";
-  };
-  insert."\\bbB" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbB";
     action = "𝔹";
-  };
-  insert."\\bbC" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbC";
     action = "ℂ";
-  };
-  insert."\\bbD" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbD";
     action = "𝔻";
-  };
-  insert."\\bbE" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbE";
     action = "𝔼";
-  };
-  insert."\\bbF" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbF";
     action = "𝔽";
-  };
-  insert."\\bbG" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbG";
     action = "𝔾";
-  };
-  insert."\\bbH" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbH";
     action = "ℍ";
-  };
-  insert."\\bbI" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbI";
     action = "𝕀";
-  };
-  insert."\\bbJ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbJ";
     action = "𝕁";
-  };
-  insert."\\bbK" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbK";
     action = "𝕂";
-  };
-  insert."\\bbL" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbL";
     action = "𝕃";
-  };
-  insert."\\bbM" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbM";
     action = "𝕄";
-  };
-  insert."\\bbN" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbN";
     action = "ℕ";
-  };
-  insert."\\bbO" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbO";
     action = "𝕆";
-  };
-  insert."\\bbP" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbP";
     action = "ℙ";
-  };
-  insert."\\bbQ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbQ";
     action = "ℚ";
-  };
-  insert."\\bbR" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbR";
     action = "ℝ";
-  };
-  insert."\\bbS" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbS";
     action = "𝕊";
-  };
-  insert."\\bbT" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbT";
     action = "𝕋";
-  };
-  insert."\\bbU" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbU";
     action = "𝕌";
-  };
-  insert."\\bbV" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbV";
     action = "𝕍";
-  };
-  insert."\\bbW" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbW";
     action = "𝕎";
-  };
-  insert."\\bbX" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbX";
     action = "𝕏";
-  };
-  insert."\\bbY" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbY";
     action = "𝕐";
-  };
-  insert."\\bbZ" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbZ";
     action = "ℤ";
-  };
-  insert."\\bba" = {
+  }
+  {
+    mode = "i";
+    key = "\\bba";
     action = "𝕒";
-  };
-  insert."\\bbb" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbb";
     action = "𝕓";
-  };
-  insert."\\bbc" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbc";
     action = "𝕔";
-  };
-  insert."\\bbd" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbd";
     action = "𝕕";
-  };
-  insert."\\bbe" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbe";
     action = "𝕖";
-  };
-  insert."\\bbf" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbf";
     action = "𝕗";
-  };
-  insert."\\bbg" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbg";
     action = "𝕘";
-  };
-  insert."\\bbh" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbh";
     action = "𝕙";
-  };
-  insert."\\bbi" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbi";
     action = "𝕚";
-  };
-  insert."\\bbj" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbj";
     action = "𝕛";
-  };
-  insert."\\bbk" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbk";
     action = "𝕜";
-  };
-  insert."\\bbl" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbl";
     action = "𝕝";
-  };
-  insert."\\bbm" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbm";
     action = "𝕞";
-  };
-  insert."\\bbn" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbn";
     action = "𝕟";
-  };
-  insert."\\bbo" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbo";
     action = "𝕠";
-  };
-  insert."\\bbp" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbp";
     action = "𝕡";
-  };
-  insert."\\bbq" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbq";
     action = "𝕢";
-  };
-  insert."\\bbr" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbr";
     action = "𝕣";
-  };
-  insert."\\bbs" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbs";
     action = "𝕤";
-  };
-  insert."\\bbt" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbt";
     action = "𝕥";
-  };
-  insert."\\bbu" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbu";
     action = "𝕦";
-  };
-  insert."\\bbv" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbv";
     action = "𝕧";
-  };
-  insert."\\bbw" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbw";
     action = "𝕨";
-  };
-  insert."\\bbx" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbx";
     action = "𝕩";
-  };
-  insert."\\bby" = {
+  }
+  {
+    mode = "i";
+    key = "\\bby";
     action = "𝕪";
-  };
-  insert."\\bbz" = {
+  }
+  {
+    mode = "i";
+    key = "\\bbz";
     action = "𝕫";
-  };
-  insert."\\_a" = {
+  }
+  {
+    mode = "i";
+    key = "\\_a";
     action = "ₐ";
-  };
-  insert."\\_e" = {
+  }
+  {
+    mode = "i";
+    key = "\\_e";
     action = "ₑ";
-  };
-  insert."\\_h" = {
+  }
+  {
+    mode = "i";
+    key = "\\_h";
     action = "ₕ";
-  };
-  insert."\\_i" = {
+  }
+  {
+    mode = "i";
+    key = "\\_i";
     action = "ᵢ";
-  };
-  insert."\\_j" = {
+  }
+  {
+    mode = "i";
+    key = "\\_j";
     action = "ⱼ";
-  };
-  insert."\\_k" = {
+  }
+  {
+    mode = "i";
+    key = "\\_k";
     action = "ₖ";
-  };
-  insert."\\_l" = {
+  }
+  {
+    mode = "i";
+    key = "\\_l";
     action = "ₗ";
-  };
-  insert."\\_m" = {
+  }
+  {
+    mode = "i";
+    key = "\\_m";
     action = "ₘ";
-  };
-  insert."\\_n" = {
+  }
+  {
+    mode = "i";
+    key = "\\_n";
     action = "ₙ";
-  };
-  insert."\\_o" = {
+  }
+  {
+    mode = "i";
+    key = "\\_o";
     action = "ₒ";
-  };
-  insert."\\_p" = {
+  }
+  {
+    mode = "i";
+    key = "\\_p";
     action = "ₚ";
-  };
-  insert."\\_r" = {
+  }
+  {
+    mode = "i";
+    key = "\\_r";
     action = "ᵣ";
-  };
-  insert."\\_s" = {
+  }
+  {
+    mode = "i";
+    key = "\\_s";
     action = "ₛ";
-  };
-  insert."\\_t" = {
+  }
+  {
+    mode = "i";
+    key = "\\_t";
     action = "ₜ";
-  };
-  insert."\\_u" = {
+  }
+  {
+    mode = "i";
+    key = "\\_u";
     action = "ᵤ";
-  };
-  insert."\\_v" = {
+  }
+  {
+    mode = "i";
+    key = "\\_v";
     action = "ᵥ";
-  };
-  insert."\\_x" = {
+  }
+  {
+    mode = "i";
+    key = "\\_x";
     action = "ₓ";
-  };
-  insert."\\^A" = {
+  }
+  {
+    mode = "i";
+    key = "\\^A";
     action = "ᴬ";
-  };
-  insert."\\^B" = {
+  }
+  {
+    mode = "i";
+    key = "\\^B";
     action = "ᴮ";
-  };
-  insert."\\^D" = {
+  }
+  {
+    mode = "i";
+    key = "\\^D";
     action = "ᴰ";
-  };
-  insert."\\^E" = {
+  }
+  {
+    mode = "i";
+    key = "\\^E";
     action = "ᴱ";
-  };
-  insert."\\^G" = {
+  }
+  {
+    mode = "i";
+    key = "\\^G";
     action = "ᴳ";
-  };
-  insert."\\^H" = {
+  }
+  {
+    mode = "i";
+    key = "\\^H";
     action = "ᴴ";
-  };
-  insert."\\^I" = {
+  }
+  {
+    mode = "i";
+    key = "\\^I";
     action = "ᴵ";
-  };
-  insert."\\^J" = {
+  }
+  {
+    mode = "i";
+    key = "\\^J";
     action = "ᴶ";
-  };
-  insert."\\^K" = {
+  }
+  {
+    mode = "i";
+    key = "\\^K";
     action = "ᴷ";
-  };
-  insert."\\^L" = {
+  }
+  {
+    mode = "i";
+    key = "\\^L";
     action = "ᴸ";
-  };
-  insert."\\^M" = {
+  }
+  {
+    mode = "i";
+    key = "\\^M";
     action = "ᴹ";
-  };
-  insert."\\^N" = {
+  }
+  {
+    mode = "i";
+    key = "\\^N";
     action = "ᴺ";
-  };
-  insert."\\^O" = {
+  }
+  {
+    mode = "i";
+    key = "\\^O";
     action = "ᴼ";
-  };
-  insert."\\^P" = {
+  }
+  {
+    mode = "i";
+    key = "\\^P";
     action = "ᴾ";
-  };
-  insert."\\^R" = {
+  }
+  {
+    mode = "i";
+    key = "\\^R";
     action = "ᴿ";
-  };
-  insert."\\^T" = {
+  }
+  {
+    mode = "i";
+    key = "\\^T";
     action = "ᵀ";
-  };
-  insert."\\^U" = {
+  }
+  {
+    mode = "i";
+    key = "\\^U";
     action = "ᵁ";
-  };
-  insert."\\^V" = {
+  }
+  {
+    mode = "i";
+    key = "\\^V";
     action = "ⱽ";
-  };
-  insert."\\^W" = {
+  }
+  {
+    mode = "i";
+    key = "\\^W";
     action = "ᵂ";
-  };
-  insert."\\^a" = {
+  }
+  {
+    mode = "i";
+    key = "\\^a";
     action = "ᵃ";
-  };
-  insert."\\^b" = {
+  }
+  {
+    mode = "i";
+    key = "\\^b";
     action = "ᵇ";
-  };
-  insert."\\^c" = {
+  }
+  {
+    mode = "i";
+    key = "\\^c";
     action = "ᶜ";
-  };
-  insert."\\^d" = {
+  }
+  {
+    mode = "i";
+    key = "\\^d";
     action = "ᵈ";
-  };
-  insert."\\^e" = {
+  }
+  {
+    mode = "i";
+    key = "\\^e";
     action = "ᵉ";
-  };
-  insert."\\^f" = {
+  }
+  {
+    mode = "i";
+    key = "\\^f";
     action = "ᶠ";
-  };
-  insert."\\^g" = {
+  }
+  {
+    mode = "i";
+    key = "\\^g";
     action = "ᵍ";
-  };
-  insert."\\^h" = {
+  }
+  {
+    mode = "i";
+    key = "\\^h";
     action = "ʰ";
-  };
-  insert."\\^i" = {
+  }
+  {
+    mode = "i";
+    key = "\\^i";
     action = "ⁱ";
-  };
-  insert."\\^j" = {
+  }
+  {
+    mode = "i";
+    key = "\\^j";
     action = "ʲ";
-  };
-  insert."\\^k" = {
+  }
+  {
+    mode = "i";
+    key = "\\^k";
     action = "ᵏ";
-  };
-  insert."\\^l" = {
+  }
+  {
+    mode = "i";
+    key = "\\^l";
     action = "ˡ";
-  };
-  insert."\\^m" = {
+  }
+  {
+    mode = "i";
+    key = "\\^m";
     action = "ᵐ";
-  };
-  insert."\\^n" = {
+  }
+  {
+    mode = "i";
+    key = "\\^n";
     action = "ⁿ";
-  };
-  insert."\\^o" = {
+  }
+  {
+    mode = "i";
+    key = "\\^o";
     action = "ᵒ";
-  };
-  insert."\\^p" = {
+  }
+  {
+    mode = "i";
+    key = "\\^p";
     action = "ᵖ";
-  };
-  insert."\\^q" = {
+  }
+  {
+    mode = "i";
+    key = "\\^q";
     action = "ᶝ";
-  };
-  insert."\\^r" = {
+  }
+  {
+    mode = "i";
+    key = "\\^r";
     action = "ʳ";
-  };
-  insert."\\^s" = {
+  }
+  {
+    mode = "i";
+    key = "\\^s";
     action = "ˢ";
-  };
-  insert."\\^t" = {
+  }
+  {
+    mode = "i";
+    key = "\\^t";
     action = "ᵗ";
-  };
-  insert."\\^u" = {
+  }
+  {
+    mode = "i";
+    key = "\\^u";
     action = "ᵘ";
-  };
-  insert."\\^v" = {
+  }
+  {
+    mode = "i";
+    key = "\\^v";
     action = "ᵛ";
-  };
-  insert."\\^w" = {
+  }
+  {
+    mode = "i";
+    key = "\\^w";
     action = "ʷ";
-  };
-  insert."\\^x" = {
+  }
+  {
+    mode = "i";
+    key = "\\^x";
     action = "ˣ";
-  };
-  insert."\\^y" = {
+  }
+  {
+    mode = "i";
+    key = "\\^y";
     action = "ʸ";
-  };
-  insert."\\^z" = {
+  }
+  {
+    mode = "i";
+    key = "\\^z";
     action = "ᶻ";
-  };
-  insert."\\^tm" = {
+  }
+  {
+    mode = "i";
+    key = "\\^tm";
     action = "™";
-  };
-  insert."\\sca" = {
+  }
+  {
+    mode = "i";
+    key = "\\sca";
     action = "ᴀ";
-  };
-  insert."\\scb" = {
+  }
+  {
+    mode = "i";
+    key = "\\scb";
     action = "ʙ";
-  };
-  insert."\\scc" = {
+  }
+  {
+    mode = "i";
+    key = "\\scc";
     action = "ᴄ";
-  };
-  insert."\\scd" = {
+  }
+  {
+    mode = "i";
+    key = "\\scd";
     action = "ᴅ";
-  };
-  insert."\\sce" = {
+  }
+  {
+    mode = "i";
+    key = "\\sce";
     action = "ᴇ";
-  };
-  insert."\\scf" = {
+  }
+  {
+    mode = "i";
+    key = "\\scf";
     action = "ꜰ";
-  };
-  insert."\\scg" = {
+  }
+  {
+    mode = "i";
+    key = "\\scg";
     action = "ɢ";
-  };
-  insert."\\sch" = {
+  }
+  {
+    mode = "i";
+    key = "\\sch";
     action = "ʜ";
-  };
-  insert."\\sci" = {
+  }
+  {
+    mode = "i";
+    key = "\\sci";
     action = "ɪ";
-  };
-  insert."\\scj" = {
+  }
+  {
+    mode = "i";
+    key = "\\scj";
     action = "ᴊ";
-  };
-  insert."\\sck" = {
+  }
+  {
+    mode = "i";
+    key = "\\sck";
     action = "ᴋ";
-  };
-  insert."\\scl" = {
+  }
+  {
+    mode = "i";
+    key = "\\scl";
     action = "ʟ";
-  };
-  insert."\\scm" = {
+  }
+  {
+    mode = "i";
+    key = "\\scm";
     action = "ᴍ";
-  };
-  insert."\\scn" = {
+  }
+  {
+    mode = "i";
+    key = "\\scn";
     action = "ɴ";
-  };
-  insert."\\sco" = {
+  }
+  {
+    mode = "i";
+    key = "\\sco";
     action = "ᴏ";
-  };
-  insert."\\scp" = {
+  }
+  {
+    mode = "i";
+    key = "\\scp";
     action = "ᴘ";
-  };
-  insert."\\scr" = {
+  }
+  {
+    mode = "i";
+    key = "\\scr";
     action = "ʀ";
-  };
-  insert."\\scs" = {
+  }
+  {
+    mode = "i";
+    key = "\\scs";
     action = "ꜱ";
-  };
-  insert."\\sct" = {
+  }
+  {
+    mode = "i";
+    key = "\\sct";
     action = "ᴛ";
-  };
-  insert."\\scu" = {
+  }
+  {
+    mode = "i";
+    key = "\\scu";
     action = "ᴜ";
-  };
-  insert."\\scv" = {
+  }
+  {
+    mode = "i";
+    key = "\\scv";
     action = "ᴠ";
-  };
-  insert."\\scw" = {
+  }
+  {
+    mode = "i";
+    key = "\\scw";
     action = "ᴡ";
-  };
-  insert."\\scy" = {
+  }
+  {
+    mode = "i";
+    key = "\\scy";
     action = "ʏ";
-  };
-  insert."\\scz" = {
+  }
+  {
+    mode = "i";
+    key = "\\scz";
     action = "ᴢ";
-  };
-  insert."\\wc0" = {
+  }
+  {
+    mode = "i";
+    key = "\\wc0";
     action = "⓪";
-  };
-  insert."\\wc1" = {
+  }
+  {
+    mode = "i";
+    key = "\\wc1";
     action = "①";
-  };
-  insert."\\wc2" = {
+  }
+  {
+    mode = "i";
+    key = "\\wc2";
     action = "②";
-  };
-  insert."\\wc3" = {
+  }
+  {
+    mode = "i";
+    key = "\\wc3";
     action = "③";
-  };
-  insert."\\wc4" = {
+  }
+  {
+    mode = "i";
+    key = "\\wc4";
     action = "④";
-  };
-  insert."\\wc5" = {
+  }
+  {
+    mode = "i";
+    key = "\\wc5";
     action = "⑤";
-  };
-  insert."\\wc6" = {
+  }
+  {
+    mode = "i";
+    key = "\\wc6";
     action = "⑥";
-  };
-  insert."\\wc7" = {
+  }
+  {
+    mode = "i";
+    key = "\\wc7";
     action = "⑦";
-  };
-  insert."\\wc8" = {
+  }
+  {
+    mode = "i";
+    key = "\\wc8";
     action = "⑧";
-  };
-  insert."\\wc9" = {
+  }
+  {
+    mode = "i";
+    key = "\\wc9";
     action = "⑨";
-  };
-  insert."\\wcA" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcA";
     action = "Ⓐ";
-  };
-  insert."\\wcB" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcB";
     action = "Ⓑ";
-  };
-  insert."\\wcC" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcC";
     action = "Ⓒ";
-  };
-  insert."\\wcD" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcD";
     action = "Ⓓ";
-  };
-  insert."\\wcE" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcE";
     action = "Ⓔ";
-  };
-  insert."\\wcF" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcF";
     action = "Ⓕ";
-  };
-  insert."\\wcG" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcG";
     action = "Ⓖ";
-  };
-  insert."\\wcH" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcH";
     action = "Ⓗ";
-  };
-  insert."\\wcI" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcI";
     action = "Ⓘ";
-  };
-  insert."\\wcJ" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcJ";
     action = "Ⓙ";
-  };
-  insert."\\wcK" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcK";
     action = "Ⓚ";
-  };
-  insert."\\wcL" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcL";
     action = "Ⓛ";
-  };
-  insert."\\wcM" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcM";
     action = "Ⓜ";
-  };
-  insert."\\wcN" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcN";
     action = "Ⓝ";
-  };
-  insert."\\wcO" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcO";
     action = "Ⓞ";
-  };
-  insert."\\wcP" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcP";
     action = "Ⓟ";
-  };
-  insert."\\wcQ" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcQ";
     action = "Ⓠ";
-  };
-  insert."\\wcR" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcR";
     action = "Ⓡ";
-  };
-  insert."\\wcS" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcS";
     action = "Ⓢ";
-  };
-  insert."\\wcT" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcT";
     action = "Ⓣ";
-  };
-  insert."\\wcU" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcU";
     action = "Ⓤ";
-  };
-  insert."\\wcV" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcV";
     action = "Ⓥ";
-  };
-  insert."\\wcW" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcW";
     action = "Ⓦ";
-  };
-  insert."\\wcX" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcX";
     action = "Ⓧ";
-  };
-  insert."\\wcY" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcY";
     action = "Ⓨ";
-  };
-  insert."\\wcZ" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcZ";
     action = "Ⓩ";
-  };
-  insert."\\wca" = {
+  }
+  {
+    mode = "i";
+    key = "\\wca";
     action = "ⓐ";
-  };
-  insert."\\wcb" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcb";
     action = "ⓑ";
-  };
-  insert."\\wcc" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcc";
     action = "ⓒ";
-  };
-  insert."\\wcd" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcd";
     action = "ⓓ";
-  };
-  insert."\\wce" = {
+  }
+  {
+    mode = "i";
+    key = "\\wce";
     action = "ⓔ";
-  };
-  insert."\\wcf" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcf";
     action = "ⓕ";
-  };
-  insert."\\wcg" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcg";
     action = "ⓖ";
-  };
-  insert."\\wch" = {
+  }
+  {
+    mode = "i";
+    key = "\\wch";
     action = "ⓗ";
-  };
-  insert."\\wci" = {
+  }
+  {
+    mode = "i";
+    key = "\\wci";
     action = "ⓘ";
-  };
-  insert."\\wcj" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcj";
     action = "ⓙ";
-  };
-  insert."\\wck" = {
+  }
+  {
+    mode = "i";
+    key = "\\wck";
     action = "ⓚ";
-  };
-  insert."\\wcl" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcl";
     action = "ⓛ";
-  };
-  insert."\\wcm" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcm";
     action = "ⓜ";
-  };
-  insert."\\wcn" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcn";
     action = "ⓝ";
-  };
-  insert."\\wco" = {
+  }
+  {
+    mode = "i";
+    key = "\\wco";
     action = "ⓞ";
-  };
-  insert."\\wcp" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcp";
     action = "ⓟ";
-  };
-  insert."\\wcq" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcq";
     action = "ⓠ";
-  };
-  insert."\\wcr" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcr";
     action = "ⓡ";
-  };
-  insert."\\wcs" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcs";
     action = "ⓢ";
-  };
-  insert."\\wct" = {
+  }
+  {
+    mode = "i";
+    key = "\\wct";
     action = "ⓣ";
-  };
-  insert."\\wcu" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcu";
     action = "ⓤ";
-  };
-  insert."\\wcv" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcv";
     action = "ⓥ";
-  };
-  insert."\\wcw" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcw";
     action = "ⓦ";
-  };
-  insert."\\wcx" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcx";
     action = "ⓧ";
-  };
-  insert."\\wcy" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcy";
     action = "ⓨ";
-  };
-  insert."\\wcz" = {
+  }
+  {
+    mode = "i";
+    key = "\\wcz";
     action = "ⓩ";
-  };
-  insert."\\A`" = {
+  }
+  {
+    mode = "i";
+    key = "\\A`";
     action = "À";
-  };
-  insert."\\A'" = {
+  }
+  {
+    mode = "i";
+    key = "\\A'";
     action = "Á";
-  };
-  insert."\\A.." = {
+  }
+  {
+    mode = "i";
+    key = "\\A..";
     action = "Ä";
-  };
-  insert."\\A^" = {
+  }
+  {
+    mode = "i";
+    key = "\\A^";
     action = "Â";
-  };
-  insert."\\C," = {
+  }
+  {
+    mode = "i";
+    key = "\\C,";
     action = "Ç";
-  };
-  insert."\\E`" = {
+  }
+  {
+    mode = "i";
+    key = "\\E`";
     action = "È";
-  };
-  insert."\\E'" = {
+  }
+  {
+    mode = "i";
+    key = "\\E'";
     action = "É";
-  };
-  insert."\\E^" = {
+  }
+  {
+    mode = "i";
+    key = "\\E^";
     action = "Ê";
-  };
-  insert."\\I'" = {
+  }
+  {
+    mode = "i";
+    key = "\\I'";
     action = "Í";
-  };
-  insert."\\I`" = {
+  }
+  {
+    mode = "i";
+    key = "\\I`";
     action = "Ì";
-  };
-  insert."\\I.." = {
+  }
+  {
+    mode = "i";
+    key = "\\I..";
     action = "Ï";
-  };
-  insert."\\O^" = {
+  }
+  {
+    mode = "i";
+    key = "\\O^";
     action = "Ô";
-  };
-  insert."\\O.." = {
+  }
+  {
+    mode = "i";
+    key = "\\O..";
     action = "Ö";
-  };
-  insert."\\U'" = {
+  }
+  {
+    mode = "i";
+    key = "\\U'";
     action = "Ú";
-  };
-  insert."\\U`" = {
+  }
+  {
+    mode = "i";
+    key = "\\U`";
     action = "Ù";
-  };
-  insert."\\U^" = {
+  }
+  {
+    mode = "i";
+    key = "\\U^";
     action = "Û";
-  };
-  insert."\\U.." = {
+  }
+  {
+    mode = "i";
+    key = "\\U..";
     action = "Ü";
-  };
-  insert."\\a`" = {
+  }
+  {
+    mode = "i";
+    key = "\\a`";
     action = "à";
-  };
-  insert."\\a'" = {
+  }
+  {
+    mode = "i";
+    key = "\\a'";
     action = "á";
-  };
-  insert."\\a.." = {
+  }
+  {
+    mode = "i";
+    key = "\\a..";
     action = "ä";
-  };
-  insert."\\a^" = {
+  }
+  {
+    mode = "i";
+    key = "\\a^";
     action = "â";
-  };
-  insert."\\c," = {
+  }
+  {
+    mode = "i";
+    key = "\\c,";
     action = "ç";
-  };
-  insert."\\e`" = {
+  }
+  {
+    mode = "i";
+    key = "\\e`";
     action = "è";
-  };
-  insert."\\e'" = {
+  }
+  {
+    mode = "i";
+    key = "\\e'";
     action = "é";
-  };
-  insert."\\e^" = {
+  }
+  {
+    mode = "i";
+    key = "\\e^";
     action = "ê";
-  };
-  insert."\\i'" = {
+  }
+  {
+    mode = "i";
+    key = "\\i'";
     action = "í";
-  };
-  insert."\\i`" = {
+  }
+  {
+    mode = "i";
+    key = "\\i`";
     action = "ì";
-  };
-  insert."\\i.." = {
+  }
+  {
+    mode = "i";
+    key = "\\i..";
     action = "ï";
-  };
-  insert."\\o^" = {
+  }
+  {
+    mode = "i";
+    key = "\\o^";
     action = "ô";
-  };
-  insert."\\o.." = {
+  }
+  {
+    mode = "i";
+    key = "\\o..";
     action = "ö";
-  };
-  insert."\\u'" = {
+  }
+  {
+    mode = "i";
+    key = "\\u'";
     action = "ú";
-  };
-  insert."\\u`" = {
+  }
+  {
+    mode = "i";
+    key = "\\u`";
     action = "ù";
-  };
-  insert."\\u^" = {
+  }
+  {
+    mode = "i";
+    key = "\\u^";
     action = "û";
-  };
-  insert."\\u.." = {
+  }
+  {
+    mode = "i";
+    key = "\\u..";
     action = "ü";
-  };
-  insert."\\ae" = {
+  }
+  {
+    mode = "i";
+    key = "\\ae";
     action = "æ";
-  };
-  insert."\\oe" = {
+  }
+  {
+    mode = "i";
+    key = "\\oe";
     action = "œ";
-  };
-  insert."\\e^~" = {
+  }
+  {
+    mode = "i";
+    key = "\\e^~";
     action = "ễ";
-  };
-  insert."\\osl" = {
+  }
+  {
+    mode = "i";
+    key = "\\osl";
     action = "ø";
-  };
-  insert."\\Osl" = {
+  }
+  {
+    mode = "i";
+    key = "\\Osl";
     action = "Ø";
-  };
-  insert."\\osls" = {
+  }
+  {
+    mode = "i";
+    key = "\\osls";
     action = "ᴓ";
-  };
-  insert."\\boxlr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxlr";
     action = "─";
-  };
-  insert."\\boxLR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxLR";
     action = "━";
-  };
-  insert."\\boxtb" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtb";
     action = "│";
-  };
-  insert."\\boxTB" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTB";
     action = "┃";
-  };
-  insert."\\boxlr-" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxlr-";
     action = "┄";
-  };
-  insert."\\boxLR-" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxLR-";
     action = "┅";
-  };
-  insert."\\boxtb-" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtb-";
     action = "┆";
-  };
-  insert."\\boxTB-" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTB-";
     action = "┇";
-  };
-  insert."\\boxlr." = {
+  }
+  {
+    mode = "i";
+    key = "\\boxlr.";
     action = "┈";
-  };
-  insert."\\boxLR." = {
+  }
+  {
+    mode = "i";
+    key = "\\boxLR.";
     action = "┉";
-  };
-  insert."\\boxtb." = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtb.";
     action = "┊";
-  };
-  insert."\\boxTB." = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTB.";
     action = "┋";
-  };
-  insert."\\boxbr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxbr";
     action = "┌";
-  };
-  insert."\\boxbR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxbR";
     action = "┍";
-  };
-  insert."\\boxBr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBr";
     action = "┎";
-  };
-  insert."\\boxBR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBR";
     action = "┏";
-  };
-  insert."\\boxbl" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxbl";
     action = "┐";
-  };
-  insert."\\boxbL" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxbL";
     action = "┑";
-  };
-  insert."\\boxBl" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBl";
     action = "┒";
-  };
-  insert."\\boxBL" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBL";
     action = "┓";
-  };
-  insert."\\boxtr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtr";
     action = "└";
-  };
-  insert."\\boxtR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtR";
     action = "┕";
-  };
-  insert."\\boxTr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTr";
     action = "┖";
-  };
-  insert."\\boxTR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTR";
     action = "┗";
-  };
-  insert."\\boxtl" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtl";
     action = "┘";
-  };
-  insert."\\boxtL" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtL";
     action = "┙";
-  };
-  insert."\\boxTl" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTl";
     action = "┚";
-  };
-  insert."\\boxTL" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTL";
     action = "┛";
-  };
-  insert."\\boxtbr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtbr";
     action = "├";
-  };
-  insert."\\boxtbR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtbR";
     action = "┝";
-  };
-  insert."\\boxTbr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTbr";
     action = "┞";
-  };
-  insert."\\boxtBr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtBr";
     action = "┟";
-  };
-  insert."\\boxTBr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBr";
     action = "┠";
-  };
-  insert."\\boxTbR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTbR";
     action = "┡";
-  };
-  insert."\\boxtBR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtBR";
     action = "┢";
-  };
-  insert."\\boxTBR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBR";
     action = "┣";
-  };
-  insert."\\boxtbl" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtbl";
     action = "┤";
-  };
-  insert."\\boxtbL" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtbL";
     action = "┥";
-  };
-  insert."\\boxTbl" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTbl";
     action = "┦";
-  };
-  insert."\\boxtBl" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtBl";
     action = "┧";
-  };
-  insert."\\boxTBl" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBl";
     action = "┨";
-  };
-  insert."\\boxTbL" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTbL";
     action = "┩";
-  };
-  insert."\\boxtBL" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtBL";
     action = "┪";
-  };
-  insert."\\boxTBL" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBL";
     action = "┫";
-  };
-  insert."\\boxblr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxblr";
     action = "┬";
-  };
-  insert."\\boxbLr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxbLr";
     action = "┭";
-  };
-  insert."\\boxblR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxblR";
     action = "┮";
-  };
-  insert."\\boxbLR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxbLR";
     action = "┯";
-  };
-  insert."\\boxBlr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBlr";
     action = "┰";
-  };
-  insert."\\boxBLr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBLr";
     action = "┱";
-  };
-  insert."\\boxBlR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBlR";
     action = "┲";
-  };
-  insert."\\boxBLR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBLR";
     action = "┳";
-  };
-  insert."\\boxtlr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtlr";
     action = "┴";
-  };
-  insert."\\boxtLr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtLr";
     action = "┵";
-  };
-  insert."\\boxtlR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtlR";
     action = "┶";
-  };
-  insert."\\boxtLR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtLR";
     action = "┷";
-  };
-  insert."\\boxTlr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTlr";
     action = "┸";
-  };
-  insert."\\boxTLr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTLr";
     action = "┹";
-  };
-  insert."\\boxTlR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTlR";
     action = "┺";
-  };
-  insert."\\boxTLR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTLR";
     action = "┻";
-  };
-  insert."\\boxtblr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtblr";
     action = "┼";
-  };
-  insert."\\boxtbLr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtbLr";
     action = "┽";
-  };
-  insert."\\boxtblR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtblR";
     action = "┾";
-  };
-  insert."\\boxtbLR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtbLR";
     action = "┿";
-  };
-  insert."\\boxTblr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTblr";
     action = "╀";
-  };
-  insert."\\boxtBlr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtBlr";
     action = "╁";
-  };
-  insert."\\boxTBlr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBlr";
     action = "╂";
-  };
-  insert."\\boxTbLr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTbLr";
     action = "╃";
-  };
-  insert."\\boxTblR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTblR";
     action = "╄";
-  };
-  insert."\\boxtBLr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtBLr";
     action = "╅";
-  };
-  insert."\\boxtBlR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtBlR";
     action = "╆";
-  };
-  insert."\\boxTbLR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTbLR";
     action = "╇";
-  };
-  insert."\\boxtBLR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtBLR";
     action = "╈";
-  };
-  insert."\\boxTBLr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBLr";
     action = "╉";
-  };
-  insert."\\boxTBlR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBlR";
     action = "╊";
-  };
-  insert."\\boxTBLR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBLR";
     action = "╋";
-  };
-  insert."\\boxlr:" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxlr:";
     action = "╌";
-  };
-  insert."\\boxLR:" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxLR:";
     action = "╍";
-  };
-  insert."\\boxtb:" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtb:";
     action = "╎";
-  };
-  insert."\\boxTB:" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTB:";
     action = "╏";
-  };
-  insert."\\boxLR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxLR=";
     action = "═";
-  };
-  insert."\\boxTB=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTB=";
     action = "║";
-  };
-  insert."\\boxbR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxbR=";
     action = "╒";
-  };
-  insert."\\boxBr=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBr=";
     action = "╓";
-  };
-  insert."\\boxBR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBR=";
     action = "╔";
-  };
-  insert."\\boxbL=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxbL=";
     action = "╕";
-  };
-  insert."\\boxBl=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBl=";
     action = "╖";
-  };
-  insert."\\boxBL=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBL=";
     action = "╗";
-  };
-  insert."\\boxtR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtR=";
     action = "╘";
-  };
-  insert."\\boxTr=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTr=";
     action = "╙";
-  };
-  insert."\\boxTR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTR=";
     action = "╚";
-  };
-  insert."\\boxtL=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtL=";
     action = "╛";
-  };
-  insert."\\boxTl=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTl=";
     action = "╜";
-  };
-  insert."\\boxTL=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTL=";
     action = "╝";
-  };
-  insert."\\boxtbR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtbR=";
     action = "╞";
-  };
-  insert."\\boxTBr=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBr=";
     action = "╟";
-  };
-  insert."\\boxTBR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBR=";
     action = "╠";
-  };
-  insert."\\boxtbL=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtbL=";
     action = "╡";
-  };
-  insert."\\boxTBl=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBl=";
     action = "╢";
-  };
-  insert."\\boxTBL=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBL=";
     action = "╣";
-  };
-  insert."\\boxbLR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxbLR=";
     action = "╤";
-  };
-  insert."\\boxBlr=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBlr=";
     action = "╥";
-  };
-  insert."\\boxBLR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxBLR=";
     action = "╦";
-  };
-  insert."\\boxtLR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtLR=";
     action = "╧";
-  };
-  insert."\\boxTlr=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTlr=";
     action = "╨";
-  };
-  insert."\\boxTLR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTLR=";
     action = "╩";
-  };
-  insert."\\boxtbLR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtbLR=";
     action = "╪";
-  };
-  insert."\\boxTBlr=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBlr=";
     action = "╫";
-  };
-  insert."\\boxTBLR=" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTBLR=";
     action = "╬";
-  };
-  insert."\\boxbrc" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxbrc";
     action = "╭";
-  };
-  insert."\\boxblc" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxblc";
     action = "╮";
-  };
-  insert."\\boxtlc" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtlc";
     action = "╯";
-  };
-  insert."\\boxtrc" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtrc";
     action = "╰";
-  };
-  insert."\\boxtrbl" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtrbl";
     action = "╱";
-  };
-  insert."\\boxtlbr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtlbr";
     action = "╲";
-  };
-  insert."\\boxx" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxx";
     action = "╳";
-  };
-  insert."\\boxl" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxl";
     action = "╴";
-  };
-  insert."\\boxt" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxt";
     action = "╵";
-  };
-  insert."\\boxr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxr";
     action = "╶";
-  };
-  insert."\\boxb" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxb";
     action = "╷";
-  };
-  insert."\\boxL" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxL";
     action = "╸";
-  };
-  insert."\\boxT" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxT";
     action = "╹";
-  };
-  insert."\\boxR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxR";
     action = "╺";
-  };
-  insert."\\boxB" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxB";
     action = "╻";
-  };
-  insert."\\boxlR" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxlR";
     action = "╼";
-  };
-  insert."\\boxtB" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxtB";
     action = "╽";
-  };
-  insert."\\boxLr" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxLr";
     action = "╾";
-  };
-  insert."\\boxTb" = {
+  }
+  {
+    mode = "i";
+    key = "\\boxTb";
     action = "╿";
-  };
-  insert."\\nbsp" = {
+  }
+  {
+    mode = "i";
+    key = "\\nbsp";
     action = " ";
-  };
-  insert."\\ensp" = {
+  }
+  {
+    mode = "i";
+    key = "\\ensp";
     action = " ";
-  };
-  insert."\\fgsp" = {
+  }
+  {
+    mode = "i";
+    key = "\\fgsp";
     action = " ";
-  };
+  }
 
   # elew
-  insert."\\python" = {
+  {
+    mode = "i";
+    key = "\\python";
     action = "🐍";
-  };
-  insert."\\docker" = {
+  }
+  {
+    mode = "i";
+    key = "\\docker";
     action = "🐳";
-  };
-  insert."\\haskell" = {
+  }
+  {
+    mode = "i";
+    key = "\\haskell";
     action = "λ";
-  };
-  insert."\\git" = {
+  }
+  {
+    mode = "i";
+    key = "\\git";
     action = "";
-  };
-  insert."\\java" = {
+  }
+  {
+    mode = "i";
+    key = "\\java";
     action = "☕";
-  };
-  insert."\\go" = {
+  }
+  {
+    mode = "i";
+    key = "\\go";
     action = "🐹";
-  };
-  insert."\\rust" = {
+  }
+  {
+    mode = "i";
+    key = "\\rust";
     action = "🦀";
-  };
-  insert."\\package" = {
+  }
+  {
+    mode = "i";
+    key = "\\package";
     action = "📦";
-  };
-  insert."\\deploy" = {
+  }
+  {
+    mode = "i";
+    key = "\\deploy";
     action = "🚀";
-  };
-  insert."\\bug" = {
+  }
+  {
+    mode = "i";
+    key = "\\bug";
     action = "🐛";
-  };
-  insert."\\feature" = {
+  }
+  {
+    mode = "i";
+    key = "\\feature";
     action = "✨";
-  };
-  insert."\\fire" = {
+  }
+  {
+    mode = "i";
+    key = "\\fire";
     action = "🔥";
-  };
-  insert."\\opt" = {
+  }
+  {
+    mode = "i";
+    key = "\\opt";
     action = "⚡️";
-  };
-  insert."\\memo" = {
+  }
+  {
+    mode = "i";
+    key = "\\memo";
     action = "📝";
-  };
-  insert."\\hotfix" = {
+  }
+  {
+    mode = "i";
+    key = "\\hotfix";
     action = "🚑️";
-  };
-}
+  }
+]

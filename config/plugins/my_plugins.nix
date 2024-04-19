@@ -93,8 +93,8 @@
     src = fetchFromGitHub {
       owner = "EthanJamesLew";
       repo = "nkpl-vim";
-      rev = "8c768a22470c96fd1242e78567f3baad4cafc390";
-      sha256 = "YQE87t1+33EfVM0O4qIE+cz539lx/GZxr03kq48Igoc="; 
+      rev = "e9657270112b48e6bc55c02ae2e41ca0855ec0b2";
+      sha256 = "Jqs03dQ6I6lVKJ3Jdg6n3VBx7yQYCBP/A/AFKAOUWiI=";
     };
     dependencies = [];
   };

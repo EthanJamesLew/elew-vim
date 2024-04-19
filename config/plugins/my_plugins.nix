@@ -87,4 +87,15 @@
     };
     dependencies = [];
   };
+  
+  nkpl = vimUtils.buildVimPlugin {
+    name = "nkpl-2024-04-19";
+    src = fetchFromGitHub {
+      owner = "EthanJamesLew";
+      repo = "nkpl-vim";
+      rev = "8c768a22470c96fd1242e78567f3baad4cafc390";
+      sha256 = "YQE87t1+33EfVM0O4qIE+cz539lx/GZxr03kq48Igoc="; 
+    };
+    dependencies = [];
+  };
 }

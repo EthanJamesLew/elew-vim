@@ -10,4 +10,5 @@ in with myPlugins; [
   rust
   matlab
   clafer
+  nkpl
 ] 

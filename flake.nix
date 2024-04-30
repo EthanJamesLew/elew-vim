@@ -34,6 +34,7 @@
         tag = "latest";
         copyToRoot = [ nvim-docker ];
         config = {
+          Cmd = [ "${nvim-docker}/bin/nvim" ];
         };
       };
     in {

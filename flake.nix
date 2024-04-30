@@ -13,6 +13,7 @@
     ...
   } @ inputs: let
     importedConfig = import ./config;
+    importedDockerConfig = import ./config;
     optionsConfig = import ./keymaps.nix { lib=nixpkgs.lib; };
   in
     flake-utils.lib.eachDefaultSystem (system: let
@@ -21,7 +22,19 @@
       nixvim' = nixvim.legacyPackages.${system};
       nvim = nixvim'.makeNixvimWithModule {
         inherit pkgs;
-        module = optionsConfig // (importedConfig {inherit pkgs system;});
+        module = optionsConfig // (importedConfig { inherit pkgs system; });
+      };
+      nvim-docker = nixvim'.makeNixvimWithModule {
+        inherit pkgs;
+        module = optionsConfig // (importedDockerConfig { inherit pkgs system; });
+
+      };
+      dockerImage = pkgs.dockerTools.buildImage {
+        name = "elew-vim";
+        tag = "latest";
+        copyToRoot = [ nvim-docker ];
+        config = {
+        };
       };
     in {
       checks = {
@@ -33,6 +46,7 @@
       };
       packages = {
         # Lets you run `nix run .` to start nixvim
+        inherit dockerImage;
         default = nvim;
       };
     });

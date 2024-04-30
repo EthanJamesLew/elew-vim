@@ -13,6 +13,7 @@
     ...
   } @ inputs: let
     importedConfig = import ./config;
+    importedDockerConfig = import ./docker_config;
     optionsConfig = import ./keymaps.nix { lib=nixpkgs.lib; };
   in
     flake-utils.lib.eachDefaultSystem (system: let
@@ -25,7 +26,7 @@
       };
       nvim-docker = nixvim'.makeNixvimWithModule {
         inherit pkgs;
-        module = optionsConfig;
+        module = optionsConfig // (importedDockerConfig { inherit pkgs system; });
 
       };
       dockerImage = pkgs.dockerTools.buildImage {

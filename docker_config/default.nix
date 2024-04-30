@@ -5,7 +5,6 @@
     ../config/git.nix
     ../config/nix.nix
     ../config/extras.nix
-    ../config/lsp.nix
     ../config/theme.nix
     ../config/tree.nix
     ../config/dprint.nix

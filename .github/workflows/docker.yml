@@ -28,7 +28,7 @@ jobs:
         run: docker save -o image.tar $(docker images -q)
 
       - name: Split Docker Tarball
-        run: split --bytes=2G image.tar image.tar.part-
+        run: split --bytes=1G image.tar image.tar.part-
       
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1

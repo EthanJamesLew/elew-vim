@@ -20,17 +20,20 @@ jobs:
 
       - name: Build Docker Image
         run: nix build .#dockerImage
-
+      
       - name: Load Docker Image
         run: docker load < result
 
       - name: Create Docker Tarball
         run: docker save -o image.tar $(docker images -q)
 
+      - name: Split Docker Tarball
+        run: split --bytes=2G image.tar image.tar.part-
+      
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
         with:
-          files: image.tar
+          files: "image.tar.part-*"
 

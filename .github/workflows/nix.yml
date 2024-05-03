@@ -1,4 +1,4 @@
-name: Nix Check and Build
+name: Nix Build
 
 on:
   push:

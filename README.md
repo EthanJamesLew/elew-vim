@@ -1,3 +1,4 @@
+[![Nix Check and Build](https://github.com/EthanJamesLew/elew-vim/actions/workflows/nix.yml/badge.svg)](https://github.com/EthanJamesLew/elew-vim/actions/workflows/nix.yml)
 ## README
 
 ### Overview

@@ -2,6 +2,8 @@ name: nvim JSON
 
 on:
   push:
+    tags:
+      - '*'
   pull_request:
 
 jobs:
@@ -23,5 +25,47 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: nvimJSON
-          path: ./result  # this assumes that the result symlink points to the nvimJSON output
+          path: ./result
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1.3'
+
+      - name: Install Jekyll and Bundler
+        run: |
+          sudo gem install jekyll bundler
+
+      - name: Prepare Jekyll directory and Gemfile
+        run: |
+          mkdir -p docs
+          touch docs/Gemfile
+          echo "source 'https://rubygems.org'" >> docs/Gemfile
+          echo "gem 'jekyll', '~> 4.2.0'" >> docs/Gemfile
+          echo "gem 'minima', '~> 2.5'" >> docs/Gemfile
+          echo "group :jekyll_plugins do" >> docs/Gemfile
+          echo "  gem 'jekyll-feed', '~> 0.12'" >> docs/Gemfile
+          echo "end" >> docs/Gemfile
+          echo "gem 'terminal-table', '~> 2.0'" >> docs/Gemfile
+          echo "gem 'unicode-display_width'" >> docs/Gemfile  # Specify version if necessary
+
+      - name: Generate Jekyll site
+        run: python nixvim_jekyll_generator.py --input result --output ./docs/index.md
+
+      - name: Build Jekyll site
+        run: |
+          cd docs
+          bundle install
+          bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_TOKEN }}
+          publish_dir: ./docs/_site
 

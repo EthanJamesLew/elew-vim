@@ -1,0 +1,1734 @@
+<p>Generated on: 2024-05-04 23:58:28
+Git commit: cd8b8426e4910c09cce50ea59169d4815f409d3e
+Repository dirty: True</p>
+
+<h2 id="vim-configuration">Vim Configuration</h2>
+<div class="language-vim highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">" make sure that we're using latexmk</span>
+<span class="k">let</span> <span class="nv">g:vimtex_compiler_method</span> <span class="p">=</span> <span class="s1">'latexmk'</span> 
+
+<span class="c">" latexmk compilation (the important one is shell escape as it is needed for pygments minted)</span>
+<span class="k">let</span> <span class="nv">g:vimtex_compiler_latexmk</span> <span class="p">=</span> <span class="p">{</span>
+<span class="se">  \</span> <span class="s1">'options'</span> <span class="p">:</span> <span class="p">[</span>
+<span class="se">  \</span>    <span class="s1">'-shell-escape'</span><span class="p">,</span>
+<span class="se">  \</span>    <span class="s1">'-verbose'</span><span class="p">,</span>
+<span class="se">  \</span>    <span class="s1">'-file-line-error'</span><span class="p">,</span>
+<span class="se">  \</span>    <span class="s1">'-synctex=1'</span><span class="p">,</span>
+<span class="se">  \</span>    <span class="s1">'-interaction=nonstopmode'</span><span class="p">,</span>
+<span class="se">  \</span> <span class="p">],</span>
+<span class="se">  \</span><span class="p">}</span>
+
+</code></pre></div></div>
+
+<h2 id="global-variables">Global Variables</h2>
+<ul>
+  <li>fortran_dep_install: 3</li>
+  <li>mapleader: ,</li>
+</ul>
+
+<h2 id="key-mappings">Key Mappings</h2>
+<p>| Key | Action | Mode | Description |
+| — | —— | —- | ———– |
+| <code class="language-plaintext highlighter-rouge">\\</code> | <code class="language-plaintext highlighter-rouge">\</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u</code> | <code class="language-plaintext highlighter-rouge">↑</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r</code> | <code class="language-plaintext highlighter-rouge">→</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d</code> | <code class="language-plaintext highlighter-rouge">↓</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l</code> | <code class="language-plaintext highlighter-rouge">←</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ur</code> | <code class="language-plaintext highlighter-rouge">↗</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\dr</code> | <code class="language-plaintext highlighter-rouge">↘</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\dl</code> | <code class="language-plaintext highlighter-rouge">↙</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ul</code> | <code class="language-plaintext highlighter-rouge">↖</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ud-</code> | <code class="language-plaintext highlighter-rouge">↕</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rl-</code> | <code class="language-plaintext highlighter-rouge">↔</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\uu</code> | <code class="language-plaintext highlighter-rouge">⇈</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rr</code> | <code class="language-plaintext highlighter-rouge">⇉</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\dd</code> | <code class="language-plaintext highlighter-rouge">⇊</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ll</code> | <code class="language-plaintext highlighter-rouge">⇇</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ud</code> | <code class="language-plaintext highlighter-rouge">⇅</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\du</code> | <code class="language-plaintext highlighter-rouge">⇵</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rl</code> | <code class="language-plaintext highlighter-rouge">⇄</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\lr</code> | <code class="language-plaintext highlighter-rouge">⇆</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u=</code> | <code class="language-plaintext highlighter-rouge">⇑</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r=</code> | <code class="language-plaintext highlighter-rouge">⇒</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d=</code> | <code class="language-plaintext highlighter-rouge">⇓</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l=</code> | <code class="language-plaintext highlighter-rouge">⇐</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ud=</code> | <code class="language-plaintext highlighter-rouge">⇕</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rl=</code> | <code class="language-plaintext highlighter-rouge">⇔</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r=/</code> | <code class="language-plaintext highlighter-rouge">⇏</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l=/</code> | <code class="language-plaintext highlighter-rouge">⇍</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rl=/</code> | <code class="language-plaintext highlighter-rouge">⇎</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ur=</code> | <code class="language-plaintext highlighter-rouge">⇗</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\dr=</code> | <code class="language-plaintext highlighter-rouge">⇘</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\dl=</code> | <code class="language-plaintext highlighter-rouge">⇙</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ul=</code> | <code class="language-plaintext highlighter-rouge">⇖</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r==</code> | <code class="language-plaintext highlighter-rouge">⇛</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l==</code> | <code class="language-plaintext highlighter-rouge">⇚</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\impr</code> | <code class="language-plaintext highlighter-rouge">⟹</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\impl</code> | <code class="language-plaintext highlighter-rouge">⟸</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\iff</code> | <code class="language-plaintext highlighter-rouge">⟺</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u|</code> | <code class="language-plaintext highlighter-rouge">⇧</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r|</code> | <code class="language-plaintext highlighter-rouge">⇨</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d|</code> | <code class="language-plaintext highlighter-rouge">⇩</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l|</code> | <code class="language-plaintext highlighter-rouge">⇦</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rl|</code> | <code class="language-plaintext highlighter-rouge">⬄</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r|=</code> | <code class="language-plaintext highlighter-rouge">⇰</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r\</code> | <code class="language-plaintext highlighter-rouge">⇀</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u|-</code> | <code class="language-plaintext highlighter-rouge">↥</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r|-</code> | <code class="language-plaintext highlighter-rouge">↦</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d|-</code> | <code class="language-plaintext highlighter-rouge">↧</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l|-</code> | <code class="language-plaintext highlighter-rouge">↤</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rh</code> | <code class="language-plaintext highlighter-rouge">↪</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\lh</code> | <code class="language-plaintext highlighter-rouge">↩</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rc</code> | <code class="language-plaintext highlighter-rouge">↬</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\lc</code> | <code class="language-plaintext highlighter-rouge">↫</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r&gt;|</code> | <code class="language-plaintext highlighter-rouge">⇥</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l&gt;|</code> | <code class="language-plaintext highlighter-rouge">⇤</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u&gt;&gt;</code> | <code class="language-plaintext highlighter-rouge">↟</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r&gt;&gt;</code> | <code class="language-plaintext highlighter-rouge">↠</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d&gt;&gt;</code> | <code class="language-plaintext highlighter-rouge">↡</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l&gt;&gt;</code> | <code class="language-plaintext highlighter-rouge">↞</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r|&gt;</code> | <code class="language-plaintext highlighter-rouge">⇾</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l|&gt;</code> | <code class="language-plaintext highlighter-rouge">⇽</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rl|&gt;</code> | <code class="language-plaintext highlighter-rouge">⇿</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r~</code> | <code class="language-plaintext highlighter-rouge">↝</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l~</code> | <code class="language-plaintext highlighter-rouge">↜</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rl~</code> | <code class="language-plaintext highlighter-rouge">↭</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rv</code> | <code class="language-plaintext highlighter-rouge">↣</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\lv</code> | <code class="language-plaintext highlighter-rouge">↢</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r~~</code> | <code class="language-plaintext highlighter-rouge">⇝</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l~~</code> | <code class="language-plaintext highlighter-rouge">⇜</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u.</code> | <code class="language-plaintext highlighter-rouge">⇡</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r.</code> | <code class="language-plaintext highlighter-rouge">⇢</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d.</code> | <code class="language-plaintext highlighter-rouge">⇣</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l.</code> | <code class="language-plaintext highlighter-rouge">⇠</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\r/</code> | <code class="language-plaintext highlighter-rouge">↛</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\l/</code> | <code class="language-plaintext highlighter-rouge">↚</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rl/</code> | <code class="language-plaintext highlighter-rouge">↮</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ro</code> | <code class="language-plaintext highlighter-rouge">⊸</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\lo</code> | <code class="language-plaintext highlighter-rouge">⟜</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\rlo</code> | <code class="language-plaintext highlighter-rouge">⧟</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\zd</code> | <code class="language-plaintext highlighter-rouge">↯</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\cw</code> | <code class="language-plaintext highlighter-rouge">↻</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ccw</code> | <code class="language-plaintext highlighter-rouge">↺</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\(</code> | <code class="language-plaintext highlighter-rouge">⟮</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\)</code> | <code class="language-plaintext highlighter-rouge">⟯</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\((</code> | <code class="language-plaintext highlighter-rouge">⸨</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\))</code> | <code class="language-plaintext highlighter-rouge">⸩</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\(|</code> | <code class="language-plaintext highlighter-rouge">⦇</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\)|</code> | <code class="language-plaintext highlighter-rouge">⦈</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\c(</code> | <code class="language-plaintext highlighter-rouge">⦅</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\c)</code> | <code class="language-plaintext highlighter-rouge">⦆</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\b(</code> | <code class="language-plaintext highlighter-rouge">❪</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\b)</code> | <code class="language-plaintext highlighter-rouge">❫</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\B(</code> | <code class="language-plaintext highlighter-rouge">❨</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\B)</code> | <code class="language-plaintext highlighter-rouge">❩</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u)</code> | <code class="language-plaintext highlighter-rouge">⏜</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d)</code> | <code class="language-plaintext highlighter-rouge">⏝</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\fr</code> | <code class="language-plaintext highlighter-rouge">⌢</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\sm</code> | <code class="language-plaintext highlighter-rouge">⌣</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;</code> | <code class="language-plaintext highlighter-rouge">⟨</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;</code> | <code class="language-plaintext highlighter-rouge">⟩</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;&lt;</code> | <code class="language-plaintext highlighter-rouge">⟪</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;&gt;</code> | <code class="language-plaintext highlighter-rouge">⟫</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;|</code> | <code class="language-plaintext highlighter-rouge">⦉</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;|</code> | <code class="language-plaintext highlighter-rouge">⦊</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;.</code> | <code class="language-plaintext highlighter-rouge">⦑</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;.</code> | <code class="language-plaintext highlighter-rouge">⦒</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\b&lt;</code> | <code class="language-plaintext highlighter-rouge">❬</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\b&gt;</code> | <code class="language-plaintext highlighter-rouge">❭</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;"</code> | <code class="language-plaintext highlighter-rouge">«</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;"</code> | <code class="language-plaintext highlighter-rouge">»</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;'</code> | <code class="language-plaintext highlighter-rouge">‹</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;'</code> | <code class="language-plaintext highlighter-rouge">›</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\(&lt;</code> | <code class="language-plaintext highlighter-rouge">⦓</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\)&gt;</code> | <code class="language-plaintext highlighter-rouge">⦔</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\((&gt;</code> | <code class="language-plaintext highlighter-rouge">⦕</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\))&lt;</code> | <code class="language-plaintext highlighter-rouge">⦖</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u&lt;</code> | <code class="language-plaintext highlighter-rouge">⸦</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u&gt;</code> | <code class="language-plaintext highlighter-rouge">⸧</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\f&lt;</code> | <code class="language-plaintext highlighter-rouge">᚜</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\f&gt;</code> | <code class="language-plaintext highlighter-rouge">᚛</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\_&lt;</code> | <code class="language-plaintext highlighter-rouge">⸜</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\_&gt;</code> | <code class="language-plaintext highlighter-rouge">⸝</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^&lt;</code> | <code class="language-plaintext highlighter-rouge">⸌</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^&gt;</code> | <code class="language-plaintext highlighter-rouge">⸍</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\[</code> | <code class="language-plaintext highlighter-rouge">⦗</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\]</code> | <code class="language-plaintext highlighter-rouge">⦘</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\[[</code> | <code class="language-plaintext highlighter-rouge">⟦</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\]]</code> | <code class="language-plaintext highlighter-rouge">⟧</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\[|</code> | <code class="language-plaintext highlighter-rouge">⟬</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\]|</code> | <code class="language-plaintext highlighter-rouge">⟭</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\e[</code> | <code class="language-plaintext highlighter-rouge">⁅</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\e]</code> | <code class="language-plaintext highlighter-rouge">⁆</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\tL</code> | <code class="language-plaintext highlighter-rouge">⌈</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\tR</code> | <code class="language-plaintext highlighter-rouge">⌉</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\bL</code> | <code class="language-plaintext highlighter-rouge">⌊</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\bR</code> | <code class="language-plaintext highlighter-rouge">⌋</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\tl</code> | <code class="language-plaintext highlighter-rouge">⸢</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\tr</code> | <code class="language-plaintext highlighter-rouge">⸣</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\bl</code> | <code class="language-plaintext highlighter-rouge">⸤</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\br</code> | <code class="language-plaintext highlighter-rouge">⸥</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\{|</code> | <code class="language-plaintext highlighter-rouge">⦃</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\}|</code> | <code class="language-plaintext highlighter-rouge">⦄</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\{</code> | <code class="language-plaintext highlighter-rouge">⎨</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\}</code> | <code class="language-plaintext highlighter-rouge">⎬</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\z{</code> | <code class="language-plaintext highlighter-rouge">⧘</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\z}</code> | <code class="language-plaintext highlighter-rouge">⧙</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\z</code> | <code class="language-plaintext highlighter-rouge">⧛</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\b{</code> | <code class="language-plaintext highlighter-rouge">❴</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\b}</code> | <code class="language-plaintext highlighter-rouge">❵</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s{</code> | <code class="language-plaintext highlighter-rouge">⟅</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s}</code> | <code class="language-plaintext highlighter-rouge">⟆</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;/</code> | <code class="language-plaintext highlighter-rouge">≮</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;=</code> | <code class="language-plaintext highlighter-rouge">≤</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;=</code> | <code class="language-plaintext highlighter-rouge">≥</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;=&gt;=</code> | <code class="language-plaintext highlighter-rouge">⋚</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;~</code> | <code class="language-plaintext highlighter-rouge">≲</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;~</code> | <code class="language-plaintext highlighter-rouge">≳</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;?</code> | <code class="language-plaintext highlighter-rouge">⩻</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;?</code> | <code class="language-plaintext highlighter-rouge">⩼</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;&lt;</code> | <code class="language-plaintext highlighter-rouge">⪥</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;&lt;x</code> | <code class="language-plaintext highlighter-rouge">⪤</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;2</code> | <code class="language-plaintext highlighter-rouge">≪</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;2</code> | <code class="language-plaintext highlighter-rouge">≫</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;3</code> | <code class="language-plaintext highlighter-rouge">⋘</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;3</code> | <code class="language-plaintext highlighter-rouge">⋙</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;&gt;=</code> | <code class="language-plaintext highlighter-rouge">≫=</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;&lt;=</code> | <code class="language-plaintext highlighter-rouge">≪=</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\xo|</code> | <code class="language-plaintext highlighter-rouge">⊻</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\nand</code> | <code class="language-plaintext highlighter-rouge">⊼</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\nor</code> | <code class="language-plaintext highlighter-rouge">⊽</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\h&lt;</code> | <code class="language-plaintext highlighter-rouge">⪡</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\h&gt;</code> | <code class="language-plaintext highlighter-rouge">⪢</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\hor</code> | <code class="language-plaintext highlighter-rouge">⩔</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\hand</code> | <code class="language-plaintext highlighter-rouge">⩓</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\Hand</code> | <code class="language-plaintext highlighter-rouge">⩕</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\Hor</code> | <code class="language-plaintext highlighter-rouge">⩖</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&lt;o</code> | <code class="language-plaintext highlighter-rouge">⩹</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\&gt;o</code> | <code class="language-plaintext highlighter-rouge">⩺</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d&lt;</code> | <code class="language-plaintext highlighter-rouge">⋖</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d&gt;</code> | <code class="language-plaintext highlighter-rouge">⋗</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d&lt;=</code> | <code class="language-plaintext highlighter-rouge">⩿</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\d&gt;=</code> | <code class="language-plaintext highlighter-rouge">⪀</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\dor</code> | <code class="language-plaintext highlighter-rouge">⟇</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\dand</code> | <code class="language-plaintext highlighter-rouge">⟑</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\m&lt;</code> | <code class="language-plaintext highlighter-rouge">⪪</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\m&gt;</code> | <code class="language-plaintext highlighter-rouge">⪫</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\m&lt;=</code> | <code class="language-plaintext highlighter-rouge">⪬</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\m&gt;=</code> | <code class="language-plaintext highlighter-rouge">⪭</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\m&lt;|</code> | <code class="language-plaintext highlighter-rouge">⩤</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\m&gt;|</code> | <code class="language-plaintext highlighter-rouge">⩥</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\mand</code> | <code class="language-plaintext highlighter-rouge">⩚</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\mor</code> | <code class="language-plaintext highlighter-rouge">⩛</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\e&lt;</code> | <code class="language-plaintext highlighter-rouge">≺</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\e&gt;</code> | <code class="language-plaintext highlighter-rouge">≻</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\e&lt;-</code> | <code class="language-plaintext highlighter-rouge">⪯</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\e&gt;-</code> | <code class="language-plaintext highlighter-rouge">⪰</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\e&lt;=</code> | <code class="language-plaintext highlighter-rouge">≼</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\e&gt;=</code> | <code class="language-plaintext highlighter-rouge">≽</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\eor</code> | <code class="language-plaintext highlighter-rouge">⋎</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\eand</code> | <code class="language-plaintext highlighter-rouge">⋏</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\e&lt;&lt;</code> | <code class="language-plaintext highlighter-rouge">⪻</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\e&gt;&gt;</code> | <code class="language-plaintext highlighter-rouge">⪼</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\t&lt;=</code> | <code class="language-plaintext highlighter-rouge">⊴</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\t&gt;=</code> | <code class="language-plaintext highlighter-rouge">⊵</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\t&lt;</code> | <code class="language-plaintext highlighter-rouge">⊲</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\t&gt;</code> | <code class="language-plaintext highlighter-rouge">⊳</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\t&lt;&gt;</code> | <code class="language-plaintext highlighter-rouge">⧎</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\t&lt;|</code> | <code class="language-plaintext highlighter-rouge">⧏</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\t&gt;|</code> | <code class="language-plaintext highlighter-rouge">⧐</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\t&lt;=/</code> | <code class="language-plaintext highlighter-rouge">⋬</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\t&gt;=/</code> | <code class="language-plaintext highlighter-rouge">⋭</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ct&lt;</code> | <code class="language-plaintext highlighter-rouge">⪦</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ct&gt;</code> | <code class="language-plaintext highlighter-rouge">⪧</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ct&lt;=</code> | <code class="language-plaintext highlighter-rouge">⪨</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ct&gt;=</code> | <code class="language-plaintext highlighter-rouge">⪩</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\ctor</code> | <code class="language-plaintext highlighter-rouge">⌔</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\y&lt;</code> | <code class="language-plaintext highlighter-rouge">⧼</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\y&gt;</code> | <code class="language-plaintext highlighter-rouge">⧽</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\Y&lt;</code> | <code class="language-plaintext highlighter-rouge">⊰</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\Y&gt;</code> | <code class="language-plaintext highlighter-rouge">⊱</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&lt;</code> | <code class="language-plaintext highlighter-rouge">⊂</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&gt;</code> | <code class="language-plaintext highlighter-rouge">⊃</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&lt;=</code> | <code class="language-plaintext highlighter-rouge">⊆</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&gt;=</code> | <code class="language-plaintext highlighter-rouge">⊇</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&lt;=/</code> | <code class="language-plaintext highlighter-rouge">⊈</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&gt;=/</code> | <code class="language-plaintext highlighter-rouge">⊉</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&lt;/=</code> | <code class="language-plaintext highlighter-rouge">⊊</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&gt;/=</code> | <code class="language-plaintext highlighter-rouge">⊋</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&lt;/</code> | <code class="language-plaintext highlighter-rouge">⊄</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&gt;/</code> | <code class="language-plaintext highlighter-rouge">⊅</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\su</code> | <code class="language-plaintext highlighter-rouge">∪</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\si</code> | <code class="language-plaintext highlighter-rouge">∩</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\sU</code> | <code class="language-plaintext highlighter-rouge">⋃</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\sI</code> | <code class="language-plaintext highlighter-rouge">⋂</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\su+</code> | <code class="language-plaintext highlighter-rouge">⊎</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\sU+</code> | <code class="language-plaintext highlighter-rouge">⨄</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&lt;.</code> | <code class="language-plaintext highlighter-rouge">⪽</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&gt;.</code> | <code class="language-plaintext highlighter-rouge">⪾</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\su.</code> | <code class="language-plaintext highlighter-rouge">⊍</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\si.</code> | <code class="language-plaintext highlighter-rouge">⩀</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&lt;|</code> | <code class="language-plaintext highlighter-rouge">⫏</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&gt;|</code> | <code class="language-plaintext highlighter-rouge">⫐</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&lt;=|</code> | <code class="language-plaintext highlighter-rouge">⫑</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\s&gt;=|</code> | <code class="language-plaintext highlighter-rouge">⫒</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\su|</code> | <code class="language-plaintext highlighter-rouge">⩌</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\si|</code> | <code class="language-plaintext highlighter-rouge">⩍</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\hs&lt;</code> | <code class="language-plaintext highlighter-rouge">⋐</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\hs&gt;</code> | <code class="language-plaintext highlighter-rouge">⋑</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\hsu</code> | <code class="language-plaintext highlighter-rouge">⋓</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\hsi</code> | <code class="language-plaintext highlighter-rouge">⋒</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\q&lt;=</code> | <code class="language-plaintext highlighter-rouge">⊑</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\q&gt;=</code> | <code class="language-plaintext highlighter-rouge">⊒</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\q&lt;</code> | <code class="language-plaintext highlighter-rouge">⊏</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\q&gt;</code> | <code class="language-plaintext highlighter-rouge">⊐</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\q&lt;=/</code> | <code class="language-plaintext highlighter-rouge">⋢</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\q&gt;=/</code> | <code class="language-plaintext highlighter-rouge">⋣</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\q&lt;/=</code> | <code class="language-plaintext highlighter-rouge">⋤</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\q&gt;/=</code> | <code class="language-plaintext highlighter-rouge">⋥</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\j</code> | <code class="language-plaintext highlighter-rouge">⊔</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\m</code> | <code class="language-plaintext highlighter-rouge">⊓</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\J</code> | <code class="language-plaintext highlighter-rouge">⨆</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\M</code> | <code class="language-plaintext highlighter-rouge">⨅</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\hj</code> | <code class="language-plaintext highlighter-rouge">⩏</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\hm</code> | <code class="language-plaintext highlighter-rouge">⩎</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\w</code> | <code class="language-plaintext highlighter-rouge">⩊</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\sum</code> | <code class="language-plaintext highlighter-rouge">∑</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\prod</code> | <code class="language-plaintext highlighter-rouge">∏</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\'&lt;</code> | <code class="language-plaintext highlighter-rouge">‘</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\'&gt;</code> | <code class="language-plaintext highlighter-rouge">’</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\'</code><code class="language-plaintext highlighter-rouge"> | </code>‛<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>"&lt;<code class="language-plaintext highlighter-rouge"> | </code>“<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>"&gt;<code class="language-plaintext highlighter-rouge"> | </code>”<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\,,<code class="language-plaintext highlighter-rouge"> | </code>„<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>"<code class="language-plaintext highlighter-rouge">| `‟` | i | Insert mode |
+| `\--` | `–` | i | Insert mode |
+| `\---` | `—` | i | Insert mode |
+| `\'` | `′` | i | Insert mode |
+| `\''` | `″` | i | Insert mode |
+| `\'''` | `‴` | i | Insert mode |
+| `\</code> | <code class="language-plaintext highlighter-rouge">‵</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\</code><code class="language-plaintext highlighter-rouge">| `‶` | i | Insert mode |
+| `\</code><code class="language-plaintext highlighter-rouge">| `‷` | i | Insert mode |
+| `\.` | `⋅` | i | Insert mode |
+| `\.bu` | `∙` | i | Insert mode |
+| `\:` | `∶` | i | Insert mode |
+| `\:3` | `⁝` | i | Insert mode |
+| `\:4` | `⁞` | i | Insert mode |
+| `\t:` | `ː` | i | Insert mode |
+| `\s:` | `꞉` | i | Insert mode |
+| `\ther` | `∴` | i | Insert mode |
+| `\bec` | `∵` | i | Insert mode |
+| `\::` | `∷` | i | Insert mode |
+| `\..` | `‥` | i | Insert mode |
+| `\...` | `…` | i | Insert mode |
+| `\c...` | `⋯` | i | Insert mode |
+| `\v...` | `⋮` | i | Insert mode |
+| `\.:` | `⁖` | i | Insert mode |
+| `\.:.` | `⁘` | i | Insert mode |
+| `\:.:` | `⁙` | i | Insert mode |
+| `\.+` | `⸭` | i | Insert mode |
+| `\o` | `∘` | i | Insert mode |
+| `\o:` | `⦂` | i | Insert mode |
+| `\o;` | `⨟` | i | Insert mode |
+| `\,|` | `⍪` | i | Insert mode |
+| `\d^` | `⌄` | i | Insert mode |
+| `\.^` | `˙` | i | Insert mode |
+| `\and,` | `꘍` | i | Insert mode |
+| `\|` | `∣` | i | Insert mode |
+| `\|/` | `∤` | i | Insert mode |
+| `\|:` | `¦` | i | Insert mode |
+| `\w|` | `⫾` | i | Insert mode |
+| `\||` | `‖` | i | Insert mode |
+| `\par` | `∥` | i | Insert mode |
+| `\%` | `÷` | i | Insert mode |
+| `\%%` | `٪` | i | Insert mode |
+| `\/` | `∕` | i | Insert mode |
+| `\set\` | `∖` | i | Insert mode |
+| `\//` | `⫽` | i | Insert mode |
+| `\&amp;` | `⅋` | i | Insert mode |
+| `\///` | `⫻` | i | Insert mode |
+| `\O/` | `∅` | i | Insert mode |
+| `\*` | `⋆` | i | Insert mode |
+| `\star` | `☆` | i | Insert mode |
+| `\starb` | `★` | i | Insert mode |
+| `\**` | `⋇` | i | Insert mode |
+| `\#` | `♯` | i | Insert mode |
+| `\##` | `𝄪` | i | Insert mode |
+| `\b` | `♭` | i | Insert mode |
+| `\bb` | `𝄫` | i | Insert mode |
+| `\n` | `♮` | i | Insert mode |
+| `\=||` | `⋕` | i | Insert mode |
+| `\d?` | `¿` | i | Insert mode |
+| `\d!` | `¡` | i | Insert mode |
+| `\??` | `⁇` | i | Insert mode |
+| `\!!` | `‼` | i | Insert mode |
+| `\?!` | `⁈` | i | Insert mode |
+| `\!?` | `⁉` | i | Insert mode |
+| `\++` | `⧺` | i | Insert mode |
+| `\+++` | `⧻` | i | Insert mode |
+| `\+.` | `∔` | i | Insert mode |
+| `\+(` | `⨭` | i | Insert mode |
+| `\+)` | `⨮` | i | Insert mode |
+| `\+-` | `±` | i | Insert mode |
+| `\-.` | `∸` | i | Insert mode |
+| `\x` | `×` | i | Insert mode |
+| `\x.` | `⨰` | i | Insert mode |
+| `\x-` | `⨱` | i | Insert mode |
+| `\x(` | `⨴` | i | Insert mode |
+| `\x)` | `⨵` | i | Insert mode |
+| `\xx` | `⨯` | i | Insert mode |
+| `\XX` | `⨳` | i | Insert mode |
+| `\xb` | `✖` | i | Insert mode |
+| `\swap` | `⤨` | i | Insert mode |
+| `\o+` | `⊕` | i | Insert mode |
+| `\o-` | `⊖` | i | Insert mode |
+| `\ox` | `⊗` | i | Insert mode |
+| `\o/` | `⊘` | i | Insert mode |
+| `\o.` | `⊙` | i | Insert mode |
+| `\oo` | `⊚` | i | Insert mode |
+| `\o*` | `⊛` | i | Insert mode |
+| `\o=` | `⊜` | i | Insert mode |
+| `\o--` | `⊝` | i | Insert mode |
+| `\ot` | `⎊` | i | Insert mode |
+| `\o|` | `⦶` | i | Insert mode |
+| `\o||` | `⦷` | i | Insert mode |
+| `\o\` | `⦸` | i | Insert mode |
+| `\obot` | `⦹` | i | Insert mode |
+| `\o%` | `⦼` | i | Insert mode |
+| `\o&lt;` | `⧀` | i | Insert mode |
+| `\o&gt;` | `⧁` | i | Insert mode |
+| `\.di` | `⋄` | i | Insert mode |
+| `\di` | `◇` | i | Insert mode |
+| `\di.` | `⟐` | i | Insert mode |
+| `\s` | `□` | i | Insert mode |
+| `\s+` | `⊞` | i | Insert mode |
+| `\s-` | `⊟` | i | Insert mode |
+| `\sx` | `⊠` | i | Insert mode |
+| `\s.` | `⊡` | i | Insert mode |
+| `\sand` | `⟎` | i | Insert mode |
+| `\sor` | `⟏` | i | Insert mode |
+| `\s/` | `⧄` | i | Insert mode |
+| `\s\` | `⧅` | i | Insert mode |
+| `\s*` | `⧆` | i | Insert mode |
+| `\so` | `⧇` | i | Insert mode |
+| `\ss` | `⧈` | i | Insert mode |
+| `\sss` | `⧉` | i | Insert mode |
+| `\s|` | `⎅` | i | Insert mode |
+| `\O` | `○` | i | Insert mode |
+| `\qed` | `∎` | i | Insert mode |
+| `\-/` | `⌿` | i | Insert mode |
+| `\sin` | `∿` | i | Insert mode |
+| `\link` | `∾` | i | Insert mode |
+| `\bow` | `⋈` | i | Insert mode |
+| `\hour` | `⧖` | i | Insert mode |
+| `\bowl` | `⋉` | i | Insert mode |
+| `\bowr` | `⋊` | i | Insert mode |
+| `\inf` | `∞` | i | Insert mode |
+| `\inf&lt;` | `∝` | i | Insert mode |
+| `\tru` | `△` | i | Insert mode |
+| `\trr` | `▷` | i | Insert mode |
+| `\trd` | `▽` | i | Insert mode |
+| `\trl` | `◁` | i | Insert mode |
+| `\trub` | `▲` | i | Insert mode |
+| `\trrb` | `▶` | i | Insert mode |
+| `\trdb` | `▼` | i | Insert mode |
+| `\trlb` | `◀` | i | Insert mode |
+| `\t+` | `⨹` | i | Insert mode |
+| `\t-` | `⨺` | i | Insert mode |
+| `\tx` | `⨻` | i | Insert mode |
+| `\tt` | `⟁` | i | Insert mode |
+| `\t.` | `◬` | i | Insert mode |
+| `\cd` | `⟡` | i | Insert mode |
+| `\cd&gt;` | `⟢` | i | Insert mode |
+| `\cd&lt;` | `⟣` | i | Insert mode |
+| `\sq&gt;` | `⟤` | i | Insert mode |
+| `\sq&lt;` | `⟥` | i | Insert mode |
+| `\loz` | `⌑` | i | Insert mode |
+| `\d&lt;&gt;` | `⟠` | i | Insert mode |
+| `\zap` | `⌁` | i | Insert mode |
+| `\dag` | `†` | i | Insert mode |
+| `\ddag` | `‡` | i | Insert mode |
+| `\***` | `⁂` | i | Insert mode |
+| `\int` | `∫` | i | Insert mode |
+| `\cent` | `¢` | i | Insert mode |
+| `\Oo` | `⧂` | i | Insert mode |
+| `\+br` | `⌌` | i | Insert mode |
+| `\+bl` | `⌍` | i | Insert mode |
+| `\+tr` | `⌎` | i | Insert mode |
+| `\+tl` | `⌏` | i | Insert mode |
+| `\ctl` | `⌜` | i | Insert mode |
+| `\ctr` | `⌝` | i | Insert mode |
+| `\cbl` | `⌞` | i | Insert mode |
+| `\cbr` | `⌟` | i | Insert mode |
+| `\&gt;-` | `⌲` | i | Insert mode |
+| `\scales` | `⚖` | i | Insert mode |
+| `\root` | `√` | i | Insert mode |
+| `\in` | `∈` | i | Insert mode |
+| `\in.` | `⋵` | i | Insert mode |
+| `\in|` | `⋳` | i | Insert mode |
+| `\in=` | `⋹` | i | Insert mode |
+| `\in-` | `⋲` | i | Insert mode |
+| `\in-l` | `⋺` | i | Insert mode |
+| `\in/` | `∉` | i | Insert mode |
+| `\inl` | `∋` | i | Insert mode |
+| `\in|l` | `⋻` | i | Insert mode |
+| `\inu` | `⟒` | i | Insert mode |
+| `\ind` | `⫙` | i | Insert mode |
+| `\ele` | `∊` | i | Insert mode |
+| `\elel` | `∍` | i | Insert mode |
+| `\ele|` | `⋴` | i | Insert mode |
+| `\ele|l` | `⋼` | i | Insert mode |
+| `\mem` | `⋿` | i | Insert mode |
+| `\all` | `∀` | i | Insert mode |
+| `\ex` | `∃` | i | Insert mode |
+| `\ex/` | `∄` | i | Insert mode |
+| `\|-` | `⊢` | i | Insert mode |
+| `\-|` | `⊣` | i | Insert mode |
+| `\|=` | `⊨` | i | Insert mode |
+| `\or` | `∨` | i | Insert mode |
+| `\and` | `∧` | i | Insert mode |
+| `\andor` | `⩙` | i | Insert mode |
+| `\bot` | `⊥` | i | Insert mode |
+| `\bot=` | `⫫` | i | Insert mode |
+| `\top` | `⊤` | i | Insert mode |
+| `\not` | `¬` | i | Insert mode |
+| `\xor` | `⊻` | i | Insert mode |
+| `\comp` | `∁` | i | Insert mode |
+| `\==` | `≡` | i | Insert mode |
+| `\==/` | `≢` | i | Insert mode |
+| `\===` | `≣` | i | Insert mode |
+| `\=2` | `⩵` | i | Insert mode |
+| `\=3` | `⩶` | i | Insert mode |
+| `\~=` | `≃` | i | Insert mode |
+| `\~~` | `≈` | i | Insert mode |
+| `\~~/` | `≉` | i | Insert mode |
+| `\~` | `∼` | i | Insert mode |
+| `\~/` | `≁` | i | Insert mode |
+| `\:=` | `≔` | i | Insert mode |
+| `\=:` | `≕` | i | Insert mode |
+| `\::=` | `⩴` | i | Insert mode |
+| `\=/` | `≠` | i | Insert mode |
+| `\=?` | `≟` | i | Insert mode |
+| `\=o` | `≗` | i | Insert mode |
+| `\=*` | `⩮` | i | Insert mode |
+| `\=.` | `⩦` | i | Insert mode |
+| `\=//` | `⧣` | i | Insert mode |
+| `\=s` | `≌` | i | Insert mode |
+| `\=star` | `≛` | i | Insert mode |
+| `\~~^` | `⩯` | i | Insert mode |
+| `\=t` | `≜` | i | Insert mode |
+| `\=def` | `≝` | i | Insert mode |
+| `\eqv` | `≍` | i | Insert mode |
+| `\eqv/` | `≭` | i | Insert mode |
+| `\=O` | `≎` | i | Insert mode |
+| `\block` | `█` | i | Insert mode |
+| `\_+` | `₊` | i | Insert mode |
+| `\_-` | `₋` | i | Insert mode |
+| `\_=` | `₌` | i | Insert mode |
+| `\_(` | `₍` | i | Insert mode |
+| `\_)` | `₎` | i | Insert mode |
+| `\^+` | `⁺` | i | Insert mode |
+| `\^-` | `⁻` | i | Insert mode |
+| `\^=` | `⁼` | i | Insert mode |
+| `\^(` | `⁽` | i | Insert mode |
+| `\^)` | `⁾` | i | Insert mode |
+| `\^deg` | `˚` | i | Insert mode |
+| `\^bow` | `⑅` | i | Insert mode |
+| `\^uu` | `ᐜ` | i | Insert mode |
+| `\^tr` | `ᐞ` | i | Insert mode |
+| `\^/` | `ᐟ` | i | Insert mode |
+| `\^\` | `ᐠ` | i | Insert mode |
+| `\^un` | `ᐡ` | i | Insert mode |
+| `\^in` | `ᐢ` | i | Insert mode |
+| `\^su` | `ᐣ` | i | Insert mode |
+| `\^//` | `ᐥ` | i | Insert mode |
+| `\^||` | `ᐦ` | i | Insert mode |
+| `\^top` | `ᐪ` | i | Insert mode |
+| `\^.` | `ᐧ` | i | Insert mode |
+| `\^^nu` |</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^^^</code> | <code class="language-plaintext highlighter-rouge">| i | Insert mode |
+| `\^^&lt;` |</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^^&gt;</code> | <code class="language-plaintext highlighter-rouge">| i | Insert mode |
+| `\^^&lt;-` |</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^^-&gt;</code> | <code class="language-plaintext highlighter-rouge">| i | Insert mode |
+| `\^^~` |</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^^(</code> | <code class="language-plaintext highlighter-rouge">| i | Insert mode |
+| `\^^)` |</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^^~~</code> | <code class="language-plaintext highlighter-rouge">| i | Insert mode |
+| `\^^-` |</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^^--</code> | <code class="language-plaintext highlighter-rouge">| i | Insert mode |
+| `\^^.` |</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^^..</code> | <code class="language-plaintext highlighter-rouge">| i | Insert mode |
+| `\^^o` |</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^^,</code> | <code class="language-plaintext highlighter-rouge">| i | Insert mode |
+| `\^^v` |</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\^^(.</code> | <code class="language-plaintext highlighter-rouge">| i | Insert mode |
+| `\PP` | `¶` | i | Insert mode |
+| `\_` | `␣` | i | Insert mode |
+| `\__` | `‗` | i | Insert mode |
+| `\___` | `﹍` | i | Insert mode |
+| `\~_` | `﹏` | i | Insert mode |
+| `\utie` | `‿` | i | Insert mode |
+| `\iutie` | `⁔` | i | Insert mode |
+| `\sp` | `␠` | i | Insert mode |
+| `\SS` | `§` | i | Insert mode |
+| `\bu` | `•` | i | Insert mode |
+| `\obu` | `◦` | i | Insert mode |
+| `\-bu` | `⁃` | i | Insert mode |
+| `\tbu` | `‣` | i | Insert mode |
+| `\lbu` | `⁌` | i | Insert mode |
+| `\rbu` | `⁍` | i | Insert mode |
+| `\ibu` | `◘` | i | Insert mode |
+| `\hbu` | `❥` | i | Insert mode |
+| `\hlbu` | `☙` | i | Insert mode |
+| `\hrbu` | `❧` | i | Insert mode |
+| `\buo` | `⦿` | i | Insert mode |
+| `\obuo` | `⦾` | i | Insert mode |
+| `\check` | `✓` | i | Insert mode |
+| `\X` | `✗` | i | Insert mode |
+| `\bal` | `☐` | i | Insert mode |
+| `\balc` | `☑` | i | Insert mode |
+| `\balx` | `☒` | i | Insert mode |
+| `\disapprove` | `ಠ_ಠ` | i | Insert mode |
+| `\flip` | `﹙╯°□°）╯︵┻━┻` | i | Insert mode |
+| `\putback` | `┬─┬ノ﹙゜-゜ノ﹚` | i | Insert mode |
+| `\dust` | `┬─┬⃰͡ ﹙ᵔᵕᵔ͜ ﹚` | i | Insert mode |
+| `\doubleflip` | `┻━┻︵ヽ﹙`Д´﹚ﾉ︵┻━┻` | i | Insert mode |
+| `\fisticuffs` | `ლ﹙｀ー´ლ﹚` | i | Insert mode |
+| `\shrug` | `¯_﹙ツ﹚_/¯` | i | Insert mode |
+| `\meh` | `¯﹙°_o﹚/¯` | i | Insert mode |
+| `\angry` | `﹙╬ಠ益ಠ﹚` | i | Insert mode |
+| `\meow` | `ฅ^•ﻌ•^ฅ` | i | Insert mode |
+| `\cheers` | `﹙^_^）o自自o（^_^﹚` | i | Insert mode |
+| `\crying` | `ಥ_ಥ` | i | Insert mode |
+| `\breakdown` | `ಥ﹏ಥ` | i | Insert mode |
+| `\disagree` | `٩◔̯◔۶` | i | Insert mode |
+| `\flex` | `ᕙ﹙⇀‸↼‶﹚ᕗ` | i | Insert mode |
+| `\sadconfused` | `¯_﹙⊙︿⊙﹚_/¯` | i | Insert mode |
+| `\ytho` | `щ（ﾟДﾟщ）` | i | Insert mode |
+| `\strut` | `ᕕ﹙ᐛ﹚ᕗ` | i | Insert mode |
+| `\fkit` | `t﹙-_-t﹚` | i | Insert mode |
+| `\sleepy` | `눈_눈` | i | Insert mode |
+| `\opera` | `ヾ﹙´〇`﹚ﾉ♪♪♪` | i | Insert mode |
+| `\zombie` | `[¬º-°]¬` | i | Insert mode |
+| `\point` | `﹙☞ﾟヮﾟ﹚☞` | i | Insert mode |
+| `\poo` | `💩` | i | Insert mode |
+| `\Alpha` | `Α` | i | Insert mode |
+| `\Beta` | `Β` | i | Insert mode |
+| `\Gamma` | `Γ` | i | Insert mode |
+| `\Delta` | `Δ` | i | Insert mode |
+| `\Epsilon` | `Ε` | i | Insert mode |
+| `\Zeta` | `Ζ` | i | Insert mode |
+| `\Eta` | `Η` | i | Insert mode |
+| `\Theta` | `Θ` | i | Insert mode |
+| `\Iota` | `Ι` | i | Insert mode |
+| `\Kappa` | `Κ` | i | Insert mode |
+| `\Lambda` | `Λ` | i | Insert mode |
+| `\Mu` | `Μ` | i | Insert mode |
+| `\Nu` | `Ν` | i | Insert mode |
+| `\Xi` | `Ξ` | i | Insert mode |
+| `\Omicron` | `Ο` | i | Insert mode |
+| `\Pi` | `Π` | i | Insert mode |
+| `\Rho` | `Ρ` | i | Insert mode |
+| `\varSigma` | `ϴ` | i | Insert mode |
+| `\Sigma` | `Σ` | i | Insert mode |
+| `\Tau` | `Τ` | i | Insert mode |
+| `\Upsilon` | `Υ` | i | Insert mode |
+| `\Phi` | `Φ` | i | Insert mode |
+| `\Chi` | `Χ` | i | Insert mode |
+| `\Psi` | `Ψ` | i | Insert mode |
+| `\Omega` | `Ω` | i | Insert mode |
+| `\Nabla` | `∇` | i | Insert mode |
+| `\alpha` | `α` | i | Insert mode |
+| `\beta` | `β` | i | Insert mode |
+| `\gamma` | `γ` | i | Insert mode |
+| `\delta` | `δ` | i | Insert mode |
+| `\epsilon` | `ε` | i | Insert mode |
+| `\zeta` | `ζ` | i | Insert mode |
+| `\eta` | `η` | i | Insert mode |
+| `\theta` | `θ` | i | Insert mode |
+| `\iota` | `ι` | i | Insert mode |
+| `\kappa` | `κ` | i | Insert mode |
+| `\lambda` | `λ` | i | Insert mode |
+| `\mu` | `μ` | i | Insert mode |
+| `\nu` | `ν` | i | Insert mode |
+| `\xi` | `ξ` | i | Insert mode |
+| `\omicron` | `ο` | i | Insert mode |
+| `\pi` | `π` | i | Insert mode |
+| `\rho` | `ρ` | i | Insert mode |
+| `\varsigma` | `ς` | i | Insert mode |
+| `\sigma` | `σ` | i | Insert mode |
+| `\tau` | `τ` | i | Insert mode |
+| `\upsilon` | `υ` | i | Insert mode |
+| `\phi` | `φ` | i | Insert mode |
+| `\chi` | `χ` | i | Insert mode |
+| `\psi` | `ψ` | i | Insert mode |
+| `\omega` | `ω` | i | Insert mode |
+| `\partial` | `∂` | i | Insert mode |
+| `\varepsilon` | `ϵ` | i | Insert mode |
+| `\vartheta` | `ϑ` | i | Insert mode |
+| `\varkappa` | `ϰ` | i | Insert mode |
+| `\varphi` | `ϕ` | i | Insert mode |
+| `\varrho` | `ϱ` | i | Insert mode |
+| `\varpi` | `ϖ` | i | Insert mode |
+| `\lambda/` | `ƛ` | i | Insert mode |
+| `\bdAlpha` | `𝚨` | i | Insert mode |
+| `\bdBeta` | `𝚩` | i | Insert mode |
+| `\bdGamma` | `𝚪` | i | Insert mode |
+| `\bdDelta` | `𝚫` | i | Insert mode |
+| `\bdEpsilon` | `𝚬` | i | Insert mode |
+| `\bdZeta` | `𝚭` | i | Insert mode |
+| `\bdEta` | `𝚮` | i | Insert mode |
+| `\bdTheta` | `𝚯` | i | Insert mode |
+| `\bdIota` | `𝚰` | i | Insert mode |
+| `\bdKappa` | `𝚱` | i | Insert mode |
+| `\bdLambda` | `𝚲` | i | Insert mode |
+| `\bdMu` | `𝚳` | i | Insert mode |
+| `\bdNu` | `𝚴` | i | Insert mode |
+| `\bdXi` | `𝚵` | i | Insert mode |
+| `\bdOmicron` | `𝚶` | i | Insert mode |
+| `\bdPi` | `𝚷` | i | Insert mode |
+| `\bdRho` | `𝚸` | i | Insert mode |
+| `\bdvarSigma` | `𝚹` | i | Insert mode |
+| `\bdSigma` | `𝚺` | i | Insert mode |
+| `\bdTau` | `𝚻` | i | Insert mode |
+| `\bdUpsilon` | `𝚼` | i | Insert mode |
+| `\bdPhi` | `𝚽` | i | Insert mode |
+| `\bdChi` | `𝚾` | i | Insert mode |
+| `\bdPsi` | `𝚿` | i | Insert mode |
+| `\bdOmega` | `𝛀` | i | Insert mode |
+| `\bdNabla` | `𝛁` | i | Insert mode |
+| `\bdalpha` | `𝛂` | i | Insert mode |
+| `\bdbeta` | `𝛃` | i | Insert mode |
+| `\bdgamma` | `𝛄` | i | Insert mode |
+| `\bddelta` | `𝛅` | i | Insert mode |
+| `\bdepsilon` | `𝛆` | i | Insert mode |
+| `\bdzeta` | `𝛇` | i | Insert mode |
+| `\bdldeta` | `𝛈` | i | Insert mode |
+| `\bdtheta` | `𝛉` | i | Insert mode |
+| `\bdiota` | `𝛊` | i | Insert mode |
+| `\bdkappa` | `𝛋` | i | Insert mode |
+| `\bdlambda` | `𝛌` | i | Insert mode |
+| `\bdmu` | `𝛍` | i | Insert mode |
+| `\bdnu` | `𝛎` | i | Insert mode |
+| `\bdxi` | `𝛏` | i | Insert mode |
+| `\bdomicron` | `𝛐` | i | Insert mode |
+| `\bdpi` | `𝛑` | i | Insert mode |
+| `\bdrho` | `𝛒` | i | Insert mode |
+| `\bdvarsigma` | `𝛓` | i | Insert mode |
+| `\bdsigma` | `𝛔` | i | Insert mode |
+| `\bdtau` | `𝛕` | i | Insert mode |
+| `\bdupsilon` | `𝛖` | i | Insert mode |
+| `\bdphi` | `𝛗` | i | Insert mode |
+| `\bdchi` | `𝛘` | i | Insert mode |
+| `\bdpsi` | `𝛙` | i | Insert mode |
+| `\bdomega` | `𝛚` | i | Insert mode |
+| `\bdnabla` | `𝛛` | i | Insert mode |
+| `\bdvarepsilon` | `𝛜` | i | Insert mode |
+| `\bdvartheta` | `𝛝` | i | Insert mode |
+| `\bdvarkappa` | `𝛞` | i | Insert mode |
+| `\bdvarphi` | `𝛟` | i | Insert mode |
+| `\bdvarrho` | `𝛠` | i | Insert mode |
+| `\bdvarpi` | `𝛡` | i | Insert mode |
+| `\itAlpha` | `𝛢` | i | Insert mode |
+| `\itBeta` | `𝛣` | i | Insert mode |
+| `\itGamma` | `𝛤` | i | Insert mode |
+| `\itDelta` | `𝛥` | i | Insert mode |
+| `\itEpsilon` | `𝛦` | i | Insert mode |
+| `\itZeta` | `𝛧` | i | Insert mode |
+| `\itEta` | `𝛨` | i | Insert mode |
+| `\itTheta` | `𝛩` | i | Insert mode |
+| `\itIota` | `𝛪` | i | Insert mode |
+| `\itKappa` | `𝛫` | i | Insert mode |
+| `\itLambda` | `𝛬` | i | Insert mode |
+| `\itMu` | `𝛭` | i | Insert mode |
+| `\itNu` | `𝛮` | i | Insert mode |
+| `\itXi` | `𝛯` | i | Insert mode |
+| `\itOmicron` | `𝛰` | i | Insert mode |
+| `\itPi` | `𝛱` | i | Insert mode |
+| `\itRho` | `𝛲` | i | Insert mode |
+| `\itvarSigma` | `𝛳` | i | Insert mode |
+| `\itSigma` | `𝛴` | i | Insert mode |
+| `\itTau` | `𝛵` | i | Insert mode |
+| `\itUpsilon` | `𝛶` | i | Insert mode |
+| `\itPhi` | `𝛷` | i | Insert mode |
+| `\itChi` | `𝛸` | i | Insert mode |
+| `\itPsi` | `𝛹` | i | Insert mode |
+| `\itOmega` | `𝛺` | i | Insert mode |
+| `\itNabla` | `𝛻` | i | Insert mode |
+| `\italpha` | `𝛼` | i | Insert mode |
+| `\itbeta` | `𝛽` | i | Insert mode |
+| `\itgamma` | `𝛾` | i | Insert mode |
+| `\itdelta` | `𝛿` | i | Insert mode |
+| `\itepsilon` | `𝜀` | i | Insert mode |
+| `\itzeta` | `𝜁` | i | Insert mode |
+| `\iteta` | `𝜂` | i | Insert mode |
+| `\ittheta` | `𝜃` | i | Insert mode |
+| `\itiota` | `𝜄` | i | Insert mode |
+| `\itkappa` | `𝜅` | i | Insert mode |
+| `\itlambda` | `𝜆` | i | Insert mode |
+| `\itmu` | `𝜇` | i | Insert mode |
+| `\itnu` | `𝜈` | i | Insert mode |
+| `\itxi` | `𝜉` | i | Insert mode |
+| `\itomicron` | `𝜊` | i | Insert mode |
+| `\itpi` | `𝜋` | i | Insert mode |
+| `\itrho` | `𝜌` | i | Insert mode |
+| `\itvarsigma` | `𝜍` | i | Insert mode |
+| `\itsigma` | `𝜎` | i | Insert mode |
+| `\ittau` | `𝜏` | i | Insert mode |
+| `\itupsilon` | `𝜐` | i | Insert mode |
+| `\itphi` | `𝜑` | i | Insert mode |
+| `\itchi` | `𝜒` | i | Insert mode |
+| `\itpsi` | `𝜓` | i | Insert mode |
+| `\itomega` | `𝜔` | i | Insert mode |
+| `\itnabla` | `𝜕` | i | Insert mode |
+| `\itvarepsilon` | `𝜖` | i | Insert mode |
+| `\itvartheta` | `𝜗` | i | Insert mode |
+| `\itvarkappa` | `𝜘` | i | Insert mode |
+| `\itvarphi` | `𝜙` | i | Insert mode |
+| `\itvarrho` | `𝜚` | i | Insert mode |
+| `\itvarpi` | `𝜛` | i | Insert mode |
+| `\bditAlpha` | `𝜜` | i | Insert mode |
+| `\bditBeta` | `𝜝` | i | Insert mode |
+| `\bditGamma` | `𝜞` | i | Insert mode |
+| `\bditDelta` | `𝜟` | i | Insert mode |
+| `\bditEpsilon` | `𝜠` | i | Insert mode |
+| `\bditZeta` | `𝜡` | i | Insert mode |
+| `\bditEta` | `𝜢` | i | Insert mode |
+| `\bditTheta` | `𝜣` | i | Insert mode |
+| `\bditIota` | `𝜤` | i | Insert mode |
+| `\bditKappa` | `𝜥` | i | Insert mode |
+| `\bditLambda` | `𝜦` | i | Insert mode |
+| `\bditMu` | `𝜧` | i | Insert mode |
+| `\bditNu` | `𝜨` | i | Insert mode |
+| `\bditXi` | `𝜩` | i | Insert mode |
+| `\bditOmicron` | `𝜪` | i | Insert mode |
+| `\bditPi` | `𝜫` | i | Insert mode |
+| `\bditRho` | `𝜬` | i | Insert mode |
+| `\bditvarSigma` | `𝜭` | i | Insert mode |
+| `\bditSigma` | `𝜮` | i | Insert mode |
+| `\bditTau` | `𝜯` | i | Insert mode |
+| `\bditUpsilon` | `𝜰` | i | Insert mode |
+| `\bditPhi` | `𝜱` | i | Insert mode |
+| `\bditChi` | `𝜲` | i | Insert mode |
+| `\bditPsi` | `𝜳` | i | Insert mode |
+| `\bditOmega` | `𝜴` | i | Insert mode |
+| `\bditNabla` | `𝜵` | i | Insert mode |
+| `\bditalpha` | `𝜶` | i | Insert mode |
+| `\bditbeta` | `𝜷` | i | Insert mode |
+| `\bditgamma` | `𝜸` | i | Insert mode |
+| `\bditdelta` | `𝜹` | i | Insert mode |
+| `\bditepsilon` | `𝜺` | i | Insert mode |
+| `\bditzeta` | `𝜻` | i | Insert mode |
+| `\bditeta` | `𝜼` | i | Insert mode |
+| `\bdittheta` | `𝜽` | i | Insert mode |
+| `\bditiota` | `𝜾` | i | Insert mode |
+| `\bditkappa` | `𝜿` | i | Insert mode |
+| `\bditlambda` | `𝝀` | i | Insert mode |
+| `\bditmu` | `𝝁` | i | Insert mode |
+| `\bditnu` | `𝝂` | i | Insert mode |
+| `\bditxi` | `𝝃` | i | Insert mode |
+| `\bditomicron` | `𝝄` | i | Insert mode |
+| `\bditpi` | `𝝅` | i | Insert mode |
+| `\bditrho` | `𝝆` | i | Insert mode |
+| `\bditvarsigma` | `𝝇` | i | Insert mode |
+| `\bditsigma` | `𝝈` | i | Insert mode |
+| `\bdittau` | `𝝉` | i | Insert mode |
+| `\bditupsilon` | `𝝊` | i | Insert mode |
+| `\bditphi` | `𝝋` | i | Insert mode |
+| `\bditchi` | `𝝌` | i | Insert mode |
+| `\bditpsi` | `𝝍` | i | Insert mode |
+| `\bditomega` | `𝝎` | i | Insert mode |
+| `\bditnabla` | `𝝏` | i | Insert mode |
+| `\bditvarepsilon` | `𝝐` | i | Insert mode |
+| `\bditvartheta` | `𝝑` | i | Insert mode |
+| `\bditvarkappa` | `𝝒` | i | Insert mode |
+| `\bditvarphi` | `𝝓` | i | Insert mode |
+| `\bditvarrho` | `𝝔` | i | Insert mode |
+| `\bditvarpi` | `𝝕` | i | Insert mode |
+| `\_beta` | `ᵦ` | i | Insert mode |
+| `\_gamma` | `ᵧ` | i | Insert mode |
+| `\_rho` | `ᵨ` | i | Insert mode |
+| `\_phi` | `ᵩ` | i | Insert mode |
+| `\_chi` | `ᵪ` | i | Insert mode |
+| `\^alpha` | `ᵅ` | i | Insert mode |
+| `\^beta` | `ᵝ` | i | Insert mode |
+| `\^gamma` | `ᵞ` | i | Insert mode |
+| `\^delta` | `ᵟ` | i | Insert mode |
+| `\^epsilon` | `ᵋ` | i | Insert mode |
+| `\^theta` | `ᶿ` | i | Insert mode |
+| `\^iota` | `ᶥ` | i | Insert mode |
+| `\^Phi` | `ᶲ` | i | Insert mode |
+| `\^phi` | `ᵠ` | i | Insert mode |
+| `\^chi` | `ᵡ` | i | Insert mode |
+| `\bbGamma` | `ℾ` | i | Insert mode |
+| `\bbgamma` | `ℽ` | i | Insert mode |
+| `\bbPi` | `ℿ` | i | Insert mode |
+| `\bbpi` | `ℼ` | i | Insert mode |
+| `\bbSigma` | `⅀` | i | Insert mode |
+| `\bd0` | `𝟎` | i | Insert mode |
+| `\bd1` | `𝟏` | i | Insert mode |
+| `\bd2` | `𝟐` | i | Insert mode |
+| `\bd3` | `𝟑` | i | Insert mode |
+| `\bd4` | `𝟒` | i | Insert mode |
+| `\bd5` | `𝟓` | i | Insert mode |
+| `\bd6` | `𝟔` | i | Insert mode |
+| `\bd7` | `𝟕` | i | Insert mode |
+| `\bd8` | `𝟖` | i | Insert mode |
+| `\bd9` | `𝟗` | i | Insert mode |
+| `\bb0` | `𝟘` | i | Insert mode |
+| `\bb1` | `𝟙` | i | Insert mode |
+| `\bb2` | `𝟚` | i | Insert mode |
+| `\bb3` | `𝟛` | i | Insert mode |
+| `\bb4` | `𝟜` | i | Insert mode |
+| `\bb5` | `𝟝` | i | Insert mode |
+| `\bb6` | `𝟞` | i | Insert mode |
+| `\bb7` | `𝟟` | i | Insert mode |
+| `\bb8` | `𝟠` | i | Insert mode |
+| `\bb9` | `𝟡` | i | Insert mode |
+| `\_0` | `₀` | i | Insert mode |
+| `\_1` | `₁` | i | Insert mode |
+| `\_2` | `₂` | i | Insert mode |
+| `\_3` | `₃` | i | Insert mode |
+| `\_4` | `₄` | i | Insert mode |
+| `\_5` | `₅` | i | Insert mode |
+| `\_6` | `₆` | i | Insert mode |
+| `\_7` | `₇` | i | Insert mode |
+| `\_8` | `₈` | i | Insert mode |
+| `\_9` | `₉` | i | Insert mode |
+| `\^0` | `⁰` | i | Insert mode |
+| `\^1` | `¹` | i | Insert mode |
+| `\^2` | `²` | i | Insert mode |
+| `\^3` | `³` | i | Insert mode |
+| `\^4` | `⁴` | i | Insert mode |
+| `\^5` | `⁵` | i | Insert mode |
+| `\^6` | `⁶` | i | Insert mode |
+| `\^7` | `⁷` | i | Insert mode |
+| `\^8` | `⁸` | i | Insert mode |
+| `\^9` | `⁹` | i | Insert mode |
+| `\1/2` | `½` | i | Insert mode |
+| `\0/3` | `↉` | i | Insert mode |
+| `\1/3` | `⅓` | i | Insert mode |
+| `\2/3` | `⅔` | i | Insert mode |
+| `\1/4` | `¼` | i | Insert mode |
+| `\3/4` | `¾` | i | Insert mode |
+| `\1/5` | `⅕` | i | Insert mode |
+| `\2/5` | `⅖` | i | Insert mode |
+| `\3/5` | `⅗` | i | Insert mode |
+| `\4/5` | `⅘` | i | Insert mode |
+| `\1/6` | `⅙` | i | Insert mode |
+| `\5/6` | `⅚` | i | Insert mode |
+| `\1/7` | `⅐` | i | Insert mode |
+| `\1/8` | `⅛` | i | Insert mode |
+| `\3/8` | `⅜` | i | Insert mode |
+| `\5/8` | `⅝` | i | Insert mode |
+| `\7/8` | `⅞` | i | Insert mode |
+| `\1/9` | `⅑` | i | Insert mode |
+| `\1/10` | `⅒` | i | Insert mode |
+| `\wp` | `℘` | i | Insert mode |
+| `\ell` | `ℓ` | i | Insert mode |
+| `\ln` | `㏑` | i | Insert mode |
+| `\log` | `㏒` | i | Insert mode |
+| `\bdA` | `𝐀` | i | Insert mode |
+| `\bdB` | `𝐁` | i | Insert mode |
+| `\bdC` | `𝐂` | i | Insert mode |
+| `\bdD` | `𝐃` | i | Insert mode |
+| `\bdE` | `𝐄` | i | Insert mode |
+| `\bdF` | `𝐅` | i | Insert mode |
+| `\bdG` | `𝐆` | i | Insert mode |
+| `\bdH` | `𝐇` | i | Insert mode |
+| `\bdI` | `𝐈` | i | Insert mode |
+| `\bdJ` | `𝐉` | i | Insert mode |
+| `\bdK` | `𝐊` | i | Insert mode |
+| `\bdL` | `𝐋` | i | Insert mode |
+| `\bdM` | `𝐌` | i | Insert mode |
+| `\bdN` | `𝐍` | i | Insert mode |
+| `\bdO` | `𝐎` | i | Insert mode |
+| `\bdP` | `𝐏` | i | Insert mode |
+| `\bdQ` | `𝐐` | i | Insert mode |
+| `\bdR` | `𝐑` | i | Insert mode |
+| `\bdS` | `𝐒` | i | Insert mode |
+| `\bdT` | `𝐓` | i | Insert mode |
+| `\bdU` | `𝐔` | i | Insert mode |
+| `\bdV` | `𝐕` | i | Insert mode |
+| `\bdW` | `𝐖` | i | Insert mode |
+| `\bdX` | `𝐗` | i | Insert mode |
+| `\bdY` | `𝐘` | i | Insert mode |
+| `\bdZ` | `𝐙` | i | Insert mode |
+| `\bda` | `𝐚` | i | Insert mode |
+| `\bdb` | `𝐛` | i | Insert mode |
+| `\bdc` | `𝐜` | i | Insert mode |
+| `\bdd` | `𝐝` | i | Insert mode |
+| `\bde` | `𝐞` | i | Insert mode |
+| `\bdf` | `𝐟` | i | Insert mode |
+| `\bdg` | `𝐠` | i | Insert mode |
+| `\bdh` | `𝐡` | i | Insert mode |
+| `\bdi` | `𝐢` | i | Insert mode |
+| `\bdj` | `𝐣` | i | Insert mode |
+| `\bdk` | `𝐤` | i | Insert mode |
+| `\bdl` | `𝐥` | i | Insert mode |
+| `\bdm` | `𝐦` | i | Insert mode |
+| `\bdn` | `𝐧` | i | Insert mode |
+| `\bdo` | `𝐨` | i | Insert mode |
+| `\bdp` | `𝐩` | i | Insert mode |
+| `\bdq` | `𝐪` | i | Insert mode |
+| `\bdr` | `𝐫` | i | Insert mode |
+| `\bds` | `𝐬` | i | Insert mode |
+| `\bdt` | `𝐭` | i | Insert mode |
+| `\bdu` | `𝐮` | i | Insert mode |
+| `\bdv` | `𝐯` | i | Insert mode |
+| `\bdw` | `𝐰` | i | Insert mode |
+| `\bdx` | `𝐱` | i | Insert mode |
+| `\bdy` | `𝐲` | i | Insert mode |
+| `\bdz` | `𝐳` | i | Insert mode |
+| `\itA` | `𝐴` | i | Insert mode |
+| `\itB` | `𝐵` | i | Insert mode |
+| `\itC` | `𝐶` | i | Insert mode |
+| `\itD` | `𝐷` | i | Insert mode |
+| `\itE` | `𝐸` | i | Insert mode |
+| `\itF` | `𝐹` | i | Insert mode |
+| `\itG` | `𝐺` | i | Insert mode |
+| `\itH` | `𝐻` | i | Insert mode |
+| `\itI` | `𝐼` | i | Insert mode |
+| `\itJ` | `𝐽` | i | Insert mode |
+| `\itK` | `𝐾` | i | Insert mode |
+| `\itL` | `𝐿` | i | Insert mode |
+| `\itM` | `𝑀` | i | Insert mode |
+| `\itN` | `𝑁` | i | Insert mode |
+| `\itO` | `𝑂` | i | Insert mode |
+| `\itP` | `𝑃` | i | Insert mode |
+| `\itQ` | `𝑄` | i | Insert mode |
+| `\itR` | `𝑅` | i | Insert mode |
+| `\itS` | `𝑆` | i | Insert mode |
+| `\itT` | `𝑇` | i | Insert mode |
+| `\itU` | `𝑈` | i | Insert mode |
+| `\itV` | `𝑉` | i | Insert mode |
+| `\itW` | `𝑊` | i | Insert mode |
+| `\itX` | `𝑋` | i | Insert mode |
+| `\itY` | `𝑌` | i | Insert mode |
+| `\itZ` | `𝑍` | i | Insert mode |
+| `\ita` | `𝑎` | i | Insert mode |
+| `\itb` | `𝑏` | i | Insert mode |
+| `\itc` | `𝑐` | i | Insert mode |
+| `\itd` | `𝑑` | i | Insert mode |
+| `\ite` | `𝑒` | i | Insert mode |
+| `\itf` | `𝑓` | i | Insert mode |
+| `\itg` | `𝑔` | i | Insert mode |
+| `\ith` | `ℎ` | i | Insert mode |
+| `\iti` | `𝑖` | i | Insert mode |
+| `\itj` | `𝑗` | i | Insert mode |
+| `\itk` | `𝑘` | i | Insert mode |
+| `\itl` | `𝑙` | i | Insert mode |
+| `\itm` | `𝑚` | i | Insert mode |
+| `\itn` | `𝑛` | i | Insert mode |
+| `\ito` | `𝑜` | i | Insert mode |
+| `\itp` | `𝑝` | i | Insert mode |
+| `\itq` | `𝑞` | i | Insert mode |
+| `\itr` | `𝑟` | i | Insert mode |
+| `\its` | `𝑠` | i | Insert mode |
+| `\itt` | `𝑡` | i | Insert mode |
+| `\itu` | `𝑢` | i | Insert mode |
+| `\itv` | `𝑣` | i | Insert mode |
+| `\itw` | `𝑤` | i | Insert mode |
+| `\itx` | `𝑥` | i | Insert mode |
+| `\ity` | `𝑦` | i | Insert mode |
+| `\itz` | `𝑧` | i | Insert mode |
+| `\bditA` | `𝑨` | i | Insert mode |
+| `\bditB` | `𝑩` | i | Insert mode |
+| `\bditC` | `𝑪` | i | Insert mode |
+| `\bditD` | `𝑫` | i | Insert mode |
+| `\bditE` | `𝑬` | i | Insert mode |
+| `\bditF` | `𝑭` | i | Insert mode |
+| `\bditG` | `𝑮` | i | Insert mode |
+| `\bditH` | `𝑯` | i | Insert mode |
+| `\bditI` | `𝑰` | i | Insert mode |
+| `\bditJ` | `𝑱` | i | Insert mode |
+| `\bditK` | `𝑲` | i | Insert mode |
+| `\bditL` | `𝑳` | i | Insert mode |
+| `\bditM` | `𝑴` | i | Insert mode |
+| `\bditN` | `𝑵` | i | Insert mode |
+| `\bditO` | `𝑶` | i | Insert mode |
+| `\bditP` | `𝑷` | i | Insert mode |
+| `\bditQ` | `𝑸` | i | Insert mode |
+| `\bditR` | `𝑹` | i | Insert mode |
+| `\bditS` | `𝑺` | i | Insert mode |
+| `\bditT` | `𝑻` | i | Insert mode |
+| `\bditU` | `𝑼` | i | Insert mode |
+| `\bditV` | `𝑽` | i | Insert mode |
+| `\bditW` | `𝑾` | i | Insert mode |
+| `\bditX` | `𝑿` | i | Insert mode |
+| `\bditY` | `𝒀` | i | Insert mode |
+| `\bditZ` | `𝒁` | i | Insert mode |
+| `\bdita` | `𝒂` | i | Insert mode |
+| `\bditb` | `𝒃` | i | Insert mode |
+| `\bditc` | `𝒄` | i | Insert mode |
+| `\bditd` | `𝒅` | i | Insert mode |
+| `\bdite` | `𝒆` | i | Insert mode |
+| `\bditf` | `𝒇` | i | Insert mode |
+| `\bditg` | `𝒈` | i | Insert mode |
+| `\bdith` | `𝒉` | i | Insert mode |
+| `\bditi` | `𝒊` | i | Insert mode |
+| `\bditj` | `𝒋` | i | Insert mode |
+| `\bditk` | `𝒌` | i | Insert mode |
+| `\bditl` | `𝒍` | i | Insert mode |
+| `\bditm` | `𝒎` | i | Insert mode |
+| `\bditn` | `𝒏` | i | Insert mode |
+| `\bdito` | `𝒐` | i | Insert mode |
+| `\bditp` | `𝒑` | i | Insert mode |
+| `\bditq` | `𝒒` | i | Insert mode |
+| `\bditr` | `𝒓` | i | Insert mode |
+| `\bdits` | `𝒔` | i | Insert mode |
+| `\bditt` | `𝒕` | i | Insert mode |
+| `\bditu` | `𝒖` | i | Insert mode |
+| `\bditv` | `𝒗` | i | Insert mode |
+| `\bditw` | `𝒘` | i | Insert mode |
+| `\bditx` | `𝒙` | i | Insert mode |
+| `\bdity` | `𝒚` | i | Insert mode |
+| `\bditz` | `𝒛` | i | Insert mode |
+| `\calA` | `𝒜` | i | Insert mode |
+| `\calB` | `ℬ` | i | Insert mode |
+| `\calC` | `𝒞` | i | Insert mode |
+| `\calD` | `𝒟` | i | Insert mode |
+| `\calE` | `ℰ` | i | Insert mode |
+| `\calF` | `ℱ` | i | Insert mode |
+| `\calG` | `𝒢` | i | Insert mode |
+| `\calH` | `ℋ` | i | Insert mode |
+| `\calI` | `ℐ` | i | Insert mode |
+| `\calJ` | `𝒥` | i | Insert mode |
+| `\calK` | `𝒦` | i | Insert mode |
+| `\calL` | `ℒ` | i | Insert mode |
+| `\calM` | `ℳ` | i | Insert mode |
+| `\calN` | `𝒩` | i | Insert mode |
+| `\calO` | `𝒪` | i | Insert mode |
+| `\calP` | `𝒫` | i | Insert mode |
+| `\calQ` | `𝒬` | i | Insert mode |
+| `\calR` | `ℛ` | i | Insert mode |
+| `\calS` | `𝒮` | i | Insert mode |
+| `\calT` | `𝒯` | i | Insert mode |
+| `\calU` | `𝒰` | i | Insert mode |
+| `\calV` | `𝒱` | i | Insert mode |
+| `\calW` | `𝒲` | i | Insert mode |
+| `\calX` | `𝒳` | i | Insert mode |
+| `\calY` | `𝒴` | i | Insert mode |
+| `\calZ` | `𝒵` | i | Insert mode |
+| `\cala` | `𝒶` | i | Insert mode |
+| `\calb` | `𝒷` | i | Insert mode |
+| `\calc` | `𝒸` | i | Insert mode |
+| `\cald` | `𝒹` | i | Insert mode |
+| `\cale` | `ℯ` | i | Insert mode |
+| `\calf` | `𝒻` | i | Insert mode |
+| `\calg` | `ℊ` | i | Insert mode |
+| `\calh` | `𝒽` | i | Insert mode |
+| `\cali` | `𝒾` | i | Insert mode |
+| `\calj` | `𝒿` | i | Insert mode |
+| `\calk` | `𝓀` | i | Insert mode |
+| `\call` | `𝓁` | i | Insert mode |
+| `\calm` | `𝓂` | i | Insert mode |
+| `\caln` | `𝓃` | i | Insert mode |
+| `\calo` | `ℴ` | i | Insert mode |
+| `\calp` | `𝓅` | i | Insert mode |
+| `\calq` | `𝓆` | i | Insert mode |
+| `\calr` | `𝓇` | i | Insert mode |
+| `\cals` | `𝓈` | i | Insert mode |
+| `\calt` | `𝓉` | i | Insert mode |
+| `\calu` | `𝓊` | i | Insert mode |
+| `\calv` | `𝓋` | i | Insert mode |
+| `\calw` | `𝓌` | i | Insert mode |
+| `\calx` | `𝓍` | i | Insert mode |
+| `\caly` | `𝓎` | i | Insert mode |
+| `\calz` | `𝓏` | i | Insert mode |
+| `\bdcalA` | `𝓐` | i | Insert mode |
+| `\bdcalB` | `𝓑` | i | Insert mode |
+| `\bdcalC` | `𝓒` | i | Insert mode |
+| `\bdcalD` | `𝓓` | i | Insert mode |
+| `\bdcalE` | `𝓔` | i | Insert mode |
+| `\bdcalF` | `𝓕` | i | Insert mode |
+| `\bdcalG` | `𝓖` | i | Insert mode |
+| `\bdcalH` | `𝓗` | i | Insert mode |
+| `\bdcalI` | `𝓘` | i | Insert mode |
+| `\bdcalJ` | `𝓙` | i | Insert mode |
+| `\bdcalK` | `𝓚` | i | Insert mode |
+| `\bdcalL` | `𝓛` | i | Insert mode |
+| `\bdcalM` | `𝓜` | i | Insert mode |
+| `\bdcalN` | `𝓝` | i | Insert mode |
+| `\bdcalO` | `𝓞` | i | Insert mode |
+| `\bdcalP` | `𝓟` | i | Insert mode |
+| `\bdcalQ` | `𝓠` | i | Insert mode |
+| `\bdcalR` | `𝓡` | i | Insert mode |
+| `\bdcalS` | `𝓢` | i | Insert mode |
+| `\bdcalT` | `𝓣` | i | Insert mode |
+| `\bdcalU` | `𝓤` | i | Insert mode |
+| `\bdcalV` | `𝓥` | i | Insert mode |
+| `\bdcalW` | `𝓦` | i | Insert mode |
+| `\bdcalX` | `𝓧` | i | Insert mode |
+| `\bdcalY` | `𝓨` | i | Insert mode |
+| `\bdcalZ` | `𝓩` | i | Insert mode |
+| `\bdcala` | `𝓪` | i | Insert mode |
+| `\bdcalb` | `𝓫` | i | Insert mode |
+| `\bdcalc` | `𝓬` | i | Insert mode |
+| `\bdcald` | `𝓭` | i | Insert mode |
+| `\bdcale` | `𝓮` | i | Insert mode |
+| `\bdcalf` | `𝓯` | i | Insert mode |
+| `\bdcalg` | `𝓰` | i | Insert mode |
+| `\bdcalh` | `𝓱` | i | Insert mode |
+| `\bdcali` | `𝓲` | i | Insert mode |
+| `\bdcalj` | `𝓳` | i | Insert mode |
+| `\bdcalk` | `𝓴` | i | Insert mode |
+| `\bdcall` | `𝓵` | i | Insert mode |
+| `\bdcalm` | `𝓶` | i | Insert mode |
+| `\bdcaln` | `𝓷` | i | Insert mode |
+| `\bdcalo` | `𝓸` | i | Insert mode |
+| `\bdcalp` | `𝓹` | i | Insert mode |
+| `\bdcalq` | `𝓺` | i | Insert mode |
+| `\bdcalr` | `𝓻` | i | Insert mode |
+| `\bdcals` | `𝓼` | i | Insert mode |
+| `\bdcalt` | `𝓽` | i | Insert mode |
+| `\bdcalu` | `𝓾` | i | Insert mode |
+| `\bdcalv` | `𝓿` | i | Insert mode |
+| `\bdcalw` | `𝔀` | i | Insert mode |
+| `\bdcalx` | `𝔁` | i | Insert mode |
+| `\bdcaly` | `𝔂` | i | Insert mode |
+| `\bdcalz` | `𝔃` | i | Insert mode |
+| `\frakA` | `𝔄` | i | Insert mode |
+| `\frakB` | `𝔅` | i | Insert mode |
+| `\frakC` | `ℭ` | i | Insert mode |
+| `\frakD` | `𝔇` | i | Insert mode |
+| `\frakE` | `𝔈` | i | Insert mode |
+| `\frakF` | `𝔉` | i | Insert mode |
+| `\frakG` | `𝔊` | i | Insert mode |
+| `\frakH` | `ℌ` | i | Insert mode |
+| `\frakI` | `ℑ` | i | Insert mode |
+| `\frakJ` | `𝔍` | i | Insert mode |
+| `\frakK` | `𝔎` | i | Insert mode |
+| `\frakL` | `𝔏` | i | Insert mode |
+| `\frakM` | `𝔐` | i | Insert mode |
+| `\frakN` | `𝔑` | i | Insert mode |
+| `\frakO` | `𝔒` | i | Insert mode |
+| `\frakP` | `𝔓` | i | Insert mode |
+| `\frakQ` | `𝔔` | i | Insert mode |
+| `\frakR` | `ℜ` | i | Insert mode |
+| `\frakS` | `𝔖` | i | Insert mode |
+| `\frakT` | `𝔗` | i | Insert mode |
+| `\frakU` | `𝔘` | i | Insert mode |
+| `\frakV` | `𝔙` | i | Insert mode |
+| `\frakW` | `𝔚` | i | Insert mode |
+| `\frakX` | `𝔛` | i | Insert mode |
+| `\frakY` | `𝔜` | i | Insert mode |
+| `\frakZ` | `ℨ` | i | Insert mode |
+| `\fraka` | `𝔞` | i | Insert mode |
+| `\frakb` | `𝔟` | i | Insert mode |
+| `\frakc` | `𝔠` | i | Insert mode |
+| `\frakd` | `𝔡` | i | Insert mode |
+| `\frake` | `𝔢` | i | Insert mode |
+| `\frakf` | `𝔣` | i | Insert mode |
+| `\frakg` | `𝔤` | i | Insert mode |
+| `\frakh` | `𝔥` | i | Insert mode |
+| `\fraki` | `𝔦` | i | Insert mode |
+| `\frakj` | `𝔧` | i | Insert mode |
+| `\frakk` | `𝔨` | i | Insert mode |
+| `\frakl` | `𝔩` | i | Insert mode |
+| `\frakm` | `𝔪` | i | Insert mode |
+| `\frakn` | `𝔫` | i | Insert mode |
+| `\frako` | `𝔬` | i | Insert mode |
+| `\frakp` | `𝔭` | i | Insert mode |
+| `\frakq` | `𝔮` | i | Insert mode |
+| `\frakr` | `𝔯` | i | Insert mode |
+| `\fraks` | `𝔰` | i | Insert mode |
+| `\frakt` | `𝔱` | i | Insert mode |
+| `\fraku` | `𝔲` | i | Insert mode |
+| `\frakv` | `𝔳` | i | Insert mode |
+| `\frakw` | `𝔴` | i | Insert mode |
+| `\frakx` | `𝔵` | i | Insert mode |
+| `\fraky` | `𝔶` | i | Insert mode |
+| `\frakz` | `𝔷` | i | Insert mode |
+| `\bdfrakA` | `𝕬` | i | Insert mode |
+| `\bdfrakB` | `𝕭` | i | Insert mode |
+| `\bdfrakC` | `𝕮` | i | Insert mode |
+| `\bdfrakD` | `𝕯` | i | Insert mode |
+| `\bdfrakE` | `𝕰` | i | Insert mode |
+| `\bdfrakF` | `𝕱` | i | Insert mode |
+| `\bdfrakG` | `𝕲` | i | Insert mode |
+| `\bdfrakH` | `𝕳` | i | Insert mode |
+| `\bdfrakI` | `𝕴` | i | Insert mode |
+| `\bdfrakJ` | `𝕵` | i | Insert mode |
+| `\bdfrakK` | `𝕶` | i | Insert mode |
+| `\bdfrakL` | `𝕷` | i | Insert mode |
+| `\bdfrakM` | `𝕸` | i | Insert mode |
+| `\bdfrakN` | `𝕹` | i | Insert mode |
+| `\bdfrakO` | `𝕺` | i | Insert mode |
+| `\bdfrakP` | `𝕻` | i | Insert mode |
+| `\bdfrakQ` | `𝕼` | i | Insert mode |
+| `\bdfrakR` | `𝕽` | i | Insert mode |
+| `\bdfrakS` | `𝕾` | i | Insert mode |
+| `\bdfrakT` | `𝕿` | i | Insert mode |
+| `\bdfrakU` | `𝖀` | i | Insert mode |
+| `\bdfrakV` | `𝖁` | i | Insert mode |
+| `\bdfrakW` | `𝖂` | i | Insert mode |
+| `\bdfrakX` | `𝖃` | i | Insert mode |
+| `\bdfrakY` | `𝖄` | i | Insert mode |
+| `\bdfrakZ` | `𝖅` | i | Insert mode |
+| `\bdfraka` | `𝖆` | i | Insert mode |
+| `\bdfrakb` | `𝖇` | i | Insert mode |
+| `\bdfrakc` | `𝖈` | i | Insert mode |
+| `\bdfrakd` | `𝖉` | i | Insert mode |
+| `\bdfrake` | `𝖊` | i | Insert mode |
+| `\bdfrakf` | `𝖋` | i | Insert mode |
+| `\bdfrakg` | `𝖌` | i | Insert mode |
+| `\bdfrakh` | `𝖍` | i | Insert mode |
+| `\bdfraki` | `𝖎` | i | Insert mode |
+| `\bdfrakj` | `𝖏` | i | Insert mode |
+| `\bdfrakk` | `𝖐` | i | Insert mode |
+| `\bdfrakl` | `𝖑` | i | Insert mode |
+| `\bdfrakm` | `𝖒` | i | Insert mode |
+| `\bdfrakn` | `𝖓` | i | Insert mode |
+| `\bdfrako` | `𝖔` | i | Insert mode |
+| `\bdfrakp` | `𝖕` | i | Insert mode |
+| `\bdfrakq` | `𝖖` | i | Insert mode |
+| `\bdfrakr` | `𝖗` | i | Insert mode |
+| `\bdfraks` | `𝖘` | i | Insert mode |
+| `\bdfrakt` | `𝖙` | i | Insert mode |
+| `\bdfraku` | `𝖚` | i | Insert mode |
+| `\bdfrakv` | `𝖛` | i | Insert mode |
+| `\bdfrakw` | `𝖜` | i | Insert mode |
+| `\bdfrakx` | `𝖝` | i | Insert mode |
+| `\bdfraky` | `𝖞` | i | Insert mode |
+| `\bdfrakz` | `𝖟` | i | Insert mode |
+| `\bbA` | `𝔸` | i | Insert mode |
+| `\bbB` | `𝔹` | i | Insert mode |
+| `\bbC` | `ℂ` | i | Insert mode |
+| `\bbD` | `𝔻` | i | Insert mode |
+| `\bbE` | `𝔼` | i | Insert mode |
+| `\bbF` | `𝔽` | i | Insert mode |
+| `\bbG` | `𝔾` | i | Insert mode |
+| `\bbH` | `ℍ` | i | Insert mode |
+| `\bbI` | `𝕀` | i | Insert mode |
+| `\bbJ` | `𝕁` | i | Insert mode |
+| `\bbK` | `𝕂` | i | Insert mode |
+| `\bbL` | `𝕃` | i | Insert mode |
+| `\bbM` | `𝕄` | i | Insert mode |
+| `\bbN` | `ℕ` | i | Insert mode |
+| `\bbO` | `𝕆` | i | Insert mode |
+| `\bbP` | `ℙ` | i | Insert mode |
+| `\bbQ` | `ℚ` | i | Insert mode |
+| `\bbR` | `ℝ` | i | Insert mode |
+| `\bbS` | `𝕊` | i | Insert mode |
+| `\bbT` | `𝕋` | i | Insert mode |
+| `\bbU` | `𝕌` | i | Insert mode |
+| `\bbV` | `𝕍` | i | Insert mode |
+| `\bbW` | `𝕎` | i | Insert mode |
+| `\bbX` | `𝕏` | i | Insert mode |
+| `\bbY` | `𝕐` | i | Insert mode |
+| `\bbZ` | `ℤ` | i | Insert mode |
+| `\bba` | `𝕒` | i | Insert mode |
+| `\bbb` | `𝕓` | i | Insert mode |
+| `\bbc` | `𝕔` | i | Insert mode |
+| `\bbd` | `𝕕` | i | Insert mode |
+| `\bbe` | `𝕖` | i | Insert mode |
+| `\bbf` | `𝕗` | i | Insert mode |
+| `\bbg` | `𝕘` | i | Insert mode |
+| `\bbh` | `𝕙` | i | Insert mode |
+| `\bbi` | `𝕚` | i | Insert mode |
+| `\bbj` | `𝕛` | i | Insert mode |
+| `\bbk` | `𝕜` | i | Insert mode |
+| `\bbl` | `𝕝` | i | Insert mode |
+| `\bbm` | `𝕞` | i | Insert mode |
+| `\bbn` | `𝕟` | i | Insert mode |
+| `\bbo` | `𝕠` | i | Insert mode |
+| `\bbp` | `𝕡` | i | Insert mode |
+| `\bbq` | `𝕢` | i | Insert mode |
+| `\bbr` | `𝕣` | i | Insert mode |
+| `\bbs` | `𝕤` | i | Insert mode |
+| `\bbt` | `𝕥` | i | Insert mode |
+| `\bbu` | `𝕦` | i | Insert mode |
+| `\bbv` | `𝕧` | i | Insert mode |
+| `\bbw` | `𝕨` | i | Insert mode |
+| `\bbx` | `𝕩` | i | Insert mode |
+| `\bby` | `𝕪` | i | Insert mode |
+| `\bbz` | `𝕫` | i | Insert mode |
+| `\_a` | `ₐ` | i | Insert mode |
+| `\_e` | `ₑ` | i | Insert mode |
+| `\_h` | `ₕ` | i | Insert mode |
+| `\_i` | `ᵢ` | i | Insert mode |
+| `\_j` | `ⱼ` | i | Insert mode |
+| `\_k` | `ₖ` | i | Insert mode |
+| `\_l` | `ₗ` | i | Insert mode |
+| `\_m` | `ₘ` | i | Insert mode |
+| `\_n` | `ₙ` | i | Insert mode |
+| `\_o` | `ₒ` | i | Insert mode |
+| `\_p` | `ₚ` | i | Insert mode |
+| `\_r` | `ᵣ` | i | Insert mode |
+| `\_s` | `ₛ` | i | Insert mode |
+| `\_t` | `ₜ` | i | Insert mode |
+| `\_u` | `ᵤ` | i | Insert mode |
+| `\_v` | `ᵥ` | i | Insert mode |
+| `\_x` | `ₓ` | i | Insert mode |
+| `\^A` | `ᴬ` | i | Insert mode |
+| `\^B` | `ᴮ` | i | Insert mode |
+| `\^D` | `ᴰ` | i | Insert mode |
+| `\^E` | `ᴱ` | i | Insert mode |
+| `\^G` | `ᴳ` | i | Insert mode |
+| `\^H` | `ᴴ` | i | Insert mode |
+| `\^I` | `ᴵ` | i | Insert mode |
+| `\^J` | `ᴶ` | i | Insert mode |
+| `\^K` | `ᴷ` | i | Insert mode |
+| `\^L` | `ᴸ` | i | Insert mode |
+| `\^M` | `ᴹ` | i | Insert mode |
+| `\^N` | `ᴺ` | i | Insert mode |
+| `\^O` | `ᴼ` | i | Insert mode |
+| `\^P` | `ᴾ` | i | Insert mode |
+| `\^R` | `ᴿ` | i | Insert mode |
+| `\^T` | `ᵀ` | i | Insert mode |
+| `\^U` | `ᵁ` | i | Insert mode |
+| `\^V` | `ⱽ` | i | Insert mode |
+| `\^W` | `ᵂ` | i | Insert mode |
+| `\^a` | `ᵃ` | i | Insert mode |
+| `\^b` | `ᵇ` | i | Insert mode |
+| `\^c` | `ᶜ` | i | Insert mode |
+| `\^d` | `ᵈ` | i | Insert mode |
+| `\^e` | `ᵉ` | i | Insert mode |
+| `\^f` | `ᶠ` | i | Insert mode |
+| `\^g` | `ᵍ` | i | Insert mode |
+| `\^h` | `ʰ` | i | Insert mode |
+| `\^i` | `ⁱ` | i | Insert mode |
+| `\^j` | `ʲ` | i | Insert mode |
+| `\^k` | `ᵏ` | i | Insert mode |
+| `\^l` | `ˡ` | i | Insert mode |
+| `\^m` | `ᵐ` | i | Insert mode |
+| `\^n` | `ⁿ` | i | Insert mode |
+| `\^o` | `ᵒ` | i | Insert mode |
+| `\^p` | `ᵖ` | i | Insert mode |
+| `\^q` | `ᶝ` | i | Insert mode |
+| `\^r` | `ʳ` | i | Insert mode |
+| `\^s` | `ˢ` | i | Insert mode |
+| `\^t` | `ᵗ` | i | Insert mode |
+| `\^u` | `ᵘ` | i | Insert mode |
+| `\^v` | `ᵛ` | i | Insert mode |
+| `\^w` | `ʷ` | i | Insert mode |
+| `\^x` | `ˣ` | i | Insert mode |
+| `\^y` | `ʸ` | i | Insert mode |
+| `\^z` | `ᶻ` | i | Insert mode |
+| `\^tm` | `™` | i | Insert mode |
+| `\sca` | `ᴀ` | i | Insert mode |
+| `\scb` | `ʙ` | i | Insert mode |
+| `\scc` | `ᴄ` | i | Insert mode |
+| `\scd` | `ᴅ` | i | Insert mode |
+| `\sce` | `ᴇ` | i | Insert mode |
+| `\scf` | `ꜰ` | i | Insert mode |
+| `\scg` | `ɢ` | i | Insert mode |
+| `\sch` | `ʜ` | i | Insert mode |
+| `\sci` | `ɪ` | i | Insert mode |
+| `\scj` | `ᴊ` | i | Insert mode |
+| `\sck` | `ᴋ` | i | Insert mode |
+| `\scl` | `ʟ` | i | Insert mode |
+| `\scm` | `ᴍ` | i | Insert mode |
+| `\scn` | `ɴ` | i | Insert mode |
+| `\sco` | `ᴏ` | i | Insert mode |
+| `\scp` | `ᴘ` | i | Insert mode |
+| `\scr` | `ʀ` | i | Insert mode |
+| `\scs` | `ꜱ` | i | Insert mode |
+| `\sct` | `ᴛ` | i | Insert mode |
+| `\scu` | `ᴜ` | i | Insert mode |
+| `\scv` | `ᴠ` | i | Insert mode |
+| `\scw` | `ᴡ` | i | Insert mode |
+| `\scy` | `ʏ` | i | Insert mode |
+| `\scz` | `ᴢ` | i | Insert mode |
+| `\wc0` | `⓪` | i | Insert mode |
+| `\wc1` | `①` | i | Insert mode |
+| `\wc2` | `②` | i | Insert mode |
+| `\wc3` | `③` | i | Insert mode |
+| `\wc4` | `④` | i | Insert mode |
+| `\wc5` | `⑤` | i | Insert mode |
+| `\wc6` | `⑥` | i | Insert mode |
+| `\wc7` | `⑦` | i | Insert mode |
+| `\wc8` | `⑧` | i | Insert mode |
+| `\wc9` | `⑨` | i | Insert mode |
+| `\wcA` | `Ⓐ` | i | Insert mode |
+| `\wcB` | `Ⓑ` | i | Insert mode |
+| `\wcC` | `Ⓒ` | i | Insert mode |
+| `\wcD` | `Ⓓ` | i | Insert mode |
+| `\wcE` | `Ⓔ` | i | Insert mode |
+| `\wcF` | `Ⓕ` | i | Insert mode |
+| `\wcG` | `Ⓖ` | i | Insert mode |
+| `\wcH` | `Ⓗ` | i | Insert mode |
+| `\wcI` | `Ⓘ` | i | Insert mode |
+| `\wcJ` | `Ⓙ` | i | Insert mode |
+| `\wcK` | `Ⓚ` | i | Insert mode |
+| `\wcL` | `Ⓛ` | i | Insert mode |
+| `\wcM` | `Ⓜ` | i | Insert mode |
+| `\wcN` | `Ⓝ` | i | Insert mode |
+| `\wcO` | `Ⓞ` | i | Insert mode |
+| `\wcP` | `Ⓟ` | i | Insert mode |
+| `\wcQ` | `Ⓠ` | i | Insert mode |
+| `\wcR` | `Ⓡ` | i | Insert mode |
+| `\wcS` | `Ⓢ` | i | Insert mode |
+| `\wcT` | `Ⓣ` | i | Insert mode |
+| `\wcU` | `Ⓤ` | i | Insert mode |
+| `\wcV` | `Ⓥ` | i | Insert mode |
+| `\wcW` | `Ⓦ` | i | Insert mode |
+| `\wcX` | `Ⓧ` | i | Insert mode |
+| `\wcY` | `Ⓨ` | i | Insert mode |
+| `\wcZ` | `Ⓩ` | i | Insert mode |
+| `\wca` | `ⓐ` | i | Insert mode |
+| `\wcb` | `ⓑ` | i | Insert mode |
+| `\wcc` | `ⓒ` | i | Insert mode |
+| `\wcd` | `ⓓ` | i | Insert mode |
+| `\wce` | `ⓔ` | i | Insert mode |
+| `\wcf` | `ⓕ` | i | Insert mode |
+| `\wcg` | `ⓖ` | i | Insert mode |
+| `\wch` | `ⓗ` | i | Insert mode |
+| `\wci` | `ⓘ` | i | Insert mode |
+| `\wcj` | `ⓙ` | i | Insert mode |
+| `\wck` | `ⓚ` | i | Insert mode |
+| `\wcl` | `ⓛ` | i | Insert mode |
+| `\wcm` | `ⓜ` | i | Insert mode |
+| `\wcn` | `ⓝ` | i | Insert mode |
+| `\wco` | `ⓞ` | i | Insert mode |
+| `\wcp` | `ⓟ` | i | Insert mode |
+| `\wcq` | `ⓠ` | i | Insert mode |
+| `\wcr` | `ⓡ` | i | Insert mode |
+| `\wcs` | `ⓢ` | i | Insert mode |
+| `\wct` | `ⓣ` | i | Insert mode |
+| `\wcu` | `ⓤ` | i | Insert mode |
+| `\wcv` | `ⓥ` | i | Insert mode |
+| `\wcw` | `ⓦ` | i | Insert mode |
+| `\wcx` | `ⓧ` | i | Insert mode |
+| `\wcy` | `ⓨ` | i | Insert mode |
+| `\wcz` | `ⓩ` | i | Insert mode |
+| `\A</code> | <code class="language-plaintext highlighter-rouge">À</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\A'</code> | <code class="language-plaintext highlighter-rouge">Á</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\A..</code> | <code class="language-plaintext highlighter-rouge">Ä</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\A^</code> | <code class="language-plaintext highlighter-rouge">Â</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\C,</code> | <code class="language-plaintext highlighter-rouge">Ç</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\E</code><code class="language-plaintext highlighter-rouge"> | </code>È<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\E’<code class="language-plaintext highlighter-rouge"> | </code>É<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\E^<code class="language-plaintext highlighter-rouge"> | </code>Ê<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\I’<code class="language-plaintext highlighter-rouge"> | </code>Í<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\I<code class="language-plaintext highlighter-rouge">| `Ì` | i | Insert mode |
+| `\I..` | `Ï` | i | Insert mode |
+| `\O^` | `Ô` | i | Insert mode |
+| `\O..` | `Ö` | i | Insert mode |
+| `\U'` | `Ú` | i | Insert mode |
+| `\U</code> | <code class="language-plaintext highlighter-rouge">Ù</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\U^</code> | <code class="language-plaintext highlighter-rouge">Û</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\U..</code> | <code class="language-plaintext highlighter-rouge">Ü</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\a</code><code class="language-plaintext highlighter-rouge"> | </code>à<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\a’<code class="language-plaintext highlighter-rouge"> | </code>á<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\a..<code class="language-plaintext highlighter-rouge"> | </code>ä<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\a^<code class="language-plaintext highlighter-rouge"> | </code>â<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\c,<code class="language-plaintext highlighter-rouge"> | </code>ç<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\e<code class="language-plaintext highlighter-rouge">| `è` | i | Insert mode |
+| `\e'` | `é` | i | Insert mode |
+| `\e^` | `ê` | i | Insert mode |
+| `\i'` | `í` | i | Insert mode |
+| `\i</code> | <code class="language-plaintext highlighter-rouge">ì</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\i..</code> | <code class="language-plaintext highlighter-rouge">ï</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\o^</code> | <code class="language-plaintext highlighter-rouge">ô</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\o..</code> | <code class="language-plaintext highlighter-rouge">ö</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u'</code> | <code class="language-plaintext highlighter-rouge">ú</code> | i | Insert mode |
+| <code class="language-plaintext highlighter-rouge">\u</code><code class="language-plaintext highlighter-rouge"> | </code>ù<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\u^<code class="language-plaintext highlighter-rouge"> | </code>û<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\u..<code class="language-plaintext highlighter-rouge"> | </code>ü<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\ae<code class="language-plaintext highlighter-rouge"> | </code>æ<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\oe<code class="language-plaintext highlighter-rouge"> | </code>œ<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\e^~<code class="language-plaintext highlighter-rouge"> | </code>ễ<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\osl<code class="language-plaintext highlighter-rouge"> | </code>ø<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\Osl<code class="language-plaintext highlighter-rouge"> | </code>Ø<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\osls<code class="language-plaintext highlighter-rouge"> | </code>ᴓ<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxlr<code class="language-plaintext highlighter-rouge"> | </code>─<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxLR<code class="language-plaintext highlighter-rouge"> | </code>━<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtb<code class="language-plaintext highlighter-rouge"> | </code>│<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTB<code class="language-plaintext highlighter-rouge"> | </code>┃<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxlr-<code class="language-plaintext highlighter-rouge"> | </code>┄<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxLR-<code class="language-plaintext highlighter-rouge"> | </code>┅<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtb-<code class="language-plaintext highlighter-rouge"> | </code>┆<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTB-<code class="language-plaintext highlighter-rouge"> | </code>┇<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxlr.<code class="language-plaintext highlighter-rouge"> | </code>┈<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxLR.<code class="language-plaintext highlighter-rouge"> | </code>┉<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtb.<code class="language-plaintext highlighter-rouge"> | </code>┊<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTB.<code class="language-plaintext highlighter-rouge"> | </code>┋<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxbr<code class="language-plaintext highlighter-rouge"> | </code>┌<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxbR<code class="language-plaintext highlighter-rouge"> | </code>┍<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBr<code class="language-plaintext highlighter-rouge"> | </code>┎<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBR<code class="language-plaintext highlighter-rouge"> | </code>┏<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxbl<code class="language-plaintext highlighter-rouge"> | </code>┐<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxbL<code class="language-plaintext highlighter-rouge"> | </code>┑<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBl<code class="language-plaintext highlighter-rouge"> | </code>┒<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBL<code class="language-plaintext highlighter-rouge"> | </code>┓<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtr<code class="language-plaintext highlighter-rouge"> | </code>└<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtR<code class="language-plaintext highlighter-rouge"> | </code>┕<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTr<code class="language-plaintext highlighter-rouge"> | </code>┖<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTR<code class="language-plaintext highlighter-rouge"> | </code>┗<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtl<code class="language-plaintext highlighter-rouge"> | </code>┘<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtL<code class="language-plaintext highlighter-rouge"> | </code>┙<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTl<code class="language-plaintext highlighter-rouge"> | </code>┚<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTL<code class="language-plaintext highlighter-rouge"> | </code>┛<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtbr<code class="language-plaintext highlighter-rouge"> | </code>├<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtbR<code class="language-plaintext highlighter-rouge"> | </code>┝<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTbr<code class="language-plaintext highlighter-rouge"> | </code>┞<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtBr<code class="language-plaintext highlighter-rouge"> | </code>┟<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBr<code class="language-plaintext highlighter-rouge"> | </code>┠<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTbR<code class="language-plaintext highlighter-rouge"> | </code>┡<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtBR<code class="language-plaintext highlighter-rouge"> | </code>┢<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBR<code class="language-plaintext highlighter-rouge"> | </code>┣<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtbl<code class="language-plaintext highlighter-rouge"> | </code>┤<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtbL<code class="language-plaintext highlighter-rouge"> | </code>┥<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTbl<code class="language-plaintext highlighter-rouge"> | </code>┦<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtBl<code class="language-plaintext highlighter-rouge"> | </code>┧<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBl<code class="language-plaintext highlighter-rouge"> | </code>┨<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTbL<code class="language-plaintext highlighter-rouge"> | </code>┩<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtBL<code class="language-plaintext highlighter-rouge"> | </code>┪<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBL<code class="language-plaintext highlighter-rouge"> | </code>┫<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxblr<code class="language-plaintext highlighter-rouge"> | </code>┬<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxbLr<code class="language-plaintext highlighter-rouge"> | </code>┭<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxblR<code class="language-plaintext highlighter-rouge"> | </code>┮<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxbLR<code class="language-plaintext highlighter-rouge"> | </code>┯<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBlr<code class="language-plaintext highlighter-rouge"> | </code>┰<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBLr<code class="language-plaintext highlighter-rouge"> | </code>┱<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBlR<code class="language-plaintext highlighter-rouge"> | </code>┲<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBLR<code class="language-plaintext highlighter-rouge"> | </code>┳<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtlr<code class="language-plaintext highlighter-rouge"> | </code>┴<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtLr<code class="language-plaintext highlighter-rouge"> | </code>┵<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtlR<code class="language-plaintext highlighter-rouge"> | </code>┶<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtLR<code class="language-plaintext highlighter-rouge"> | </code>┷<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTlr<code class="language-plaintext highlighter-rouge"> | </code>┸<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTLr<code class="language-plaintext highlighter-rouge"> | </code>┹<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTlR<code class="language-plaintext highlighter-rouge"> | </code>┺<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTLR<code class="language-plaintext highlighter-rouge"> | </code>┻<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtblr<code class="language-plaintext highlighter-rouge"> | </code>┼<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtbLr<code class="language-plaintext highlighter-rouge"> | </code>┽<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtblR<code class="language-plaintext highlighter-rouge"> | </code>┾<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtbLR<code class="language-plaintext highlighter-rouge"> | </code>┿<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTblr<code class="language-plaintext highlighter-rouge"> | </code>╀<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtBlr<code class="language-plaintext highlighter-rouge"> | </code>╁<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBlr<code class="language-plaintext highlighter-rouge"> | </code>╂<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTbLr<code class="language-plaintext highlighter-rouge"> | </code>╃<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTblR<code class="language-plaintext highlighter-rouge"> | </code>╄<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtBLr<code class="language-plaintext highlighter-rouge"> | </code>╅<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtBlR<code class="language-plaintext highlighter-rouge"> | </code>╆<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTbLR<code class="language-plaintext highlighter-rouge"> | </code>╇<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtBLR<code class="language-plaintext highlighter-rouge"> | </code>╈<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBLr<code class="language-plaintext highlighter-rouge"> | </code>╉<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBlR<code class="language-plaintext highlighter-rouge"> | </code>╊<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBLR<code class="language-plaintext highlighter-rouge"> | </code>╋<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxlr:<code class="language-plaintext highlighter-rouge"> | </code>╌<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxLR:<code class="language-plaintext highlighter-rouge"> | </code>╍<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtb:<code class="language-plaintext highlighter-rouge"> | </code>╎<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTB:<code class="language-plaintext highlighter-rouge"> | </code>╏<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxLR=<code class="language-plaintext highlighter-rouge"> | </code>═<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTB=<code class="language-plaintext highlighter-rouge"> | </code>║<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxbR=<code class="language-plaintext highlighter-rouge"> | </code>╒<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBr=<code class="language-plaintext highlighter-rouge"> | </code>╓<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBR=<code class="language-plaintext highlighter-rouge"> | </code>╔<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxbL=<code class="language-plaintext highlighter-rouge"> | </code>╕<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBl=<code class="language-plaintext highlighter-rouge"> | </code>╖<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBL=<code class="language-plaintext highlighter-rouge"> | </code>╗<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtR=<code class="language-plaintext highlighter-rouge"> | </code>╘<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTr=<code class="language-plaintext highlighter-rouge"> | </code>╙<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTR=<code class="language-plaintext highlighter-rouge"> | </code>╚<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtL=<code class="language-plaintext highlighter-rouge"> | </code>╛<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTl=<code class="language-plaintext highlighter-rouge"> | </code>╜<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTL=<code class="language-plaintext highlighter-rouge"> | </code>╝<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtbR=<code class="language-plaintext highlighter-rouge"> | </code>╞<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBr=<code class="language-plaintext highlighter-rouge"> | </code>╟<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBR=<code class="language-plaintext highlighter-rouge"> | </code>╠<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtbL=<code class="language-plaintext highlighter-rouge"> | </code>╡<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBl=<code class="language-plaintext highlighter-rouge"> | </code>╢<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBL=<code class="language-plaintext highlighter-rouge"> | </code>╣<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxbLR=<code class="language-plaintext highlighter-rouge"> | </code>╤<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBlr=<code class="language-plaintext highlighter-rouge"> | </code>╥<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxBLR=<code class="language-plaintext highlighter-rouge"> | </code>╦<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtLR=<code class="language-plaintext highlighter-rouge"> | </code>╧<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTlr=<code class="language-plaintext highlighter-rouge"> | </code>╨<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTLR=<code class="language-plaintext highlighter-rouge"> | </code>╩<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtbLR=<code class="language-plaintext highlighter-rouge"> | </code>╪<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBlr=<code class="language-plaintext highlighter-rouge"> | </code>╫<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTBLR=<code class="language-plaintext highlighter-rouge"> | </code>╬<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxbrc<code class="language-plaintext highlighter-rouge"> | </code>╭<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxblc<code class="language-plaintext highlighter-rouge"> | </code>╮<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtlc<code class="language-plaintext highlighter-rouge"> | </code>╯<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtrc<code class="language-plaintext highlighter-rouge"> | </code>╰<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtrbl<code class="language-plaintext highlighter-rouge"> | </code>╱<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtlbr<code class="language-plaintext highlighter-rouge"> | </code>╲<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxx<code class="language-plaintext highlighter-rouge"> | </code>╳<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxl<code class="language-plaintext highlighter-rouge"> | </code>╴<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxt<code class="language-plaintext highlighter-rouge"> | </code>╵<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxr<code class="language-plaintext highlighter-rouge"> | </code>╶<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxb<code class="language-plaintext highlighter-rouge"> | </code>╷<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxL<code class="language-plaintext highlighter-rouge"> | </code>╸<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxT<code class="language-plaintext highlighter-rouge"> | </code>╹<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxR<code class="language-plaintext highlighter-rouge"> | </code>╺<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxB<code class="language-plaintext highlighter-rouge"> | </code>╻<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxlR<code class="language-plaintext highlighter-rouge"> | </code>╼<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxtB<code class="language-plaintext highlighter-rouge"> | </code>╽<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxLr<code class="language-plaintext highlighter-rouge"> | </code>╾<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\boxTb<code class="language-plaintext highlighter-rouge"> | </code>╿<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\nbsp<code class="language-plaintext highlighter-rouge"> | </code> <code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\ensp<code class="language-plaintext highlighter-rouge"> | </code> <code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\fgsp<code class="language-plaintext highlighter-rouge"> | </code> <code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\python<code class="language-plaintext highlighter-rouge"> | </code>🐍<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\docker<code class="language-plaintext highlighter-rouge"> | </code>🐳<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\haskell<code class="language-plaintext highlighter-rouge"> | </code>λ<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\git<code class="language-plaintext highlighter-rouge"> | </code><code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\java<code class="language-plaintext highlighter-rouge"> | </code>☕<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\go<code class="language-plaintext highlighter-rouge"> | </code>🐹<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\rust<code class="language-plaintext highlighter-rouge"> | </code>🦀<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\package<code class="language-plaintext highlighter-rouge"> | </code>📦<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\deploy<code class="language-plaintext highlighter-rouge"> | </code>🚀<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\bug<code class="language-plaintext highlighter-rouge"> | </code>🐛<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\feature<code class="language-plaintext highlighter-rouge"> | </code>✨<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\fire<code class="language-plaintext highlighter-rouge"> | </code>🔥<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\opt<code class="language-plaintext highlighter-rouge"> | </code>⚡️<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\memo<code class="language-plaintext highlighter-rouge"> | </code>📝<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code>\hotfix<code class="language-plaintext highlighter-rouge"> | </code>🚑️<code class="language-plaintext highlighter-rouge"> | i | Insert mode |
+| </code><space>` | `za` | n | Normal mode |
+| `<space>` | `zf` | v | Visual and Select mode |
+| `<leader>tn` | `:tabnew<cr>` | n | Normal mode |
+| `<leader>tc` | `:tabclose<cr>` | n | Normal mode |
+| `<leader>to` | `:tabonly<cr>` | n | Normal mode |
+| `<leader>t<leader>` | `:tabnext<cr>` | n | Normal mode |
+| `<leader>te` | `:tabedit<space>` | n | Normal mode |
+| `<leader>r` | `:Rg<space>` | n | Normal mode |
+| `<leader>ga` | `:Git add %:p<CR><CR>` | n | Normal mode |
+| `<leader>gs` | `:Git status<CR>` | n | Normal mode |
+| `<leader>gc` | `:Git commit -v -q<CR>` | n | Normal mode |
+| `<leader>gt` | `:Git commit -v -q %:p<CR>` | n | Normal mode |
+| `<leader>gd` | `:Git diff<CR>` | n | Normal mode |
+| `<leader>ge` | `:Git edit<CR>` | n | Normal mode |
+| `<leader>gr` | `:Git restore --staged %:p<CR><CR>` | n | Normal mode |
+| `<leader>gw` | `:Git write<CR><CR>` | n | Normal mode |
+| `<leader>gl` | `:silent! Glog<CR>:bot copen<CR>` | n | Normal mode |
+| `<leader>gp` | `:Git grep<Space>` | n | Normal mode |
+| `<leader>gm` | `:Git move<Space>` | n | Normal mode |
+| `<leader>gb` | `:Git branch<Space>` | n | Normal mode |
+| `<leader>go` | `:Git checkout<Space>` | n | Normal mode |
+| `<leader>gps` | `:Dispatch! git push<CR>` | n | Normal mode |
+| `<leader>gpl` | `:Dispatch! git pull<CR>stuff` | n | Normal mode |</CR></leader></CR></leader></Space></leader></Space></leader></Space></leader></Space></leader></CR></CR></leader></CR></CR></leader></CR></CR></leader></CR></leader></CR></leader></CR></leader></CR></leader></CR></leader></CR></CR></leader></space></leader></space></leader></cr></leader></leader></cr></leader></cr></leader></cr></leader></space></space></p>
+
+<h2 id="options">Options</h2>
+<ul>
+  <li>ai: True</li>
+  <li>expandtab: True</li>
+  <li>langmenu: en</li>
+  <li>number: True</li>
+  <li>relativenumber: True</li>
+  <li>ruler: True</li>
+  <li>shiftwidth: 4</li>
+  <li>si: True</li>
+  <li>tabstop: 4</li>
+  <li>wildignore: <em>.o,</em>~,*.pyc</li>
+  <li>wrap: True</li>
+</ul>
+
+<h2 id="imported-modules">Imported Modules</h2>
+<ul>
+  <li>/nix/store/r0v3f8ai4zibr3f9f4n677cxs3mlvl4y-bufferline.nix</li>
+  <li>/nix/store/7x7flxkr145rg0lkmn6qb19fkr963y4d-git.nix</li>
+  <li>/nix/store/gdp5s8jk7j4nkk9i6cmd3vqnrhgxxywz-nix.nix</li>
+  <li>/nix/store/cscc7a0q0b8p2dg7x4rcws0j2pjsc77q-extras.nix</li>
+  <li>/nix/store/sqxi3yapfjdbg7xj7jxxm4n3gx2wgaji-lsp.nix</li>
+  <li>/nix/store/6h1s4i0p09ndgb1qi3h5z5maz3n4w7dh-theme.nix</li>
+  <li>/nix/store/x4fjiih00l4vbffbii3wva68hj7sws7i-tree.nix</li>
+  <li>/nix/store/k4h1ckj8a0k817q931kx9d3klzq9gwnp-typst.nix</li>
+  <li>/nix/store/974f3ga901h279zf254rfsrzanf3wijx-dprint.nix</li>
+  <li>/nix/store/xbwlfbyirxi5zl9vgr0w2jb9hjysrlf7-tex.nix</li>
+</ul>

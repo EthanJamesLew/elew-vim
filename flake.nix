@@ -19,6 +19,7 @@
         inherit pkgs;
         module = optionsConfig // (importedConfig { inherit pkgs system; });
       };
+      nvimAttributes = pkgs.writeText "nvim-attributes.json" (builtins.toPrettyJSON nvim);
       nvim-docker = nixvim'.makeNixvimWithModule {
         inherit pkgs;
         module = optionsConfig // (importedDockerConfig { inherit pkgs system; });
@@ -31,7 +32,6 @@
           Cmd = [ "${nvim-docker}/bin/nvim" ];
         };
       };
-      nvimJSON = pkgs.writeText "nvim-config.json" (builtins.toJSON nvim);
     in {
       checks = {
         default = nixvimLib.check.mkTestDerivationFromNvim {
@@ -42,7 +42,7 @@
       packages = {
         inherit dockerImage;
         default = nvim;
-        nvimJSON = nvimJSON;
+        nvimAttributes = nvimAttributes;
       };
     });
 }

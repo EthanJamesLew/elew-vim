@@ -1,4 +1,4 @@
-name: nvim JSON
+name: Docs 
 
 on:
   push:

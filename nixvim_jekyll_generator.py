@@ -59,22 +59,23 @@ def generate_jekyll_post(data, output_file):
         file.write(f"Repository dirty: {dirty}\n\n")
         
         
-        file.write("## Global Variables\n")
+        file.write("## Global Variables\n\n")
         for key, value in config['globals'].items():
             file.write(f"- {key}: {value}\n")
         file.write("\n")
         
-        file.write("## Options\n")
+        file.write("## Options\n\n")
         for opt, value in config['opts'].items():
             file.write(f"- {opt}: {value}\n")
         file.write("\n")
         
-        file.write("## Imported Modules\n")
+        file.write("## Imported Modules\n\n")
         for imp in imports:
             file.write(f"- {imp}\n")
+        file.write("\n")
 
         
-        file.write("## Vim Configuration\n")
+        file.write("## Vim Configuration\n\n")
         file.write("```vim\n")
         file.write(config['extraConfigVim'] + "\n")
         file.write("```\n\n")

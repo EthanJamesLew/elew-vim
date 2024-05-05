@@ -54,8 +54,8 @@ def generate_jekyll_post(data, output_file):
         file.write(f"date: {date_for_filename}\n")
         file.write(f"categories: ['NixVim', 'configuration']\n")
         file.write("---\n\n")
-        file.write(f"Generated on: {date_time}\n")
-        file.write(f"Git commit: {commit}\n")
+        file.write(f"Generated on: {date_time}\n\n")
+        file.write(f"Git commit: {commit}\n\n")
         file.write(f"Repository dirty: {dirty}\n\n")
         
         file.write("## Vim Configuration\n")
@@ -67,14 +67,15 @@ def generate_jekyll_post(data, output_file):
         for key, value in config['globals'].items():
             file.write(f"- {key}: {value}\n")
         file.write("\n")
-        
-        file.write("## Key Mappings\n")
+
+        file.write("## Key Mappings\n\n")
         file.write("| Key | Action | Mode | Description |\n")
         file.write("| --- | ------ | ---- | ----------- |\n")
         for mapping in config['keymaps']:
             mode = mapping['mode']
             description = mode_descriptions.get(mode, "Unknown mode")
-            file.write(f"| `{mapping['key']}` | `{mapping['action']}` | {mode} | {description} |\n")
+            key_string = mapping['key'].replace('`', '\\`')
+            file.write(f"| `{key_string}` | `{mapping['action']}` | {mode} | {description} |\n")
         file.write("\n")
         
         file.write("## Options\n")

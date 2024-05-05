@@ -58,24 +58,10 @@ def generate_jekyll_post(data, output_file):
         file.write(f"Git commit: {commit}\n\n")
         file.write(f"Repository dirty: {dirty}\n\n")
         
-        file.write("## Vim Configuration\n")
-        file.write("```vim\n")
-        file.write(config['extraConfigVim'] + "\n")
-        file.write("```\n\n")
         
         file.write("## Global Variables\n")
         for key, value in config['globals'].items():
             file.write(f"- {key}: {value}\n")
-        file.write("\n")
-
-        file.write("## Key Mappings\n\n")
-        file.write("| Key | Action | Mode | Description |\n")
-        file.write("| --- | ------ | ---- | ----------- |\n")
-        for mapping in config['keymaps']:
-            mode = mapping['mode']
-            description = mode_descriptions.get(mode, "Unknown mode")
-            key_string = mapping['key'].replace('`', '\\`')
-            file.write(f"| `{key_string}` | `{mapping['action']}` | {mode} | {description} |\n")
         file.write("\n")
         
         file.write("## Options\n")
@@ -87,6 +73,22 @@ def generate_jekyll_post(data, output_file):
         for imp in imports:
             file.write(f"- {imp}\n")
 
+        
+        file.write("## Vim Configuration\n")
+        file.write("```vim\n")
+        file.write(config['extraConfigVim'] + "\n")
+        file.write("```\n\n")
+
+        file.write("## Key Mappings\n\n")
+        file.write("| Key | Action | Mode | Description |\n")
+        file.write("| --- | ------ | ---- | ----------- |\n")
+        for mapping in config['keymaps']:
+            mode = mapping['mode']
+            description = mode_descriptions.get(mode, "Unknown mode")
+            key_string = mapping['key'].replace('`', '\\`')
+            file.write(f"| `{key_string}` | `{mapping['action']}` | {mode} | {description} |\n")
+        file.write("\n")
+        
         print(f"Jekyll post '{output_file}' has been generated.")
 
 def main():

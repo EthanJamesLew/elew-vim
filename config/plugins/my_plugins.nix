@@ -98,4 +98,15 @@
     };
     dependencies = [];
   };
+
+  vim-jinja2-syntax = vimUtils.buildVimPlugin {
+    name = "vim-jina2-syntax-2024-05-05";
+    src = fetchFromGitHub {
+      owner = "Glench"; 
+      repo = "Vim-Jinja2-Syntax";
+      rev = "2c17843b074b06a835f88587e1023ceff7e2c7d1";
+      sha256 = "sha256-57kZn10XBpCRRXsFSSEIUngdIJSj3cmNQHnkObj+ro4=";
+    };
+  };
+
 }

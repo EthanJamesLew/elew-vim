@@ -11,4 +11,5 @@ in with myPlugins; [
   matlab
   clafer
   nkpl
+  vim-jinja2-syntax
 ] 

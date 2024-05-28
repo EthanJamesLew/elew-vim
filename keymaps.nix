@@ -16,7 +16,7 @@ let
       let g:vimtex_compiler_method = 'latexmk'
 
       " match my orgmode task preferences
-      let g:org_todo_keywords=['TODO', 'FEEDBACK', '|', 'DONE', 'BLOCKED', 'DELEGATED']
+      let g:org_todo_keywords=['TODO', 'DOING', 'FEEDBACK', '|', 'DONE', 'BLOCKED', 'DELEGATED']
       
       " latexmk compilation (the important one is shell escape as it is needed for pygments minted)
       let g:vimtex_compiler_latexmk = {

@@ -67,7 +67,7 @@
   };
   
   matlab = vimUtils.buildVimPlugin {
-    name = "rust-2023-12-10";
+    name = "matlab-2023-12-10";
     src = fetchFromGitHub {
       owner = "daeyun";
       repo = "vim-matlab";

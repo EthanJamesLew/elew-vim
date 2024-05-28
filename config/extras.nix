@@ -9,7 +9,8 @@
     ctrlp
     markdown-preview-nvim
     awesome-vim-colorschemes
-    orgmode
+    vim-orgmode
+    vim-speeddating
   ];
 in {
   extraPlugins = externalPlugins ++ myPlugins;

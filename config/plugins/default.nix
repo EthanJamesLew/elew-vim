@@ -12,4 +12,7 @@ in with myPlugins; [
   clafer
   nkpl
   vim-jinja2-syntax
+  plantuml-previewer
+  plantuml-syntax
+  open-browser
 ] 

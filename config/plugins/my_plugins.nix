@@ -109,4 +109,33 @@
     };
   };
 
+  plantuml-previewer = vimUtils.buildVimPlugin {
+    name = "plantuml-previewer-2024-10-23";
+    src = fetchFromGitHub {
+      owner = "weirongxu";
+      repo = "plantuml-previewer.vim";
+      rev = "555347700382c97b347bace57b7a9f764ed556b1";
+      sha256 = "sha256-eKtTNN0pVaeSbUXd1Mz+igHjFDnCEP043eFw1dY3nW4=";
+    };
+  };
+
+  plantuml-syntax = vimUtils.buildVimPlugin {
+    name = "plantuml-syntax-2024-10-23";
+    src = fetchFromGitHub {
+      owner = "aklt";
+      repo = "plantuml-syntax";
+      rev = "9d4900aa16674bf5bb8296a72b975317d573b547";
+      sha256 = "sha256-qmo5xI7Vugtsbl95RW2Pnu6cDei1Xz7Pq06HrrwPpI4=";
+    };
+  };
+
+  open-browser = vimUtils.buildVimPlugin {
+    name = "open-browser-2024-10-23";
+    src = fetchFromGitHub {
+      owner = "tyru";
+      repo = "open-browser.vim";
+      rev = "7d4c1d8198e889d513a030b5a83faa07606bac27";
+      sha256 = "sha256-9QZgTv8W0BFlF0lsH1BPPAzjD6iXWXHXZf2zpouQH2s=";
+    };
+  };
 }

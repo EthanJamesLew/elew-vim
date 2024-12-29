@@ -16,5 +16,4 @@ in with myPlugins; [
   plantuml-syntax
   open-browser
   sysmlv2
-  nvim-treesitter
 ] 

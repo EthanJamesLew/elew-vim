@@ -144,16 +144,6 @@
     src = fetchFromGitHub {
       owner = "EthanJamesLew";
       repo = "sysmlv2.nvim";
-      rev = "b584b87e9d56a55d6fe9e01add27ace66748409c";
-      sha256 = "sha256-c0oOeHIzbT6sncEmi9BSfuCBFsY0ECcLQjjE7p7c8ps=";
-    };
-  };
-
-  nvim-treesitter = vimUtils.buildVimPlugin {
-    name = "nvim-treesitter-2024-10-23";
-    src = fetchFromGitHub {
-      owner = "nvim-treesitter";
-      repo = "nvim-treesitter";
       rev = "d35e2ce350db8e9189a6048c96ad9709c36db995";
       sha256 = "sha256-efHx+Cpy4oOHaegfE0lPJiPDBJOourYgKgZXg+ckh8U=";
     };

@@ -138,4 +138,24 @@
       sha256 = "sha256-9QZgTv8W0BFlF0lsH1BPPAzjD6iXWXHXZf2zpouQH2s=";
     };
   };
+
+  sysmlv2 = vimUtils.buildVimPlugin {
+    name = "sysmlv2-2024-10-23";
+    src = fetchFromGitHub {
+      owner = "EthanJamesLew";
+      repo = "sysmlv2.nvim";
+      rev = "b584b87e9d56a55d6fe9e01add27ace66748409c";
+      sha256 = "sha256-c0oOeHIzbT6sncEmi9BSfuCBFsY0ECcLQjjE7p7c8ps=";
+    };
+  };
+
+  nvim-treesitter = vimUtils.buildVimPlugin {
+    name = "nvim-treesitter-2024-10-23";
+    src = fetchFromGitHub {
+      owner = "nvim-treesitter";
+      repo = "nvim-treesitter";
+      rev = "5d18ef22dc63624e90aa7b6dbc17f2c3856ae716";
+      sha256 = "sha256-B+JHv//vP9KFQZyH+Cygfrt5jbKjlNcHOUT4C684xrE=";
+    };
+  };
 }
